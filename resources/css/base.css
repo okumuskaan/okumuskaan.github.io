@@ -1,0 +1,407 @@
+/****************************/
+/* Universal Styles */
+/****************************/
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/****************************/
+/* Header */
+/****************************/
+header {
+    background-color: black;
+    color: seashell;
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    gap: 0px 20px;
+    align-items: center;
+    margin: 0px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid whitesmoke;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Menu button and Kaan Okumus Logo Container */
+#header-left {
+    margin: auto 30px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 0px 40px;
+    //width: 30%;
+    transition: all 0.8s ease-in-out;
+}
+
+/* Menu Container */
+#menu-icon-container {
+    height: 100px;
+    width: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Menu Icon */
+#menu-icon {
+    height: 25px;
+}
+#menu-icon:hover {
+    height: 28px;
+    cursor: pointer;
+}
+
+/* Kaan Okumus Logo Style */
+header h1, .overlay h1 {
+    color: seashell;
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+#first-name {
+    display: none;
+}
+#logo-name {
+    display: none;
+    padding: 0px 9px;
+    line-height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    //border: 1px solid whitesmoke;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.6);
+}
+
+/* Navigator Style */
+header nav {
+    position: absolute;
+    right: 120px;
+}
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 10px;
+    margin: 16px 0px;
+    //margin-right: 40px;
+    text-align: center;
+    //border-left: 1px solid #bbb;
+}
+header li {
+    margin: 0 10px;
+    padding: 0 15px;
+    height: 34px;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    height: 98px;
+    border-bottom: 2px solid black;
+}
+.nav-link {
+    display: flex;
+    gap: 4px;
+    color: seashell;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    //transition: all 0.5s ease-in-out;
+}
+.non-chosen h4 {
+    font-weight: 400;
+}
+.nav-img {
+    position: relative;
+    bottom: 3px;
+    height: 20px;
+}
+#nav-menu {
+    width: 80px;
+}
+#nav-projects {
+    width: 80px;
+}
+#nav-about_me {
+    width: 80px;
+}
+#nav-activities {
+    width: 80px;
+}
+.non-chosen:hover {
+    color: gray;
+}
+header .chosen {
+    font-weight: 700;
+    border-bottom: 2px solid whitesmoke;
+}
+header li:hover {
+    border-bottom: 2px solid whitesmoke;
+    cursor: pointer;
+}
+
+/* Right part of the header that only includes Github Logo */
+#header-right {
+    position: absolute;
+    right: 40px;
+    align-items: center;
+}
+.github-box {
+    height: 33px;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.github-logo {
+    height: 30px;
+    width: 30px;
+}
+.github-logo:hover {
+    height: 33px;
+    width: 33px;
+}
+
+/****************************/
+/* Search Bar of Header */
+/****************************/
+#search-container {
+    //width: 325px;
+    padding: 1%;
+    //left: 35%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 99999;
+    transition: all 0.5s ease-in-out;
+}
+#search {
+    display: flex;
+    padding: 2px;
+    gap: 0px 10px;
+    border-radius: 20px;
+    width: 50px;
+    transition: all 0.5s ease-in-out;
+}
+#search-img {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    opacity: 1;
+    margin: 10px;
+}
+#search-img:hover {
+    opacity: 1;
+}
+form {
+    display: flex;
+    padding: 2px;
+    border-radius: 5px;
+}
+input[type="search"] {
+    display: none;
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    width: 240px;
+    font-size: 14px;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+button[type="submit"] {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    border-radius: inherit;
+    cursor: pointer;
+    opacity: 0.7;
+}
+button[type="submit"]:hover {
+    opacity: 1;
+}
+input[type="search"]:focus {
+  border: none;
+  outline: none;
+}
+
+/****************************/
+/* Position of Main Element */
+/****************************/
+main {
+    position: relative;
+    top: 100px;
+    min-height: 692px;
+    transition: all 0.5s ease-in-all;
+}
+
+/****************************/
+/* Footer */
+/****************************/
+footer {
+    background-color: black;
+    border-top: 1px solid white;
+    color: seashell;
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Copy right part of Footer */
+footer p, .overlay p {
+    color: seashell;
+    margin: 0px 10%;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+/* Social media part of Footer */
+.footer-logos-container {
+    margin: 0px 10%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo-container {
+    margin: 0px 10px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mail {
+    width: 30px;
+}
+.linkedin {
+    width: 26px;
+}
+.insta {
+    width: 25px;
+}
+.mail:hover {
+    width: 32px;
+}
+.linkedin:hover {
+    width: 28px;
+}
+.insta:hover{
+    width: 27px;
+}
+
+/****************************/
+/* The Overlay (background) */
+/****************************/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 100000; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 1); /* Black w/opacity other option is to make 0
+                                        .9 opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid seashell;
+    padding-bottom: 20px;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 18%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: seashell;
+}
+/* To modify the close button */
+.closebtn {
+    font-size: 70px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 100px;
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+}
+/* To style links in overlay */
+.overlay-content a {
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 30px;
+    font-size: 36px;
+    border: none;
+}
+
+.overlay-contact-link {
+    position: relative;
+    top: 28%;
+    height: 60px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-footer {
+    position: relative;
+    top: 32%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* Only current page link should have different style */
+.overlay-content a.chosen {
+    cursor: default;
+    color: seashell;
+}
+
+.closebtn:hover {
+    //transform: rotate(-90deg);
+    //transition: transform 0.3s linear;
+}
+

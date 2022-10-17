@@ -1,0 +1,47 @@
+main {
+    min-height: 2000px;
+}
+.secondary-nav {
+    display: flex;
+    gap: 0px 20px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.secondary-nav-box {
+
+}
+
+.projects-main {
+    height: 500px;
+}
+.type1 {
+    background-color: whitesmoke;
+}
+.type2 {
+    background-color: white;
+}
+.projects-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    height: 300px;
+    width: 90%;
+    border-bottom: 1px solid black;
+    margin: 0px auto;
+}
+
+.projects-header {
+    letter-spacing: 3px;
+    margin: auto;
+}
+.projects-header h3 {
+    font-weight: 400;
+}
+.projects-description {
+    margin: auto;
+    line-height: 32px;
+    width: 80%;
+}

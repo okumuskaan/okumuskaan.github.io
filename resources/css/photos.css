@@ -1,0 +1,155 @@
+html, body {
+    margin: 0px;
+    background-color: rgba(0,0,0,0.8);
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    min-height: 900px;
+    transition all 0.5s ease-in-out;
+}
+
+#return-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    opacity: 0.7;
+}
+
+.shown-photo-container {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: seashell;
+}
+
+.photos {
+    padding: 5px;
+}
+
+.shown-photo-container .chosen {
+    height: 600px;
+}
+
+#shown-photo-info-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo-title {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#shown-photo-info-container #info-img {
+    opacity: 0.6;
+}
+
+#info-img {
+    height: 20px;
+    width: 20px;
+    margin: 0px;
+}
+
+#toolbar {
+    height: 140px;
+    transition: height 0.5s ease-in-out;
+}
+
+.arrows {
+    height: 50px;
+    position: absolute;
+    top: 765px;
+}
+
+.left {
+    left: 50px;
+    opacity: 0.5;
+}
+.right {
+    right: 50px;
+}
+
+.other-photos-container {
+    margin: 10px auto;
+    width: 70%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other-photos-container .photos:hover {
+    height: 110px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.other-photos-container .chosen-down {
+    height: 110px;
+}
+.other-photos-container .not-chosen {
+    height: 100px;
+}
+
+#button-container {
+    height: 20px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    margin: 5px auto;
+    margin-top: 0px;
+    border: 1px solid seashell;
+    //border-bottom: 1px solid grey;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+#button-container .open-close-toolbar {
+    height: 10px;
+    transform: rotate(-90deg);
+    transition: all 0.5s ease-in-out;
+}
+#button-container:hover {
+    background-color: seashell;
+    cursor: pointer;
+}
+
+
+
+#header-openclose-button {
+    position: absolute;
+    top: 76px;
+    width: 20px;
+    height: 20px;
+    left: 49%;
+    right: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    z-index: 100000;
+}
+#header-arrow {
+    width: 13px;
+    height: 13px;
+    transform: rotate(-90deg);
+    transition: all 0.5s ease-in-out;
+}
+
+#header-openclose-button:hover {
+    border: 1px solid seashell;
+    cursor: pointer;
+}

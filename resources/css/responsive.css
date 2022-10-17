@@ -1,0 +1,112 @@
+/****************************/
+/* Responsiveness */
+/****************************/
+@media screen and (max-width: 1440px) and (min-width: 900px) {
+    header nav {
+        display: none;
+    }
+    #header-left {
+        width: 50%;
+    }
+    #search-container {
+        justify-content: right;
+        position: absolute;
+        right: 120px;
+    }
+    #full-name {
+        display: block;
+    }
+    #first-name {
+        display: none;
+    }
+    #logo-name {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 730px) {
+    header nav {
+        display: none;
+    }
+    #header-left {
+        width: 50%;
+    }
+    #search-container {
+        justify-content: right;
+        position: absolute;
+        right: 120px;
+    }
+    #full-name {
+        display: none;
+    }
+    #first-name {
+        display: block;
+    }
+    #logo-name {
+        display: none;
+    }
+}
+@media screen and (max-width: 730px) and (min-width: 620px) {
+    header nav {
+        display: none;
+    }
+    #header-left {
+        width: 10%;
+    }
+    #menu-icon-container{
+        padding-right: 0px;
+    }
+    #search-container {
+        justify-content: right;
+        position: absolute;
+        right: 120px;
+        //position: default;
+        //justify-content: right;
+    }
+    #full-name {
+        display: none;
+    }
+    #first-name {
+        display: none;
+    }
+    #logo-name {
+        display: block;
+    }
+}
+@media screen and (max-width: 630px) {
+    header nav {
+        display: none;
+    }
+    #header-left {
+        width: 8%;
+    }
+    #menu-icon-container{
+        padding-right: 0px;
+    }
+    #search-container {
+        justify-content: right;
+        position: absolute;
+        right: 40px;
+        //position: default;
+        //justify-content: right;
+    }
+    #full-name {
+        display: none;
+    }
+    #first-name {
+        display: none;
+    }
+    #logo-name {
+        display: block;
+    }
+    #header-right {
+        display: none;
+    }
+
+    .banner {
+        height: 400px;
+        // change background-position!
+    }
+    .banner p {
+
+    }
+}
