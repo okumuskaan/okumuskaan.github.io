@@ -101,7 +101,7 @@ let infoCloseBtn = document.getElementById("closebtn-more-info");
 function on_click_show_info() {
 
     infoBox.style.height = "15%";
-    //infoBox.style.width = "20%";
+    infoBox.style.width = "20%";
     infoBox.style.padding = "15px";
     infoBox.style.border = "1ps solid seashell";
     infoList.forEach((info) => {
@@ -126,7 +126,7 @@ shownPhotoInfoContainer.addEventListener("click", on_click_show_info);
 function on_click_infoCloseBtn() {
     console.log("CloseInfoBtn Clicked!!")
         infoBox.style.height = "0%";
-        //infoBox.style.width = "0%";
+        infoBox.style.width = "0%";
         infoBox.style.padding = "0px";
         infoBox.style.border = "none";
         infoList.forEach((info) => {
