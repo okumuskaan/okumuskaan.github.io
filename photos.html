@@ -4,7 +4,7 @@
 
   <meta charset="UTF-8">
 
-  <title>Photographs - Kaan Okumu&#351;</title>
+  <title>Photographs - Kaan Okumus</title>
 
   <link rel="icon" type="image/x-icon"
         href="./resources/imgs/favicon/kaan-logo.png">
@@ -49,13 +49,9 @@
   </div>
   <nav>
     <ul>
-      <li id="nav-menu" class="chosen">
-        <a href="./index.html"
-           class="nav-link">
-          <!--
-          <img class="nav-img"
-               src="./resources/imgs/header/home.png">
-          -->
+      <li id="nav-menu">
+        <a href="./menu.html"
+           class="nav-link non-chosen">
           <h4>Home</h4>
         </a>
       </li>
@@ -71,9 +67,9 @@
           <h4>About Me</h4>
         </a>
       </li>
-      <li id="nav-activities">
+      <li id="nav-activities" class="chosen">
         <a href="#"
-           class="nav-link non-chosen">
+           class="nav-link">
           <h4>My Activities</h4>
         </a>
       </li>
@@ -94,7 +90,7 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <h1>Kaan Okumus</h1>
   <div class="overlay-content">
-    <a href="./index.html">Home</a>
+    <a href="./menu.html">Home</a>
     <a href="./projects.html">Projects</a>
     <a href="./about_me.html">About Me</a>
     <a href="#" class="chosen">My Activities</a>
@@ -132,19 +128,23 @@
 </div>
 
 <main>
-  <!--
-  <img id="return-icon"
-       src="./resources/imgs/my_photos/return.png">
-  -->
 
   <div class="shown-photo-container">
     <img class="photos chosen" id="shown-photo"
          src="./resources/imgs/my_photos/prague-castle.png">
-    <div id="shown-photo-info-container">
-      <h2 id="photo-title">Prague Castle</h2>
-      <img id="info-img"
-           src="./resources/imgs/my_photos/info.png">
+    <div id="shown-photo-more-info-container">
+      <p id="closebtn-more-info">&times;</p>
+      <h2 id="more-info-title">Prague Castle</h2>
+      <h3 class="photo-title-more-info">Taken By: Kaan Okumus</h3>
+      <h3 class="photo-title-more-info">Date:     July, 2019</h3>
+      <h3 class="photo-title-more-info">Place:    Prague, Czechia</h3>
     </div>
+
+  </div>
+  <div id="shown-photo-info-container">
+    <h2 id="photo-title">Prague Castle</h2>
+    <img id="info-img"
+         src="./resources/imgs/my_photos/info.png">
   </div>
 
   <div id="button-container">

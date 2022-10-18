@@ -92,8 +92,27 @@ function on_mouseout_show_info() {
     shownPhotoInfoImg.src = "./resources/imgs/my_photos/info.png";
     shownPhotoInfoImg.style.opacity = "0.7";
 }
+
+let infoBox = document.getElementById("shown-photo-more-info-container")
+let infoList = Array.from(document.getElementsByClassName("photo-title-more-info"));
+let infoTitle = document.getElementById("more-info-title");
+let infoCloseBtn = document.getElementById("closebtn-more-info");
+
 function on_click_show_info() {
-    console.log("Clicked show info!")
+
+    infoBox.style.height = "15%";
+    //infoBox.style.width = "20%";
+    infoBox.style.padding = "15px";
+    infoBox.style.border = "1ps solid seashell";
+    infoList.forEach((info) => {
+        info.style.fontSize = "13px";
+    });
+    infoCloseBtn.style.width = "50px";
+    infoCloseBtn.style.padding = "5px";
+    infoCloseBtn.style.fontSize =  "30px";
+    infoTitle.style.borderBottom = "1px solid seashell";
+    infoTitle.style.fontSize = "16px";
+
 }
 
 photo_names.forEach((name) => {
@@ -104,3 +123,20 @@ shownPhotoInfoContainer.addEventListener("mouseover", on_mouseover_show_info);
 shownPhotoInfoContainer.addEventListener("mouseout", on_mouseout_show_info);
 shownPhotoInfoContainer.addEventListener("click", on_click_show_info);
 
+function on_click_infoCloseBtn() {
+    console.log("CloseInfoBtn Clicked!!")
+        infoBox.style.height = "0%";
+        //infoBox.style.width = "0%";
+        infoBox.style.padding = "0px";
+        infoBox.style.border = "none";
+        infoList.forEach((info) => {
+            info.style.fontSize = "0px";
+        });
+        infoCloseBtn.style.width = "0px";
+        infoCloseBtn.style.padding = "0px";
+        infoCloseBtn.style.fontSize =  "0px";
+        infoTitle.style.borderBottom = "none";
+        infoTitle.style.fontSize = "0px";
+}
+
+infoCloseBtn.addEventListener("click", on_click_infoCloseBtn);
