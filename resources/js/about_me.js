@@ -50,6 +50,7 @@ function edu_box_handler(name) {
             edu_box.getElementsByClassName("arrow-right")[0].style
             .transform = 'rotate(0deg)';
             edu_box.style.boxShadow = "none";
+            edu_info_box.style.height = '400px';
         } else {
             edu_info_box.style.display = 'none';
             edu_info_box.style.height = '0px';

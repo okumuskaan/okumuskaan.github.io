@@ -1,6 +1,6 @@
 html, body {
     margin: 0px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.7);
     font-family: "Montserrat", sans-serif;
 }
 
@@ -28,6 +28,7 @@ main {
     justify-content: center;
     align-items: center;
     color: seashell;
+    transition: all 0.5s linear;
 }
 
 .photos {
@@ -52,7 +53,7 @@ main {
     margin: 0px;
     padding: px;
     width: 0px;
-    opacity: 1;
+    opacity: 0.7;
     transition: all 0.5s linear;
 }
 #closebtn-more-info:hover {
@@ -81,11 +82,12 @@ main {
     width: 0%;
     height: 0%;
     z-index: 100;
-    transition: height 0.5s linear;
+    transition: all 0.5s linear;
 }
 .photo-title-more-info {
     font-size: 0px;
     font-weight: 400;
+    transition: all 0.5s linear;
 }
 
 #shown-photo-info-container {
@@ -94,6 +96,7 @@ main {
     color: seashell;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s linear;
 }
 
 #photo-title {
@@ -101,6 +104,7 @@ main {
     font-weight: 200;
     letter-spacing: 2px;
     font-family: "Montserrat", sans-serif;
+    transition: all 0.5s linear;
 }
 
 #shown-photo-info-container #info-img {
@@ -205,4 +209,55 @@ main {
 #header-openclose-button:hover {
     border: 1px solid seashell;
     cursor: pointer;
+}
+
+
+
+
+#sidebar {
+    position: absolute;
+    background-color: black;
+    color: seashell;
+    left: 0px;
+    top: 170px;
+    width: 80px;
+    height: 360px;
+    border: 1px solid whitesmoke;
+    border-left: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 10000;
+    transition: all 0.5s linear;
+}
+#sidebar-arrow-container {
+}
+#sidebar-arrow {
+    width: 10px;
+    position: absolute;
+    left: 60px;
+    top: 47%;
+    transform: rotate(-180deg);
+    transition: all 0.5s linear;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#sidebar-download {
+    height: 40px;
+    width: 40px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
+#sidebar-download-img {
+    width: 20px;
+    height: 20px;
 }

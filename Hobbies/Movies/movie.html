@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La Notte</title>
+    <link href="./movie.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <script type="module" src="./movie.js" async></script>
+</head>
+<body>
+
+<header>
+  <div id="movie-header-footer">
+      <h1 id="movie-title-container">
+          <span id="movie-title"></span>
+          <br>
+          <span id="sub-info">
+      Directed By: <a id="director-name"></a>
+      <span style="display:block; margin-bottom: -1em;"></span>
+      <span id="country-year"></span>
+    </span>
+      </h1>
+      <div id="movie-extra-info">
+          <img src="./imgs/misc/berlin-film.svg" id="award-icon"
+               style="height: 60px;">
+          <h4 id="award-info">1961 | Winner: Golden Bear</h4>
+      </div>
+  </div>
+
+</header>
+
+<a id="backarrow" href="./artist.html">
+    <p><</p>
+</a>
+<a id="grade">
+    <img id="star" src="./imgs/misc/star.png">
+    <p id="grade-number"></p>
+</a>
+
+
+<div class="section">
+    <div class="section-header">
+        <h3 class="section-title">My Comments</h3>
+        <a class="show-all">See In Detail</a>
+    </div>
+    <div id="comments">
+        <p></p>
+        <h6 class="sign">Kaan Okumus</h6>
+    </div>
+
+</div>
+
+<div class="section">
+    <div class="section-header">
+        <h3 class="section-title">Fav Posters</h3>
+        <a class="show-all"></a>
+    </div>
+    <div class="posters">
+    </div>
+</div>
+
+<div class="section">
+    <div class="section-header">
+        <h3 class="section-title">Fav Photos</h3>
+        <a class="show-all"></a>
+    </div>
+    <div class="photos">
+    </div>
+</div>
+
+
+<div class="overlay" id="myNav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <img id="nine-squares" src="./imgs/misc/nine-squares.png">
+    <h1></h1>
+    <div class="overlay-content">
+    </div>
+    <div class="overlay-footer">
+        <p>Copyright &copy; Kaan Okumus, 2022. All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>

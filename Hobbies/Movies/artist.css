@@ -1,0 +1,154 @@
+html {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-size: cover;
+    width: 480px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#artist-title {
+    letter-spacing: 2px;
+    line-height: 75px;
+    margin: 50px auto;
+    position: relative;
+    top: 225px;
+    height: 75px;
+    background-color: rgba(0,0,0,0.7);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+
+#movie-great-container {
+    margin: 75px 0px;
+    padding: 10px;
+    background-color: #121212;
+    width: 100%;
+    min-width: 500px;
+    border-radius: 0px;
+}
+
+#movie-container-title {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: 1.5px;
+}
+
+#movie-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.movie-box {
+    background-color: rgb(44,44,44, 0.5);
+    color: whitesmoke;
+    margin: 30px auto;
+    width: 700px;
+    height: 200px;
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.movie-box:hover {
+    background-color: rgb(44,44,44, 1);
+    cursor: pointer;
+}
+
+.movie-title {
+    text-align: right;
+    letter-spacing: 2px;
+    margin: 50px;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.movie-cover {
+    height: 200px;
+    border-top-left-radius: 15px;
+}
+
+@media screen and (max-width: 1150px) {
+    #album-song-greatest-container {
+        display: "block";
+    }
+
+    #album-great-container {
+        margin: 75px auto;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+}
+@media screen and (max-width: 750px) {
+
+    header {
+        height: 200px;
+        width: 320px;
+    }
+
+    #artist-title {
+        line-height: 50px;
+        top: 150px;
+        font-size: 20px;
+        height: 50px;
+    }
+
+    #album-song-greatest-container {
+        display: "block";
+    }
+
+    #movie-great-container {
+        margin: 50px auto;
+        margin-bottom: 0px;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    #song-great-container {
+        margin: 50px auto;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    #movie-container-title {
+        margin-top: 15px;
+        font-size: 19px;
+    }
+
+    #song-container-title {
+        margin-top: 15px;
+        font-size: 19px;
+    }
+
+    .movie-cover {
+        height: 100px;
+    }
+    .movie-box {
+        height: 100px;
+        margin: 5px auto;
+    }
+    .movie-title {
+        font-size: 14px;
+    }
+}

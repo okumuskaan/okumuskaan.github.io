@@ -1,0 +1,249 @@
+body, main {
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+#photo-title {
+    padding: 10px;
+    margin: 50px auto;
+    text-align: center;
+    max-width: 340px;
+    width: 70%;
+    color: whitesmoke;
+    letter-spacing: 3px;
+    border-bottom: 1px solid grey;
+}
+
+#photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 10%;
+}
+
+.photo-box {
+    max-height: 160px;
+    border-radius: 5px;
+    transition: 0.3s;
+    opacity: 1;
+}
+.photo-box-info {
+    opacity: 0;
+    background-color: black;
+}
+
+.photo-box:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    height: 100%;
+    background-color: rgb(23,23,23);
+}
+
+#main-photo-container {
+    display: flex;
+    width: 90%;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: seashell;
+}
+
+#info-box {
+    height: 350px;
+    width: 0%;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: 10;
+}
+#info-close {
+    display: none;
+    font-size: 26px;
+    padding: 10px;
+    line-height: 40px;
+    opacity: 0.7;
+}
+#info-title {
+    display: none;
+    position: relative;
+    bottom: 3%;
+    text-align: center;
+    line-height: 40px;
+    margin: auto;
+    height: 40px;
+    width: 70%;
+    border-bottom: 1px solid whitesmoke;
+}
+#info-text{
+    display: none;
+    padding: 10px 25px;
+    line-height: 30px;
+}
+
+#info-close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    position: relative;
+    left: 6%;
+    //max-height: 50%;
+    //max-width: 50%;
+    //min-width: 30%;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    transition: 0.3s;
+    overflow-x: auto;
+}
+
+#caption-and-info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#caption {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 30px 0px;
+    z-index: 2;
+}
+
+#info-photo-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.modal-content, #caption, #toolbar {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.close:hover, .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+    color: #bbb;
+}
+
+#toolbar {
+    margin: 0px auto;
+    margin-top: 10px;
+    height: 120px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    width: 90%;
+    //border: 1px solid whitesmoke;
+    border-radius: 15px;
+}
+.toolbar-img {
+    height: 80px;
+    opacity: 1;
+}
+.chosen-img {
+    opacity: 0.7;
+    height: 90px;
+}
+.toolbar-img:hover {
+    opacity: 0.7;
+    height: 90px;
+    cursor: pointer;
+}
+
+#toolbar-button {
+    margin: 0px auto;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+}
+
+#toolbar-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#toolbar-button-img {
+    height: 20px;
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
+#arrow-right-container {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 100px;
+    height: 100%;
+}
+
+#arrow-right {
+    position: absolute;
+    padding: 5px;
+    right: 15px;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: 0.7;
+    border-radius: 15px;
+}
+
+#arrow-left-container {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    width: 100px;
+    height: 100%;
+}
+
+#arrow-left {
+    position: absolute;
+    padding: 5px;
+    left: 15px;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    opacity: 0.7;
+    border-radius: 15px;
+}

@@ -18,6 +18,7 @@
           type="text/css">
     <link href="./resources/css/responsive.css" rel="stylesheet"
           type="text/css">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <script src="./resources/js/header.js" async></script>
@@ -29,10 +30,8 @@
             <div id="menu-icon-container">
                 <img id="menu-icon" src="./resources/imgs/header/menu-icon.png">
             </div>
-            <h1 id="full-name">Kaan Okumu&#351;</h1>
-            <h1 id="first-name">Kaan</h1>
-            <h1 id="logo-name">K</h1>
-
+            <a href="#"><h1 id="full-name">Kaan Okumu&#351;</h1></a>
+            <a href="#"><h1 id="first-name">Kaan</h1></a>
         </div>
         <form id="search-container">
             <div id="search">
@@ -58,7 +57,7 @@
                 <li id="nav-about_me"><a href="./about_me.html"
                                          class="nav-link non-chosen">About
                     Me</a></li>
-                <li id="nav-activities"><a href="#"
+                <li id="nav-activities"><a href="./activities.html"
                                            class="nav-link non-chosen">My
                     Activities</a></li>
             </ul>
@@ -76,12 +75,12 @@
 
     <div class="overlay" id="myNav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h1>Kaan Okumus</h1>
+        <h1>Kaan Okumuş</h1>
         <div class="overlay-content">
             <a href="./index.html" class="chosen">Home</a>
             <a href="./projects.html">Projects</a>
             <a href="./about_me.html">About Me</a>
-            <a href="#">My Activities</a>
+            <a href="./activities.html">My Activities</a>
             <a href="#">Contact</a>
         </div>
         <div class="overlay-contact-link">
@@ -122,11 +121,12 @@
             <p class="greet-main">I'm Kaan, a master student at EPFL SysCom.</p>
             <a href="./photos.html" id="banner-img-link" target="_blank">
                 <p id="banner-img-source">
-                    <em>Kaan Okumus,
-                        2019<sup><span>
+                    <em>Kaan Okumus, 2019
+                        <sup><span>
                             <img id="see-photos"
                                  src="./resources/imgs/menu/arrow.png">
-                        </span></sup></em>
+                        </span></sup>
+                    </em>
                 </p>
             </a>
         </div>
@@ -136,9 +136,10 @@
                 <div class="nav-box-icon-container">
                     <img src="./resources/imgs/menu/projects.svg"
                          class="nav-box-icon">
+                    <p class="nav-box-title-small">Projects</p>
                 </div>
 
-                <p>Projects</p>
+                <p class="nav-box-title">Projects</p>
                 <div class="nav-box-content-projects">
                     <div class="projects-element sp">
                         <p>Signal Processing</p>
@@ -163,9 +164,10 @@
                 <div class="nav-box-icon-container">
                     <img src="./resources/imgs/menu/me.jpeg"
                          class="nav-box-icon me">
+                    <p class="nav-box-title-small">About Me</p>
                 </div>
 
-                <p>About Me</p>
+                <p class="nav-box-title">About Me</p>
                 <div class="nav-box-content">
                     <p style="font-size: 40px;">🥂</p>
                     <p style="font-size: 40px;">🎬</p>
@@ -180,13 +182,18 @@
                 <div class="nav-box-icon-container">
                     <img src="./resources/imgs/menu/hobbies.png"
                          class="nav-box-icon">
+                    <p class="nav-box-title-small">My Activities</p>
                 </div>
 
-                <p>Outside Activities</p>
+                <p class="nav-box-title">My Activities</p>
                 <div class="nav-box-content">
                     <p style="font-size: 40px;">🥂</p>
-                    <p style="font-size: 40px;">🎬</p>
-                    <p style="font-size: 40px;">🎸</p>
+                    <a href="./Hobbies/Movies/director.html"
+                       style="text-decoration: none; font-size: 40px;">
+                        🎬
+                    </a>
+                    <a href="./Hobbies/Music/music.html"
+                       style="text-decoration: none; font-size: 40px;">🎸</a>
                 </div>
                 <a href="#" class="nav-box-button">
                     See More

@@ -11,13 +11,22 @@ let infoBox = document.getElementById("shown-photo-more-info-container")
 let infoList = Array.from(document.getElementsByClassName("photo-title-more-info"));
 let infoTitle = document.getElementById("more-info-title");
 let infoCloseBtn = document.getElementById("closebtn-more-info");
+let infoImg = document.getElementById("info-img");
 
 let shownPhotoInfoContainer = document.getElementById("shown-photo-info-container");
 let shownPhotoInfoImg = document.getElementById("info-img");
 
+let sidebar = document.getElementById("sidebar");
+let sidebarArrow = document.getElementById("sidebar-arrow");
+let sidebarDownload = document.getElementById("sidebar-download");
+let sidebarDownloadImg = document.getElementById("sidebar-download-img");
+
 const photo_names = ["prague", "beyoglu", "stopwar", "underground", "swanlake"];
-const photo_titles = ["Prague Castle", "Beyoglu'nda Insaat Calismasi",
-                      "Stop War!", "Yeralti", "Swan Lake at Lausanne"];
+const photo_titles = ["Trying to Be Consistent",
+                      "A construction worker at Beyoglu",
+                      "Stop War!",
+                      "Underground",
+                      "Swan Lake at Lausanne"];
 const photo_dates = ["July, 2019", "May, 2019", "July, 2019", "July, 2019",
                      "December, 2021"];
 const photo_places = ["Prague, Czechia", "Istanbul, Turkey", "Berlin, Germany",
@@ -56,6 +65,7 @@ function on_click_photo(evt) {
     chosen_photo_name = evt.target.id;
     photos_data[chosen_photo_name]["html-img"].setAttribute("class", "photos chosen-down");
     update_photo_infos(chosen_photo_name);
+    sidebarDownload.setAttribute("href", photos_data[evt.target.id]["src"]);
 }
 
 let ind_open_close = 0;
@@ -81,11 +91,9 @@ function on_click_show_hide_button() {
     let params = updated_params[ind_open_close];
     toolbar.style.height = params["toolbar-height"];
     chosen_photo_name = toolbar.getElementsByClassName("photos chosen-down")[0].id;
-    console.log("Chosen Photo name: ", chosen_photo_name);
 
     // Update Height info for the class not individual elements!!!
     photo_names.forEach((name) => {
-        console.log(photos_data[name]["html-img"].classList);
         photos_data[name]["html-img"].style.height = params["img-height"];
     });
     arrows.forEach((arrow) => {
@@ -125,7 +133,6 @@ function on_click_show_info() {
     infoCloseBtn.style.fontSize =  "30px";
     infoTitle.style.borderBottom = "1px solid seashell";
     infoTitle.style.fontSize = "16px";
-
 }
 function on_click_infoCloseBtn() {
     infoBox.style.height = "0%";
@@ -146,9 +153,37 @@ photo_names.forEach((name) => {
     photos_data[name]["html-img"].addEventListener("click", on_click_photo);
 });
 hide_showButton.addEventListener("click", on_click_show_hide_button);
-shownPhotoInfoContainer.addEventListener("mouseover", on_mouseover_show_info);
-shownPhotoInfoContainer.addEventListener("mouseout", on_mouseout_show_info);
-shownPhotoInfoContainer.addEventListener("click", on_click_show_info);
+infoImg.addEventListener("mouseover", on_mouseover_show_info);
+infoImg.addEventListener("mouseout", on_mouseout_show_info);
+infoImg.addEventListener("click", on_click_show_info);
 
 
 infoCloseBtn.addEventListener("click", on_click_infoCloseBtn);
+
+
+
+let ind_sidebar = 0;
+
+
+on_click_sidebar();
+//on_click_show_hide_button();
+
+
+function on_click_sidebar() {
+    if (ind_sidebar===0) {
+        sidebar.style.width = "30px";
+        sidebarArrow.style.left = "8px";
+        sidebarArrow.style.transform = "rotate(0deg)";
+        sidebarDownload.style.width = "0%";
+        sidebarDownloadImg.style.width = "0%";
+    } else {
+        sidebar.style.width = "80px";
+        sidebarArrow.style.left = "60px";
+        sidebarArrow.style.transform = "rotate(-180deg)";
+        sidebarDownload.style.width = "40px";
+        sidebarDownloadImg.style.width = "20px";
+    }
+    ind_sidebar = (ind_sidebar+1)%2;
+
+}
+sidebarArrow.addEventListener("click", on_click_sidebar);

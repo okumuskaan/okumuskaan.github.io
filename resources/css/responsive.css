@@ -29,6 +29,7 @@
     }
     #header-left {
         width: 50%;
+        gap: 0px 20px;
     }
     #search-container {
         justify-content: right;
@@ -71,6 +72,9 @@
     #logo-name {
         display: block;
     }
+    .banner {
+        background-position: center;
+    }
 }
 @media screen and (max-width: 630px) {
     header nav {
@@ -102,11 +106,22 @@
         display: none;
     }
 
-    .banner {
-        height: 400px;
-        // change background-position!
-    }
     .banner p {
+        font-size: 13px;
+    }
+    .banner {
+        height: 180px;
+        background-position: center;
+    }
+    #banner-img-source {
+        top: 155px;
+        height: 18px;
+        font-size: 7px;
+    }
+}
 
+@media screen and (max-width: 800px){
+    #banner-img-source {
+        width: 150px;
     }
 }

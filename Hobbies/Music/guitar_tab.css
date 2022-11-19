@@ -1,0 +1,76 @@
+html {
+    min-height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#tab-container {
+    margin: 20px 50px
+}
+
+.tab-box {
+    max-width: 1200px;
+    min-width: 900px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tab-line {
+    display: flex;
+    justify-content: center;
+}
+
+.note {
+    background-color: white;
+    height: 20px;
+    width: 13px;
+    text-align: center;
+    margin: 1px;
+    border: 0.5px solid rgba(0,0,255,0);
+    border-radius: 2px;
+}
+.note:hover {
+    border: 0.5px solid rgba(0,0,255,0.4);
+    cursor: text;
+}
+
+.tab-line-name {
+    height: 20px;
+    width: 12px;
+    text-align: center;
+    margin: 1px;
+    border: 0.5px solid rgba(0,0,2 55,0);
+    border-radius: 2px;
+}
+
+.tab-line-separator {
+    height: 20px;
+    width: 7px;
+    text-align: center;
+    margin: 1px;
+    border: 0.5px solid rgba(0,0,2 55,0);
+    border-radius: 2px;
+}
+
+.tab-box-title {
+    margin: 1px auto;
+
+    width: 870px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+

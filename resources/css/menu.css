@@ -3,36 +3,44 @@ main {
 }
 
 .banner {
-    height: 300px;
+    height: 420px;
     width: 100%;
     background-image: url("../imgs/menu/prague-castle-banner.png");
     background-size: cover;
-    background-position: center;
+    background-position: right;
     border-radius: 5px;
     letter-spacing: 3px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    transition: height 0.2s linear;
+    transition: background-position 0.2s linear;
 }
 .banner p {
     grid-column: 1 / span 1;
     text-align: center;
     font-size: 26px;
-    font-weight: 300;
     padding: 0px 10px;
+    color: rgba(0,0,0,0.7);
 }
 #banner-img-source {
     background-color: rgba(0,0,0,0.3);
     width: 200px;
-    height: 18px;
-    padding: 5px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 10px;
+    font-weight: 300;
+    color: whitesmoke;
     position: absolute;
     left: 0px;
-    top: 262px;
+    top: 382px;
     opacity: 0.8;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     cursor: pointer;
+    transition: top 0.1s linear;
 }
 #banner-img-link {
     position: absolute;
@@ -51,7 +59,8 @@ main {
 }
 
 p.greet-title {
-    padding-top: 30px;
+    //padding-top: 30px;
+    margin: auto;
 }
 
 .nav-box-container {
@@ -88,6 +97,7 @@ p.greet-title {
     width: 150px;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 15px;
     border-bottom: 1px solid black;
 }
@@ -98,9 +108,11 @@ p.greet-title {
     margin: 0px
 }
 
+.nav-box-title-small {
+    display: none;
+}
+
 .me {
-    //border: 1px solid black;
-    //box-shadow: 0px 0px 10px rgba(0,0,0.5);
     border-radius: 50%;
 }
 
@@ -145,7 +157,6 @@ p.greet-title {
 }
 
 .projects-element {
-    //color: seashell;
     font-size: 15px; margin: 0px;
     font-weight: 400;
     padding: 20px 10px;
@@ -169,4 +180,61 @@ p.greet-title {
 }
 .art {
     //background-color: pink;
+}
+
+@media screen and (max-width: 1250px) and (min-width: 1000px) {
+    .banner {
+        height: 300px;
+    }
+    #banner-img-source {
+        top: 162px;
+    }
+}
+@media screen and (max-width: 1250px){
+    .banner p {
+        font-size: 18px;
+    }
+    .banner {
+        height: 200px;
+    }
+    #banner-img-source {
+        top: 172px;
+        height: 20px;
+        font-size: 8px;
+    }
+
+    .nav-box-container {
+        display: block;
+    }
+    .nav-box {
+        margin: 20px auto;
+        width: 100%;
+        height: 200px;
+        border-radius: 0px;
+    }
+    .nav-box-title {
+        display: none;
+    }
+    .nav-box-title-small {
+        display: block;
+    }
+    .nav-box-icon-container {
+        height: 30px;
+        gap: 15px;
+        width: 50%;
+    }
+    .nav-box-icon {
+        height: 40px;
+    }
+    .nav-box-button {
+        display: none;
+    }
+    .nav-box-content-projects {
+        display: flex;
+        justify-content: space-around;
+    }
+    .projects-element {
+        min-width: 70px;
+    }
+
 }

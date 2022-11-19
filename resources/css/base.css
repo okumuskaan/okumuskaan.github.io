@@ -15,7 +15,7 @@ body {
 /****************************/
 header {
     background-color: black;
-    color: seashell;
+    color: whitesmoke;
     height: 100px;
     display: flex;
     justify-content: left;
@@ -27,7 +27,6 @@ header {
     width: 100%;
     z-index: 999;
     border-bottom: 1px solid whitesmoke;
-    transition: all 0.5s ease-in-out;
 }
 
 /* Menu button and Kaan Okumus Logo Container */
@@ -38,8 +37,6 @@ header {
     justify-content: left;
     align-items: center;
     gap: 0px 40px;
-    //width: 30%;
-    transition: all 0.8s ease-in-out;
 }
 
 /* Menu Container */
@@ -69,20 +66,14 @@ header h1, .overlay h1 {
     letter-spacing: 4px;
     font-weight: 200;
     font-family: "Montserrat", sans-serif;
-    transition: all 0.5s ease-in-out;
+}
+
+header a {
+    text-decoration: none;
 }
 
 #first-name {
     display: none;
-}
-#logo-name {
-    display: none;
-    padding: 0px 9px;
-    line-height: 50px;
-    margin: auto;
-    border-radius: 50%;
-    //border: 1px solid whitesmoke;
-    box-shadow: 0px 0px 10px rgba(255,255,255,0.6);
 }
 
 /* Navigator Style */
@@ -96,9 +87,7 @@ header ul {
     list-style: none;
     padding-left: 10px;
     margin: 16px 0px;
-    //margin-right: 40px;
     text-align: center;
-    //border-left: 1px solid #bbb;
 }
 header li {
     margin: 0 10px;
@@ -114,11 +103,10 @@ header li {
 .nav-link {
     display: flex;
     gap: 4px;
-    color: seashell;
+    color: whitesmoke;
     text-decoration: none;
     justify-content: space-between;
     align-items: center;
-    //transition: all 0.5s ease-in-out;
 }
 .non-chosen h4 {
     font-weight: 400;
@@ -263,7 +251,7 @@ main {
 footer {
     background-color: black;
     border-top: 1px solid white;
-    color: seashell;
+    color: whitesmoke;
     margin-top: 100px;
     width: 100%;
     height: 100px;
@@ -273,7 +261,7 @@ footer {
 }
 /* Copy right part of Footer */
 footer p, .overlay p {
-    color: seashell;
+    color: whitesmoke;
     margin: 0px 10%;
     font-size: 13px;
     letter-spacing: 2px;
@@ -334,7 +322,7 @@ footer p, .overlay p {
     justify-content: center;
     align-items: center;
     height: 80px;
-    border-bottom: 1px solid seashell;
+    border-bottom: 1px solid whitesmoke;
     padding-bottom: 20px;
 }
 
@@ -349,7 +337,7 @@ footer p, .overlay p {
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-  color: seashell;
+  color: whitesmoke;
 }
 /* To modify the close button */
 .closebtn {
@@ -396,7 +384,7 @@ footer p, .overlay p {
 
 /* Only current page link should have different style */
 .overlay-content a.chosen {
-    cursor: default;
+    //cursor: default;
     color: seashell;
 }
 

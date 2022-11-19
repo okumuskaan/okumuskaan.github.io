@@ -1,0 +1,47 @@
+html {
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#artists-title {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 35px;
+    margin: 50px 30px;
+}
+
+#artist-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.artist-box {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.artist-box p {
+    position: relative;
+    margin: 0px;
+    top: 150px;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.artist-box:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
