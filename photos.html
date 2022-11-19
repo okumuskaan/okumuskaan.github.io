@@ -1,215 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <meta charset="UTF-8">
-
-  <title>Photographs - Kaan Okumus</title>
-
-  <link rel="icon" type="image/x-icon"
-        href="./resources/imgs/favicon/kaan-logo.png">
-  <link href="./resources/css/photos.css"
-        rel="stylesheet" type="text/css">
-  <link href="./resources/css/base.css"
-        rel="stylesheet" type="text/css">
-  <link href="./resources/css/responsive.css"
-        rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
-  <script src="./resources/js/photos.js" async></script>
-  <script src="./resources/js/header.js" async></script>
-  <script src="./resources/js/header_extra.js" async></script>
-
+    <meta charset="UTF-8">
+    <title>Alternative Photos</title>
+    <link href="./resources/css/alternative_photos.css" rel="stylesheet">
+    <link href="./resources/css/base.css" rel="stylesheet">
+    <link href="./resources/css/responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="./resources/js/alternative_photos.js" async></script>
+    <script src="./resources/js/header.js" async></script>
 </head>
 <body>
 
 <header>
-  <div id="header-left">
-    <div id="menu-icon-container">
-      <img id="menu-icon" src="./resources/imgs/header/menu-icon.png">
-    </div>
-    <h1 id="full-name">Kaan Okumu&#351;</h1>
-    <h1 id="first-name">Kaan</h1>
-    <h1 id="logo-name">K</h1>
+    <div id="header-left">
+        <div id="menu-icon-container">
+            <img id="menu-icon" src="./resources/imgs/header/menu-icon.png">
+        </div>
+        <h1 id="full-name">Kaan Okumu&#351;</h1>
+        <h1 id="first-name">Kaan</h1>
+        <h1 id="logo-name">K</h1>
 
-  </div>
-  <form id="search-container">
-    <div id="search">
-      <button type="submit">
-        <img id="search-img"
-             src="./resources/imgs/header/search-icon-white.png">
-      </button>
-      <input type="search" placeholder="Search smt"
-             id="search-text" autocomplete="off">
     </div>
-  </form>
-  <div id="header-openclose-button">
-    <img id="header-arrow"
-         src="./resources/imgs/about_me/arrow-right.png">
-  </div>
-  <nav>
-    <ul>
-      <li id="nav-menu">
-        <a href="./index.html"
-           class="nav-link non-chosen">
-          <h4>Home</h4>
+    <form id="search-container">
+        <div id="search">
+            <button type="submit">
+                <img id="search-img"
+                     src="./resources/imgs/header/search-icon-white.png">
+            </button>
+            <input type="search" placeholder="Search smt"
+                   id="search-text" autocomplete="off">
+        </div>
+    </form>
+    <nav>
+        <ul>
+            <li id="nav-menu">
+                <a href="./index.html"
+                   class="nav-link non-chosen">
+                    <h4>Home</h4>
+                </a>
+            </li>
+            <li id="nav-projects"><a href="./projects.html"
+                                     class="nav-link non-chosen">
+                Projects</a></li>
+            <li id="nav-about_me"><a href="./about_me.html"
+                                     class="nav-link non-chosen">About
+                Me</a></li>
+            <li id="nav-activities" class="chosen"><a href="#"
+                                       class="nav-link non-chosen">My
+                Activities</a></li>
+        </ul>
+    </nav>
+    <div id="header-right">
+        <a href="https://github.com/okumuskaan" target="_blank"
+           class="nav-link non-chosen github-box">
+            <img
+                    class="github-logo"
+                    src="./resources/imgs/header/github-logo.png"
+                    alt="github-logo">
         </a>
-      </li>
-      <li id="nav-projects">
-        <a href="./projects.html"
-           class="nav-link non-chosen">
-          <h4>Projects</h4>
-        </a>
-      </li>
-      <li id="nav-about_me">
-        <a href="./about_me.html"
-           class="nav-link non-chosen">
-          <h4>About Me</h4>
-        </a>
-      </li>
-      <li id="nav-activities" class="chosen">
-        <a href="#"
-           class="nav-link">
-          <h4>My Activities</h4>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <div id="header-right">
-    <a href="https://github.com/okumuskaan" target="_blank"
-       class="nav-link non-chosen github-box">
-      <img
-              class="github-logo"
-              src="./resources/imgs/header/github-logo.png"
-              alt="github-logo">
-    </a>
-  </div>
+    </div>
 </header>
-
 <div class="overlay" id="myNav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <h1>Kaan Okumus</h1>
-  <div class="overlay-content">
-    <a href="./index.html">Home</a>
-    <a href="./projects.html">Projects</a>
-    <a href="./about_me.html">About Me</a>
-    <a href="#" class="chosen">My Activities</a>
-    <a href="#">Contact</a>
-  </div>
-  <div class="overlay-contact-link">
-    <a href="https://github.com/okumuskaan" target="_blank"
-       class="nav-link non-chosen github-box">
-      <img
-              class="github-logo"
-              src="./resources/imgs/header/github-logo.png"
-              alt="github-logo">
-    </a>
-    <a class="footer-logo-container"
-       href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
-       target="_blank">
-      <img class="mail"
-           src="./resources/imgs/footer/mail.png">
-    </a>
-    <a class="footer-logo-container"
-       href="https://www.instagram.com/okumus.kaan/" target="_blank">
-      <img class="insta"
-           src="./resources/imgs/footer/instagram-white4.png">
-    </a>
-    <a class="footer-logo-container"
-       href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
-       target="_blank">
-      <img class="linkedin"
-           src="./resources/imgs/footer/linkedin-white.png">
-    </a>
-  </div>
-  <div class="overlay-footer">
-    <p>Copyright &copy; Kaan Okumus, 2022. All rights reserved.</p>
-  </div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h1>Kaan Okumus</h1>
+    <div class="overlay-content">
+        <a href="./index.html" class="chosen">Home</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./about_me.html">About Me</a>
+        <a href="./activities.html">My Activities</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="overlay-contact-link">
+        <a href="https://github.com/okumuskaan" target="_blank"
+           class="nav-link non-chosen github-box">
+            <img
+                    class="github-logo"
+                    src="./resources/imgs/header/github-logo.png"
+                    alt="github-logo">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="mail"
+                 src="./resources/imgs/footer/mail.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.instagram.com/okumus.kaan/" target="_blank">
+            <img class="insta"
+                 src="./resources/imgs/footer/instagram-white4.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="linkedin"
+                 src="./resources/imgs/footer/linkedin-white.png">
+        </a>
+    </div>
+    <div class="overlay-footer">
+        <p>Copyright &copy; Kaan Okumus, 2022. All rights reserved.</p>
+    </div>
 </div>
 
 <main>
 
-  <div class="shown-photo-container">
-    <img class="photos chosen" id="shown-photo"
-         src="./resources/imgs/my_photos/prague-castle.png">
-    <div id="shown-photo-more-info-container">
-      <p id="closebtn-more-info">&times;</p>
-      <h2 id="more-info-title">Trying to Be Consistent</h2>
-      <h3 class="photo-title-more-info">Taken By: Kaan Okumus</h3>
-      <h3 class="photo-title-more-info">Date:     July, 2019</h3>
-      <h3 class="photo-title-more-info">Place:    Prague, Czechia</h3>
-    </div>
+      <h2 id="photo-title">Photographs</h2>
 
-  </div>
-  <div id="shown-photo-info-container">
-    <h2 id="photo-title">Trying to Be Consistent</h2>
-    <img id="info-img"
-         src="./resources/imgs/my_photos/info.png">
-  </div>
+      <div id="photo-container">
+          <img class="photo-box"
+               src="./resources/imgs/my_photos/prague-castle.png"
+               alt="Trying to be consistent">
+          <img class="photo-box"
+               src="./resources/imgs/my_photos/beyoglu.png"
+               alt="A construction worker at Beyoglu">
+          <img class="photo-box"
+               src="./resources/imgs/my_photos/stopwar.png"
+               alt="Stop War!">
+          <img class="photo-box"
+               src="./resources/imgs/my_photos/underground.png"
+               alt="Undeground">
+          <img class="photo-box"
+               src="./resources/imgs/my_photos/emotional-arch.png"
+               alt="On an Emotional Architecture">
+          <img class="photo-box"
+               src="./resources/imgs/my_photos/saturn.png"
+               alt="Saturn devouring his son">
+          <img class="photo-box"
+               src="./resources/imgs/my_photos/swan-lake.png"
+               alt="Swan Lake at Lausanne">
+      </div>
 
-  <div id="button-container">
-    <img class="open-close-toolbar"
-         src="./resources/imgs/about_me/arrow-left.png">
-  </div>
+      <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <div id="main-photo-container">
+              <img class="modal-content" id="img01">
+              <div id="info-box">
+                  <span id="info-close">&times;</span>
+                  <div id="info-title">Prague Castle</div>
+                  <div id="info-text">
+                      Taken By:  <br>
+                      Date:      <br>
+                      Place:     <br>
+                  </div>
+              </div>
+          </div>
 
-  <div id="toolbar">
-    <img class="arrows left"
-         src="./resources/imgs/about_me/arrow-left.png">
+          <div id="arrow-right-container">
+              <img id="arrow-right"
+                   src="./resources/imgs/about_me/arrow-right.png">
+          </div>
+          <div id="arrow-left-container">
+              <img id="arrow-left"
+                   src="./resources/imgs/about_me/arrow-left.png">
+          </div>
 
-    <div class="other-photos-container">
-      <img class="photos chosen-down" id="prague"
-           src="./resources/imgs/my_photos/prague-castle.png">
-      <img class="photos not-chosen" id="beyoglu"
-           src="./resources/imgs/my_photos/beyoglu.png">
-      <img class="photos not-chosen" id="stopwar"
-           src="./resources/imgs/my_photos/stopwar.png">
-      <img class="photos not-chosen" id="underground"
-           src="./resources/imgs/my_photos/underground.png">
-      <img class="photos not-chosen" id="swanlake"
-           src="./resources/imgs/my_photos/swan-lake.png">
-    </div>
+          <div id="caption-and-info">
+              <div id="caption"></div>
+              <img id="info-photo-icon"
+                   src="./resources/imgs/my_photos/info.png">
+          </div>
 
-    <img class="arrows right"
-         src="./resources/imgs/about_me/arrow-right.png">
-  </div>
-
-  <div id="sidebar">
-    <a id="sidebar-download"
-       href="./resources/imgs/my_photos/prague-castle.png" download>
-      <img id="sidebar-download-img"
-           src="./resources/imgs/about_me/download.png">
-    </a>
-    <div id="sidebar-arrow-container">
-      <img id="sidebar-arrow" src="./resources/imgs/about_me/arrow-right.png">
-    </div>
-  </div>
+          <div id="toolbar-button">
+              <img id="toolbar-button-img"
+                   src="./resources/imgs/about_me/arrow-right.png">
+          </div>
+          <div id="toolbar"></div>
+      </div>
 
 
-</main>
+  </main>
 
 <footer>
-  <p>Copyright &copy; Kaan Okumus, 2022. All rights reserved.</p>
-  <div class="footer-logos-container">
-    <a class="footer-logo-container"
-       href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
-       target="_blank">
-      <img class="mail"
-           src="./resources/imgs/footer/mail.png">
-    </a>
-    <a class="footer-logo-container"
-       href="https://www.instagram.com/okumus.kaan/" target="_blank">
-      <img class="insta"
-           src="./resources/imgs/footer/instagram-white4.png">
-    </a>
-    <a class="footer-logo-container"
-       href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
-       target="_blank">
-      <img class="linkedin"
-           src="./resources/imgs/footer/linkedin-white.png">
-    </a>
-  </div>
+    <p>Copyright &copy; Kaan Okumus, 2022. All rights reserved.</p>
+    <div class="footer-logos-container">
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="mail"
+                 src="./resources/imgs/footer/mail.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.instagram.com/okumus.kaan/" target="_blank">
+            <img class="insta"
+                 src="./resources/imgs/footer/instagram-white4.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="linkedin"
+                 src="./resources/imgs/footer/linkedin-white.png">
+        </a>
+    </div>
 
 </footer>
+
 
 </body>
 </html>
