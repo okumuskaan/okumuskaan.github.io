@@ -191,6 +191,23 @@ p.greet-title {
     }
 }
 @media screen and (max-width: 1250px){
+    header {
+        height: 80px;
+    }
+    #menu-icon-container {
+        height: 80px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    main {
+        top: 80px;
+    }
+    #search-container {
+        height: 50px;
+    }
+
+
     .banner p {
         font-size: 18px;
     }
