@@ -209,7 +209,7 @@ p.greet-title {
     .nav-box {
         margin: 20px auto;
         width: 100%;
-        height: 200px;
+        height: 300px;
         border-radius: 0px;
     }
     .nav-box-title {
@@ -232,6 +232,7 @@ p.greet-title {
     .nav-box-content-projects {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
     .projects-element {
         min-width: 70px;
