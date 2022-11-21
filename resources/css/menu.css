@@ -64,32 +64,34 @@ p.greet-title {
 }
 
 .nav-box-container {
-    display: flex;
+    display: block;
+    width: 100%;
     justify-content: space-around;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     max-width: 1700px;
     margin: 0px auto;
     padding: 30px 0px;
 }
 
 .nav-box {
-    height: 450px;
-    width: 400px;
+    //height: 450px;
+    //width: 400px;
+    width: 100%;
     background-color: white;
-    border: 1px solid whitesmoke;
+    //border: 1px solid whitesmoke;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0px;
     color: black;
     text-decoration: none;
 }
 
 .nav-box:hover {
     //background-color: grey;
-    box-shadow: 0px 0px 10px black;
-    transition: box-shadow 0.3s linear;
+    //box-shadow: 0px 0px 10px black;
+    //transition: box-shadow 0.3s linear;
 }
 
 .nav-box-icon-container {
@@ -117,12 +119,15 @@ p.greet-title {
 }
 
 .nav-box-content-projects {
-    height: 200px;
+    //height: 200px;
     width: 80%;
     align-items: center;
-    display: grid;
+    //display: grid;
     gap: 10px 40px;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    //grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .nav-box-content {
@@ -138,7 +143,7 @@ p.greet-title {
 .nav-box-button {
     border: 1px solid black;
     bottom: 20px;
-    margin-top: 25px;
+    margin: 25px;
     padding: 13px 10px;
     border-radius: 5px;
     background-color: black;
@@ -160,8 +165,8 @@ p.greet-title {
     font-size: 15px; margin: 0px;
     font-weight: 400;
     padding: 20px 10px;
-    height: 50px;
-    width: 110px;
+    height: 150px;
+    width: 250px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -181,6 +186,79 @@ p.greet-title {
 .art {
     //background-color: pink;
 }
+
+#telecom-box {
+    background-image: url("../imgs/menu/telecom.jpeg");
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#telecom-box p {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    color: whitesmoke;
+}
+#sp-box {
+    background-image: url("../imgs/menu/sp.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sp-box p {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    color: whitesmoke;
+}
+#frontend-box {
+    background-image: url("../imgs/menu/frontend.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#frontend-box p {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    color: whitesmoke;
+}
+#asp-box {
+    background-image: url("../imgs/menu/asp.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#asp-box p {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: rgba(0,0,0,0.7);
+    color: whitesmoke;
+}
+
 
 @media screen and (max-width: 1250px) and (min-width: 1000px) {
     .banner {
@@ -226,7 +304,7 @@ p.greet-title {
     .nav-box {
         margin: 20px auto;
         width: 100%;
-        height: 300px;
+        //height: 300px;
         border-radius: 0px;
     }
     .nav-box-title {
