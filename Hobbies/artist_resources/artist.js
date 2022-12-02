@@ -1,5 +1,7 @@
 import {artistData} from "../Music/data/musicData.js";
 import {directorData} from "../Movies/data/movieData.js";
+import {composerData} from "../ClassicalMusic/data/classicalmusicData.js";
+import {painterData} from "../Painters/data/paintersData.js";
 
 var artistType = document.querySelector("title").innerHTML.split(" ").pop();
 if (artistType==="Musicians") {
@@ -11,6 +13,16 @@ else if (artistType==="Directors") {
     var rootPath = "../Movies";
     var imgPath = rootPath + "/imgs/directors/";
     var data = directorData;
+}
+else if (artistType==="Composers") {
+    var rootPath = "../ClassicalMusic";
+    var imgPath = rootPath + "/imgs/composers/";
+    var data = composerData;
+}
+else if (artistType==="Painters") {
+    var rootPath = "../Painters";
+    var imgPath = rootPath + "/imgs/painters/";
+    var data = painterData;
 }
 
 var artistContainer = document.getElementById("artist-container");

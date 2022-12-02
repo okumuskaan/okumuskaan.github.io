@@ -39,10 +39,14 @@ body {
     margin: 1px;
     border: 0.5px solid rgba(0,0,255,0);
     border-radius: 2px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 .note:hover {
     border: 0.5px solid rgba(0,0,255,0.4);
-    cursor: text;
+    cursor: default;
+    //text;
 }
 
 .tab-line-name {
@@ -71,6 +75,58 @@ body {
     font-weight: 700;
 }
 
+#chord-bar {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 50%;
+    height: 100%;
+    min-height: 150px;
+    width: 0%;
+    //20%;
+    min-width: 0px;
+    //150px;
+    background-color: rgba(50,50,50,1);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.chord {
+    background-color: white;
+    color: black;
+    opacity: 0;
+    height: 35px;
+    width: 35px;
+    margin: 12px;
+    transition: all 0.3s linear;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+}
+.chord:hover {
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
 
+#chord-container {
 
+}
 
+#close-button {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    font-size: 30px;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+#close-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
