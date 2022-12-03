@@ -4,6 +4,31 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+#backarrow {
+    background-color: rgba(255,255,255,0.2);
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    color: whitesmoke;
+    position: absolute;
+    top: 50px;
+    left: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+#backarrow p {
+    margin: 0px;
+    font-family: 'Poor Story', cursive;
+}
+#backarrow:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.8);
+}
+
 #artists-title {
     letter-spacing: 2px;
     text-align: center;
