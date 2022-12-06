@@ -1,4 +1,6 @@
-let edu_names = ["kandou-box", "pycsou-box", "epfl-box", "metu-box"];
+let edu_names = ["kandou-box", "pycsou-box", "havelsan-box", "aselsan-box",
+"msc-box",
+"bsc-box"];
 
 let edu_data = {};
 edu_names.forEach((name) => {
@@ -29,7 +31,6 @@ function edu_box_handler(name) {
             edu_box.style.backgroundColor = 'black';
             edu_box.style.color = "seashell";
             edu_box.style.cursor = "pointer";
-            //edu_box.style.boxShadow = "none";//0px 5px 10px rgba(0,0,0,1);
         }
     }
     function remove_arrow_right() {
@@ -50,10 +51,9 @@ function edu_box_handler(name) {
             edu_box.getElementsByClassName("arrow-right")[0].style
             .transform = 'rotate(0deg)';
             edu_box.style.boxShadow = "none";
-            edu_info_box.style.height = '400px';
         } else {
             edu_info_box.style.display = 'none';
-            edu_info_box.style.height = '0px';
+            //edu_info_box.style.height = '0px';
             edu_box.getElementsByClassName("arrow-right")[0].style
                     .transform = 'rotate(90deg)';
             edu_box.style.boxShadow = "0px 5px 10px rgba(0,0,0,0.5)";

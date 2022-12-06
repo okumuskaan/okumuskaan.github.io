@@ -4,6 +4,10 @@ html, body {
     font-family: "Montserrat", sans-serif;
 }
 
+main {
+    padding-bottom: 50px;
+}
+
 #backarrow {
     background-color: rgba(255,255,255,0.2);
     height: 50px;
@@ -54,7 +58,7 @@ html, body {
     margin: 70px auto;
     padding: 0px 100px;
     width: 70%;
-    min-width: 1000px;
+    //min-width: 1000px;
 }
 .box {
     background-color: whitesmoke;
@@ -69,18 +73,22 @@ html, body {
     grid-column: 1 / 4;
     grid-row: 1 / 3;
     padding: 0px 50px;
+    min-width: 420px;
 }
 #album {
     grid-column: 4 / 6;
     grid-row: 2 / 3;
+    min-width: 420px;
 }
 #song {
     grid-column: 4 / 7;
     grid-row: 3 / 5;
+    min-width: 620px;
 }
 #tabs {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
+    min-width: 420px;
 }
 
 #musician-container {
@@ -99,7 +107,7 @@ html, body {
     align-items: center;
     text-decoration: none;
     color: black;
-    border-bottom: 1px solid rgba(0,0,0,0.7);
+    //border-bottom: 1px solid rgba(0,0,0,0.7);
     width: 200px;
     margin: 5px;
     text-align: left;
@@ -187,4 +195,22 @@ html, body {
 }
 .see-more:hover {
     text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    .box-container {
+        display: block;
+    }
+    .box {
+        margin: 30px auto;
+    }
+    .box h2 {
+        padding-top: 30px;
+    }
+    .see-more {
+        padding-bottom: 20px;
+    }
+
 }

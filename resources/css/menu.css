@@ -74,11 +74,8 @@ p.greet-title {
 }
 
 .nav-box {
-    //height: 450px;
-    //width: 400px;
     width: 100%;
     background-color: white;
-    //border: 1px solid whitesmoke;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -86,6 +83,42 @@ p.greet-title {
     margin: 10px 0px;
     color: black;
     text-decoration: none;
+}
+
+.nav-box-profil {
+    width: 100%;
+    //background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.profil-title {
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+.profil-desc {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.7);
+    margin: 10px;
+}
+.profil-uni {
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+}
+.profil-uni:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 .nav-box:hover {
@@ -104,6 +137,48 @@ p.greet-title {
     border-bottom: 1px solid black;
 }
 
+.nav-box-icon-me-container {
+    height: 350px;
+    //width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    //border-right: 1px solid black;
+    grid-column: 1 / 2;
+}
+.nav-box-profil-right {
+    grid-column: 2/3;
+    //height: 80%;
+    //background-color: white;
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+
+.edu-box-container {
+    //height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.edu-box {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 700px;
+    background-color: white;
+    color: black;
+    margin: 20px auto;
+    border-radius: 5px;
+    //border: 1px solid black;
+    //height: 30px;
+    padding: 0px 10px;
+}
+
 .nav-box-icon {
     height: 70px;
     padding: 0px;
@@ -114,8 +189,9 @@ p.greet-title {
     display: none;
 }
 
-.me {
-    border-radius: 40%;
+.nav-box-icon-me {
+    height: 250px;
+    border-radius: 50%;
 }
 
 .nav-box-content {
@@ -138,6 +214,30 @@ p.greet-title {
     justify-content: space-around;
     gap: 10px 40px;
     align-items: center;
+}
+
+.nav-box-profil-button {
+    width: 200px;
+    border: 1px solid black;
+    bottom: 20px;
+    margin: 25px;
+    padding: 13px 10px;
+    border-radius: 5px;
+    background-color: orange;
+    border: 1px solid orange;
+    opacity: 0.8;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.nav-box-profil-button:hover {
+    cursor: pointer;
+    //background-color: orange;
+    //border: 1px solid orange;
+    opacity: 1;
+    color: black;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-box-button {
@@ -332,4 +432,10 @@ margin: 0px;
         min-width: 70px;
     }
 
+}
+
+@media screen and (max-width: 1250px) {
+    .nav-box-profil {
+        display: block;
+    }
 }
