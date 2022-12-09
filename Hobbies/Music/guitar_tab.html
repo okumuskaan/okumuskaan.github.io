@@ -5,32 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guitar Tab</title>
     <link href="./guitar_tab.css" rel="stylesheet" type="text/css">
-    <script type="module" src="./guitar_tab.js"></script>
+    <script type="module" src="./guitar_tab.js" async></script>
+    <script type="module" src="./audio.js"></script>
 </head>
 <body>
 
     <div id="tab-container">
-        <h1>Guitar Tab</h1>
+        <h1 style="text-align: center;
+                   margin-top: 40px;
+                   margin-bottom: 30px;
+                  ">
+            Guitar Tab
+        </h1>
+        <audio
+               src="./clips/fof-intro-riff.mp3"
+        ></audio>
+
+
+        <div id="toolbar">
+            <div id="chordToolbarButton" class="toolbar-button">
+                <img id="chord" style="height: 40px;"
+                     src="./imgs/misc/add-note.png">
+                <span id="chordTooltip" class="tooltipToolbarButton">Open
+                    Chord Toolbar</span>
+            </div>
+            <div id="saveToolbarButton" class="toolbar-button">
+                <img id="save" style="height: 40px;"
+                     src="./imgs/misc/save.png">
+                <span id="saveTooltip" class="tooltipToolbarButton">Save Tabs</span>
+            </div>
+            <div id="playToolbarButton" class="toolbar-button">
+                <img id="play" style="filter: brightness(0);"
+                        src="./imgs/misc/play.png">
+                <span id="playTooltip" class="tooltipToolbarButton">Play
+                    Tabs</span>
+            </div>
+            <div id="deleteToolbarButton" class="toolbar-button">
+                <img id="delete" style="height: 40px;"
+                     src="./imgs/misc/delete.png">
+                <span id="deleteTooltip" class="tooltipToolbarButton">Delete
+                Tabs</span>
+            </div>
+            <div id="infoToolbarButton" class="toolbar-button">
+                <img id="info" style="height: 40px;"
+                     src="./imgs/misc/help.png">
+                <span id="infoTooltip" class="tooltipToolbarButton">See
+                    Info</span>
+            </div>
+            <div id="volumeToolbarButton" class="toolbar-button">
+                <img id="volume" style="height: 40px;"
+                     src="./imgs/misc/volume-on.png">
+                <span id="volumeTooltip" class="tooltipToolbarButton">Change
+                    Volume</span>
+                <span id="volumeSlider"></span>
+            </div>
+        </div>
+        <div id="audioInterface">
+            <p id="currentTime">0.00</p>
+            <div id="customSlider">
+                <div id="progress"></div>
+                <div id="thumb"></div>
+            </div>
+            <p id="duration">0.00</p>
+        </div>
+
+
+
     </div>
 
+
     <div id="chord-bar">
-        <p id="close-button">x</p>
+        <h4 style="margin: 30px auto 10px auto;
+                   text-align: center;
+                   font-size: 25px;
+                   color: whitesmoke;
+                   ">
+            Chord Toolbar
+        </h4>
+        <p id="close-button">&times;</p>
         <div id="chord-container">
             <div class="chord">A</div>
-            <div class="chord">Am</div>
+            <div class="chord">A#</div>
             <div class="chord">B</div>
-            <div class="chord">Bm</div>
             <div class="chord">C</div>
-            <div class="chord">Cm</div>
+            <div class="chord">C#</div>
             <div class="chord">D</div>
-            <div class="chord">Dm</div>
+            <div class="chord">D#</div>
             <div class="chord">E</div>
-            <div class="chord">Em</div>
             <div class="chord">F</div>
-            <div class="chord">Fm</div>
+            <div class="chord">F#</div>
             <div class="chord">G</div>
-            <div class="chord">Gm</div>
+            <div class="chord">G#</div>
         </div>
+        <div id="chord-type-container">
+            <div class="chord-type">Major</div>
+            <div class="chord-type">Minor</div>
+            <div class="chord-type">7</div>
+            <div class="chord-type">5</div>
+            <div class="chord-type">dim</div>
+            <div class="chord-type">dim7</div>
+            <div class="chord-type">aug</div>
+            <div class="chord-type">sus2</div>
+            <div class="chord-type">sus4</div>
+            <div class="chord-type">maj7</div>
+            <div class="chord-type">m7</div>
+            <div class="chord-type">7sus4</div>
+        </div>
+
+        <div id="addChordButton">
+            <p>
+                Enter the Chord
+            </p>
+        </div>
+
+
     </div>
 
 </body>

@@ -8,18 +8,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
     <link href="../artist_resources/artist.css" rel="stylesheet" type="text/css">
     <script type="module" src="../artist_resources/artist.js" async></script>
+    <link href="../../resources/css/base.css" rel="stylesheet" type="text/css">
+    <link href="../../resources/css/responsive.css" rel="stylesheet"
+          type="text/css">
 </head>
 <body>
 
-<a id="backarrow" href="./main.html">
-    <p><</p>
-</a>
+<header>
+    <div id="header-left">
+        <div id="menu-icon-container">
+            <img id="menu-icon" src="../../resources/imgs/header/menu-icon.png">
+        </div>
+        <a href="#"><h1 id="full-name">Kaan Okumu&#351;</h1></a>
+        <a href="#"><h1 id="first-name">Kaan</h1></a>
+    </div>
+    <form id="search-container">
+        <div id="search">
+            <button type="submit">
+                <img id="search-img"
+                     src="../../resources/imgs/header/search-icon-white.png">
+            </button>
+            <input type="search" placeholder="Search smt"
+                   id="search-text" autocomplete="off">
+        </div>
+    </form>
+    <nav>
+        <ul>
+            <li id="nav-menu" class="chosen">
+                <a href="./index.html"
+                   class="nav-link">
+                    <h4>Home</h4>
+                </a>
+            </li>
+            <li id="nav-projects"><a href="./projects.html"
+                                     class="nav-link non-chosen">
+                Projects</a></li>
+            <li id="nav-about_me"><a href="./about_me.html"
+                                     class="nav-link non-chosen">About
+                Me</a></li>
+            <li id="nav-activities"><a href="./activities.html"
+                                       class="nav-link non-chosen">My
+                Activities</a></li>
+        </ul>
+    </nav>
+    <div id="header-right">
+        <a href="https://github.com/okumuskaan" target="_blank"
+           class="nav-link non-chosen github-box">
+            <img
+                    class="github-logo"
+                    src="../../resources/imgs/header/github-logo.png"
+                    alt="github-logo">
+        </a>
+    </div>
+</header>
 
-  <header>
-    <h1 id="artists-title">My Fav Musicians</h1>
-  </header>
+<main>
+    <a id="backarrow" href="./main.html">
+        <p><</p>
+    </a>
 
-  <div id="artist-container"></div>
+    <div class="header">
+        <h1 id="artists-title">My Fav Musicians</h1>
+    </div>
+
+    <div id="artist-container"></div>
+</main>
+
+<footer>
+    <p>Copyright &copy; Kaan Okumus, 2022. All rights reserved.</p>
+    <div class="footer-logos-container">
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="mail"
+                 src="../../resources/imgs/footer/mail.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.instagram.com/okumus.kaan/" target="_blank">
+            <img class="insta"
+                 src="../../resources/imgs/footer/instagram-white4.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="linkedin"
+                 src="../../resources/imgs/footer/linkedin-white.png">
+        </a>
+    </div>
+
+</footer>
+
+
 
 </body>
 </html>

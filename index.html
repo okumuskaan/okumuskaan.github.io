@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <script src="./resources/js/header.js" async></script>
+    <script src="./resources/js/menu.js" async></script>
 </head>
 <body>
 
@@ -92,6 +93,12 @@
                         alt="github-logo">
             </a>
             <a class="footer-logo-container"
+               href="https://scholar.google.com/citations?user=K9LKq7cAAAAJ&hl=en&oi=sra"
+               target="_blank">
+                <img class="scholar"
+                     src="./resources/imgs/footer/scholar.png">
+            </a>
+            <a class="footer-logo-container"
                href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
                target="_blank">
                 <img class="mail"
@@ -117,8 +124,8 @@
     <main>
 
         <div class="banner">
-            <p class="greet-title">Hello World!</p>
-            <p class="greet-main">I'm Kaan, a master student at EPFL SysCom.</p>
+            <p id="greet-title">Hello World!</p>
+            <p id="greet-main">I'm Kaan, a master student at EPFL SysCom.</p>
             <a href="./photos.html" id="banner-img-link" target="_blank">
                 <p id="banner-img-source">
                     <em>Kaan Okumus, 2019
@@ -148,8 +155,13 @@
                     <div class="edu-box-container">
                         <div class="edu-box">
                             <div class="edu-box-left">
-                                <p style="text-align: left;">MSc. Communication
-                                    Systems<br><em>EPFL</em></p>
+                                <p style="text-align: left;
+                                          font-weight: 600;">MSc.
+                                    Communication
+                                    Systems<br><br><span
+                                            style="font-weight:400;">
+                                        Ecole Polytechnique Federale de Lausanne
+                                    </span></p>
                             </div>
                             <div class="edu-box-right">
                                 <p>2021 - <em>Present</em></p>
@@ -157,8 +169,13 @@
                         </div>
                         <div class="edu-box">
                             <div class="edu-box-left">
-                                <p style="text-align: left;">BSc. Electrical
-                                    Electronics Engineering<br><em>METU</em></p>
+                                <p style="text-align: left;
+                                          font-weight: 600;">BSc. Electrical
+                                    Electronics
+                                    Engineering<br><br><span
+                                            style="font-weight: 400;">
+                                        Middle East Technical University
+                                    </span></p>
                             </div>
                             <div class="edu-box-right">
                                 <p>2016 - 2021</p>
@@ -226,10 +243,14 @@
                     </div>
 
                 </div>
+                <!--
                 <a href="#" class="nav-box-button">
                     See More
                 </a>
+                -->
             </div>
+
+
             <div class="nav-box">
                 <div class="nav-box-icon-container">
                     <img src="./resources/imgs/menu/hobbies.png"
@@ -240,31 +261,60 @@
                 <div class="nav-box-content">
                     <a href="./Hobbies/Painters/painters.html"
                        class="outer-box-element">
-                        <div class="box-element" id="paintings-box">
-                            <p class="box-p">Paintings</p>
+                        <div class="box-element">
+                            <div class="box-element-front" id="paintings-box">
+                                <p class="box-p">Paintings</p>
+                            </div>
+                            <div class="box-element-back">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
                         </div>
                     </a>
                     <a href="./Hobbies/Movies/director.html" class="outer-box-element">
-                        <div class="box-element" id="cinema-box">
-                            <p class="box-p">Cinema</p>
+                        <div class="box-element">
+                            <div class="box-element-front" id="cinema-box">
+                                <p class="box-p">Cinema</p>
+                            </div>
+                            <div class="box-element-back">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
                         </div>
+
                     </a>
                     <a href="./Hobbies/Music/main.html"
                        class="outer-box-element">
-                        <div class="box-element" id="music-box">
-                            <p class="box-p">Music</p>
+                        <div class="box-element">
+                            <div class="box-element-front" id="music-box">
+                                <p class="box-p">Music</p>
+                            </div>
+                            <div class="box-element-back">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
                         </div>
+
                     </a>
                     <a href="./Hobbies/ClassicalMusic/classicalmusic.html"
                        class="outer-box-element">
-                        <div class="box-element" id="clasmus-box">
-                            <p class="box-p">Classical Music</p>
+                        <div class="box-element">
+                            <div class="box-element-front" id="clasmus-box">
+                                <p class="box-p">Classical Music</p>
+                            </div>
+                            <div class="box-element-back">
+                                <h1>John Doe</h1>
+                                <p>Architect & Engineer</p>
+                                <p>We love that guy</p>
+                            </div>
                         </div>
+
                     </a>
                 </div>
-                <a href="#" class="nav-box-button">
-                    See More
-                </a>
+
             </div>
 
         </div>
@@ -276,6 +326,12 @@
     <footer>
         <p>Copyright &copy; Kaan Okumus, 2022. All rights reserved.</p>
         <div class="footer-logos-container">
+            <a class="footer-logo-container"
+               href="https://scholar.google.com/citations?user=K9LKq7cAAAAJ&hl=en&oi=sra"
+               target="_blank">
+                <img class="scholar"
+                     src="./resources/imgs/footer/scholar.png">
+            </a>
             <a class="footer-logo-container"
                href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
                target="_blank">

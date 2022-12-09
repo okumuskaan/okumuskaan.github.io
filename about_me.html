@@ -4,6 +4,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
   <title>About Me - Kaan Okumus</title>
 
   <link rel="icon" type="image/x-icon"
@@ -68,7 +69,8 @@
         <div id="menu-icon-container">
           <img id="menu-icon" src="./resources/imgs/header/menu-icon.png">
         </div>
-        <h1>Kaan Okumu&#351;</h1>
+        <a href="./index.html"><h1 id="full-name">Kaan Okumu&#351;</h1></a>
+        <a href="./index.html"><h1 id="first-name">Kaan</h1></a>
       </div>
       <form id="search-container">
         <div id="search">
@@ -82,15 +84,19 @@
       </form>
       <nav>
         <ul>
-          <li id="nav-menu"><a href="./index.html"
-                               class="nav-link non-chosen">Home</a></li>
+          <li id="nav-menu">
+            <a href="./index.html"
+               class="nav-link non-chosen">
+              <h4>Home</h4>
+            </a>
+          </li>
           <li id="nav-projects"><a href="./projects.html"
                                    class="nav-link non-chosen">
             Projects</a></li>
-          <li id="nav-about_me" class="chosen"><a href="./about_me.html"
+          <li id="nav-about_me" class="chosen"><a href="#"
                                    class="nav-link">About
             Me</a></li>
-          <li id="nav-activities"><a href="#"
+          <li id="nav-activities"><a href="./activities.html"
                                      class="nav-link non-chosen">My
             Activities</a></li>
         </ul>
@@ -126,7 +132,7 @@
         <div class="edu-container-row" id="msc-box">
           <p class="left-label">Sep. 2021 - <em>Present</em></p>
           <div class="master">
-            <p>MSc. Communication Systems</p>
+            <p style="font-weight: 600;">MSc. Communication Systems</p>
             <p>&Eacute;cole Polytechnique F&eacute;d&eacute;rale de Lausanne</p>
           </div>
           <img class="arrow-right" src="./resources/imgs/about_me/arrow-right.png">
@@ -157,13 +163,13 @@
           <h4 class="subheading">Publications:</h4>
           <p class="edu-description" style="text-align: left;">
             <span style="font-weight: 700;">-</span>
-            <a href="./projects.html"  target="_blank" class="hyperlink">
+            <a href="#PoGaIn" class="hyperlink">
               PoGaIN: Poisson-Gaussian Image Noise Modeling from Paired
               Samples</a>
             <br>
-            Authors: <em>N Bahler, ME Helou, K Okumus, E Objois, S
+            Authors: <em>N Bahler, ME Helou, E Objois, K Okumus, S
             Susstrunk</em><br>
-            Published at: <em>IEEE Signal Processing</em><br><br>
+            Published at: <em>IEEE Signal Processing Letters</em><br><br>
             <span style="font-weight: 700;">-</span>
             <a href="./projects.html"  target="_blank" class="hyperlink">
               DiffuserCam Project Report</a><br>
@@ -235,7 +241,7 @@
         <div class="edu-container-row" id="bsc-box">
           <p class="left-label">Sep. 2016 - Jul. 2021</p>
           <div class="master">
-            <p>BSc. Electrical and Electronics Engineering</p>
+            <p style="font-weight: 600;">BSc. Electrical and Electronics Engineering</p>
             <p>Middle East Technical University</p>
           </div>
           <img class="arrow-right" src="./resources/imgs/about_me/arrow-right.png">
@@ -319,7 +325,7 @@
         <div class="edu-container-row" id="pycsou-box">
           <p class="left-label">Apr. 2022 - Sep. 2022</p>
           <div class="master">
-            <p>Student Assistant</p>
+            <p style="font-weight: 600;">Student Assistant</p>
             <p>EPFL Hub for Advanced Image Reconstruction</p>
           </div>
           <img class="arrow-right" src="./resources/imgs/about_me/arrow-right.png">
@@ -356,7 +362,7 @@
         <div class="edu-container-row" id="kandou-box">
           <p class="left-label">Jul. 2022 - Sep. 2022</p>
           <div class="master">
-            <p>Signal Processing Engineer Intern</p>
+            <p style="font-weight: 600;">Signal Processing Engineer Intern</p>
             <p>Kandou S.A. Lausanne</p>
           </div>
           <img class="arrow-right" src="./resources/imgs/about_me/arrow-right.png">
@@ -389,7 +395,7 @@
         <div class="edu-container-row" id="havelsan-box">
           <p class="left-label">Aug. 2020 - Sep. 2020</p>
           <div class="master">
-            <p>Deep Learning Engineer Intern</p>
+            <p style="font-weight: 600;">Deep Learning Engineer Intern</p>
             <p>HAVELSAN A.S., Information and Communication Technologies</p>
           </div>
           <img class="arrow-right" src="./resources/imgs/about_me/arrow-right.png">
@@ -420,7 +426,7 @@
         <div class="edu-container-row" id="aselsan-box">
           <p class="left-label">Jun. 2020 - Aug. 2020</p>
           <div class="master">
-            <p>Embedded System Designer Intern</p>
+            <p style="font-weight: 600;">Embedded System Designer Intern</p>
             <p>ASELSAN A.S., SST - Digital and Embedded Systems</p>
           </div>
           <img class="arrow-right" src="./resources/imgs/about_me/arrow-right.png">
@@ -457,6 +463,123 @@
           <img src="./resources/imgs/about_me/download.png">
           <p>Download CV</p>
         </a>
+      </div>
+
+      <div class="edu-container" style="background-color: white;">
+        <h1>Publications</h1>
+        <div class="publication-row" id="PoGaIn">
+          <p class="left-label">Nov. 2022</em></p>
+          <div class="master">
+            <p style="font-weight: 600;">PoGaIN: Poisson-Gaussian Image Noise Modeling from Paired Samples</p>
+            <p>Nicolas Bahler, Majed El Helou, Etienne Objois, Kaan Okumus,
+              Sabine
+              Susstrunk</p>
+            <p><span style="font-weight: 600">Published at:</span> IEEE
+              Signal Processing Letters</p>
+          </div>
+          <div class="right-label">
+            <a class="hyperlink-container"
+               href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=K9LKq7cAAAAJ&citation_for_view=K9LKq7cAAAAJ:u5HHmVD_uO8C"
+               target="_blank">
+              <img
+                      class="github-hyperlink"
+                      src="./resources/imgs/footer/scholar.png">
+            </a>
+            <a class="hyperlink-container2"
+               href="https://ieeexplore.ieee.org/document/9976220"
+               target="_blank">
+              <img
+                      class="ieee-hyperlink"
+                      style="filter: brightness(0);"
+                      src="./resources/imgs/about_me/ieee.png">
+            </a>
+            <a class="hyperlink-container"
+               href="https://github.com/IVRL/PoGaIN"
+            target="_blank">
+            <img
+                  class="github-hyperlink"
+                  src="./resources/imgs/header/github-logo-dark.png">
+            </a>
+          </div>
+          <!--
+          <a class="hyperlink-container"
+             href="https://github.com/IVRL/PoGaIN"
+             target="_blank">
+            <img
+                    class="github-hyperlink"
+                    style="height: 50px;
+                           position: absolute;
+                           right: 10%;
+                            "
+                    src="./resources/imgs/about_me/ieee.png">
+          </a>
+          -->
+        </div>
+        <div class="publication-row" id="DiffCam">
+          <p class="left-label">Dec. 2021</p>
+          <div class="master">
+            <p style="font-weight: 600;">DiffuserCam Project Report</p>
+            <p>Mehmet Onurcan Kaya, Kaan Okumus, Eelis Mielonen, Adrien
+              Jarret</p>
+            <p><span style="font-weight: 600">Published at:</span> EPFL
+              Infoscience</p>
+          </div>
+          <div class="right-label">
+            <a class="hyperlink-container"
+               href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=K9LKq7cAAAAJ&citation_for_view=K9LKq7cAAAAJ:d1gkVwhDpl0C"
+               target="_blank">
+              <img
+                      class="github-hyperlink"
+                      src="./resources/imgs/footer/scholar.png">
+            </a>
+            <a class="hyperlink-container3"
+               href="https://infoscience.epfl.ch/record/291501?ln=en"
+               target="_blank">
+              <img
+                      class="epfl-hyperlink"
+                      style="filter: brightness(0);"
+                      src="./resources/imgs/about_me/epfl-icon.svg">
+            </a>
+            <a class="hyperlink-container"
+               href="https://github.com/eelismie/DiffuserCam"
+               target="_blank">
+              <img
+                      class="github-hyperlink"
+                      src="./resources/imgs/header/github-logo-dark.png">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="language-container">
+        <h1>Languages</h1>
+        <div class="language-boxes-container">
+          <div class="language-box">
+            <img class="language-img"
+                 src="./resources/imgs/about_me/turkey.png">
+            <h3>Turkish</h3>
+            <p>Native</p>
+          </div>
+          <div class="language-box">
+            <img class="language-img"
+                 src="./resources/imgs/about_me/uk.svg">
+            <h3>English</h3>
+            <p>Advanced</p>
+          </div>
+          <div class="language-box">
+            <img class="language-img"
+                 src="./resources/imgs/about_me/france.png">
+            <h3>French</h3>
+            <p>Intermediate</p>
+          </div>
+          <div class="language-box">
+            <img class="language-img"
+                 src="./resources/imgs/about_me/russia.png">
+            <h3>Russian</h3>
+            <p>Beginner</p>
+          </div>
+        </div>
       </div>
 
       <div class="skills-container">
@@ -629,37 +752,7 @@
         </table>
       </div>
 
-      <div class="language-container">
-        <h1>Languages</h1>
-        <div class="language-boxes-container">
-          <div class="language-box">
-            <img class="language-img"
-                 src="./resources/imgs/about_me/turkey.png">
-            <h3>Turkish</h3>
-            <p>Native</p>
-          </div>
-          <div class="language-box">
-            <img class="language-img"
-                 src="./resources/imgs/about_me/uk.svg">
-            <h3>English</h3>
-            <p>Advanced</p>
-          </div>
-          <div class="language-box">
-            <img class="language-img"
-                 src="./resources/imgs/about_me/france.png">
-            <h3>French</h3>
-            <p>Intermediate</p>
-          </div>
-          <div class="language-box">
-            <img class="language-img"
-                 src="./resources/imgs/about_me/russia.png">
-            <h3>Russian</h3>
-            <p>Beginner</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="edu-container" style="background-color: white;">
+      <div class="edu-container">
         <h1>Honors & Awards</h1>
         <div class="award-row">
           <p class="left-label">Jul. 2021</em></p>
@@ -694,6 +787,12 @@
     <footer>
       <p>Copyright &copy; Kaan Okumus, 2022. All rights reserved.</p>
       <div class="footer-logos-container">
+        <a class="footer-logo-container"
+           href="https://scholar.google.com/citations?user=K9LKq7cAAAAJ&hl=en&oi=sra"
+           target="_blank">
+          <img class="scholar"
+               src="./resources/imgs/footer/scholar.png">
+        </a>
         <a class="footer-logo-container"
            href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
            target="_blank">

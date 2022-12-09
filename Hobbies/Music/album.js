@@ -61,3 +61,14 @@ albumData[theAlbum]["songs"].forEach(song => {
     }
     ind++;
 })
+
+Array.from(document.getElementsByClassName("electric-guitar-icon")).forEach(
+(guitar)=> {
+    guitar.addEventListener("mouseenter", (evt)=>{
+        console.log(evt.target.parentNode.parentNode.parentNode.querySelector
+        ("h6").innerHTML.split(">").pop());
+        let songName = evt.target.parentNode.parentNode.parentNode.querySelector
+                               ("h6").innerHTML.split(">").pop();
+        localStorage.setItem("song", songName);
+    });
+})

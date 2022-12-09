@@ -459,7 +459,7 @@ var albumData = {
                   "Keep It Coming",
                   "Cryin' Won't Help You Babe",
                   "Night Life"],
-        "guitar-inds": []
+        "guitar-inds": [2]
     },
     "homog": {
         "name": "Homogenic",
@@ -550,7 +550,7 @@ var albumData = {
                   "Trimm Trabb",
                   "No Distance Left to Run",
                   "Optigan I"],
-        "guitar-inds": []
+        "guitar-inds": [1, 3, 12]
     },
     "mw": {
         "name": "The Magic Whip",

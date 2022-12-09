@@ -7,10 +7,41 @@ html {
 body {
     margin: 0;
     padding: 0;
+    min-width: 700px;
 }
 
 #tab-container {
-    margin: 20px 50px
+    margin: 20px 50px;
+    margin-bottom: 50px;
+}
+
+#toolbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    gap: 30px;
+    zoom: 1;
+}
+.toolbar-button {
+    position: relative;
+    height: 45px;
+    width: 55px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    cursor: default;
+}
+.toolbar-button:hover {
+    background-color: darkorange;
+    cursor: pointer;
 }
 
 .tab-box {
@@ -56,6 +87,7 @@ body {
     margin: 1px;
     border: 0.5px solid rgba(0,0,2 55,0);
     border-radius: 2px;
+    cursor: default;
 }
 
 .tab-line-separator {
@@ -65,6 +97,7 @@ body {
     margin: 1px;
     border: 0.5px solid rgba(0,0,2 55,0);
     border-radius: 2px;
+    cursor: default;
 }
 
 .tab-box-title {
@@ -76,22 +109,21 @@ body {
 }
 
 #chord-bar {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    bottom: 50%;
-    height: 100%;
-    min-height: 150px;
-    width: 0%;
+    position: fixed;
+    bottom: 0px;
+    height: 0%;
+    max-height: 300px;
+    min-height: 0;
+    width: 100%;
     //20%;
     min-width: 0px;
     //150px;
-    background-color: rgba(50,50,50,1);
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    background-color: black;//rgba(50,50,50,1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     transition: all 0.3s linear;
-    display: flex;
-    flex-wrap: wrap;
+    #display: flex;
+    #flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -102,19 +134,48 @@ body {
     opacity: 0;
     height: 35px;
     width: 35px;
-    margin: 12px;
+    margin: 4px 8px;
     transition: all 0.3s linear;
     text-align: center;
     line-height: 35px;
     border-radius: 5px;
 }
 .chord:hover {
+    //background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+.deselected-chord:hover {
     background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+.chord-type {
+    background-color: white;
+    color: black;
+    opacity: 0;
+    height: 35px;
+    width: 60px;
+    margin: 4px;
+    transition: all 0.3s linear;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+}
+.chord-type:hover {
+    //background-color: rgba(255,255,255,0.2);
     cursor: pointer;
 }
 
 #chord-container {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#chord-type-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #close-button {
@@ -130,3 +191,170 @@ body {
     opacity: 1;
     cursor: pointer;
 }
+
+#addChordButton {
+    border-radius: 5px;
+    height: 50px;
+    width: 140px;
+    background-color: darkorange;
+    opacity: 1;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    cursor: default;
+    font-weight: 600;
+}
+#addChordButton:hover {
+    #opacity: 0.6;
+    cursor: pointer;
+}
+
+.warning-msg {
+    opacity: 0;
+    color: red;
+    transition: all 0.5s ease-in;
+    text-align: center;
+    position: relative;
+    bottom: 5px;
+    letter-spacing: 1.5px;
+}
+
+#play {
+    height: 35px;
+}
+#pause {
+    height: 35px;
+}
+
+@media screen and (max-width: 1030px) and (min-width: 850px) {
+    .tab-box {
+        zoom: 0.8;
+    }
+    #chord-bar {
+        zoom: 0.8;
+    }
+    #toolbar {
+        zoom: 0.9;
+    }
+}
+@media screen and (max-width: 850px) {
+    .tab-box {
+        zoom: 0.6;
+    }
+    #chord-bar {
+        zoom: 0.6;
+    }
+    #toolbar {
+        zoom: 0.7;
+    }
+}
+
+
+
+.tooltipToolbarButton {
+  visibility: hidden;
+  width: 110px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 115%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltipToolbarButton::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+#volume {
+    z-index: 101;
+}
+
+#volumeSlider {
+    position: absolute;
+    display: none;
+    background-color: red;
+    top: 10px;
+    height: 70px;
+    width: 65px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    //border-radius: 10px;
+    z-index: 100;
+}
+
+
+#audioInterface {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#currentTime {
+    width: 50px;
+    //border: 1px solid white;
+    text-align: right;
+}
+#duration {
+    width: 50px;
+    text-align: left;
+}
+
+
+#customSlider{
+    margin: 15px 0px;
+    height: 15px;
+    width: 80%;
+    background-color: #d3d3d3;
+    opacity: 0.7;
+    border-radius: 10px;
+    transition: opacity .2s;
+}
+#progress {
+    height: 15px;
+    width: 0px;
+    border-radius: 10px;
+    background-color: darkorange;
+}
+#thumb {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    bottom: 19px;
+    left: 0px;
+    #78px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#customSlider:hover {
+    opacity: 1;
+}
+#thumb:hover {
+    cursor: pointer;
+}
+
+.playing {
+    background-color: crimson;
+}
+
+.slider-noteLabel {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    opacity: 0.4;
+}
+

@@ -189,19 +189,19 @@ header li {
     height: 20px;
 }
 #nav-menu {
-    width: 80px;
+    width: 82px;
 
 }
 #nav-projects {
-    width: 80px;
+    width: 82px;
 
 }
 #nav-about_me {
-    width: 80px;
+    width: 82px;
 
 }
 #nav-activities {
-    width: 80px;
+    width: 82px;
 
 }
 .non-chosen:hover {
@@ -369,8 +369,7 @@ footer p, .overlay p {
     align-items: center;
 }
 .mail {
-    width: 30px;
-
+    width: 28px;
 }
 .linkedin {
     width: 26px;
@@ -380,8 +379,13 @@ footer p, .overlay p {
     width: 25px;
 
 }
+.scholar {
+    width: 28px;
+    filter: brightness(0) invert(1);
+}
+
 .mail:hover {
-    width: 32px;
+    width: 30px;
 
 }
 .linkedin:hover {
@@ -391,4 +395,7 @@ footer p, .overlay p {
 .insta:hover{
     width: 27px;
 
+}
+.scholar:hover {
+    width: 30px;
 }

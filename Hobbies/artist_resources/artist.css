@@ -43,6 +43,8 @@ html {
     justify-content: center;
     width: 90%;
     margin: 20px auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .artist-box {

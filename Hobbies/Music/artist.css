@@ -10,7 +10,7 @@ body {
     padding: 0px;
 }
 
-header {
+.header {
     background-size: cover;
     width: 480px;
     height: 300px;
@@ -142,7 +142,7 @@ header {
 }
 @media screen and (max-width: 750px) {
 
-    header {
+    .header {
         height: 200px;
         width: 320px;
     }
