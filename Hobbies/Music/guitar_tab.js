@@ -2,6 +2,7 @@ const CHORDBARHEIGHT = "300px";
 
 var theAlbum = localStorage.getItem("album");
 var theSong = localStorage.getItem("song");
+console.log("TheAlbum:", theAlbum);
 console.log("TheSong:", theSong);
 
 import {artistData, albumData} from "./data/musicData.js";

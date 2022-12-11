@@ -114,6 +114,7 @@ body {
     font-weight: 400;
     font-size: 23px;
     letter-spacing: 1.5px;
+    margin-bottom: 50px;
 }
 
 #song-container {
@@ -122,6 +123,61 @@ body {
     flex-wrap: wrap;
     margin: 20px 0px;
 }
+
+.song-box {
+    background-color: rgb(44,44,44, 0.5);
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 5px 15px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+.song-box-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.song-number {
+    color: grey;
+    width: 30px;
+    margin: 0px 5px;
+}
+.song-title {
+    //text-align: right;
+    letter-spacing: 2px;
+    //margin: 50px;
+    //padding: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 20px 0px;
+    cursor: default;
+}
+.song-title:hover {
+}
+.guitar-box {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guitar-icon {
+    position: relative;
+    height: 30px;
+}
+.guitar-box:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 1150px) {
     #album-song-greatest-container {

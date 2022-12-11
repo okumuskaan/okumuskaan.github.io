@@ -8,7 +8,10 @@ var artistData = {
         "artist-img": "arctic-monkeys",
         "albums": ["wpstiatwin", "humbug",
                    "tbhac", "car"],
-        "fav-songs": []
+        "fav-songs": ["foof", "tranqbase", "onepp", "batphne", "startreat",
+                      "mirrorball", "bodyp", "bigid", "sculptures",
+                      "cryinglight", "myprop", "danceshoes", "riotvan",
+                      "stuhome", "rumine", "diwknow", "oowknow","balac"]
     },
     "Bark Psychosis": {
         "artist-img": "bark",
@@ -83,7 +86,7 @@ var artistData = {
     "Jimi Hendrix": {
         "artist-img": "hendrix",
         "albums": ["are", "abal", "ell"],
-        "fav-songs": []
+        "fav-songs": ["joe", "purphaze", "aawtower", "mandepr"],
     },
     "John Coltrane": {
         "artist-img": "john-coltrane",
@@ -192,6 +195,12 @@ var songNumberColor = {
 };
 
 var albumData = {
+    "am": {
+        "background-color": "black",
+    },
+    "favworstnight": {
+        "background-color": "linear-gradient(180deg, rgba(128,119,47,1) 0%, rgba(69,66,65,1) 50%, rgba(0,0,0,1) 100%)",
+    },
     "buabs": {
         "name": "Born Under A Bad Sign",
         "img-name": "buabs.jpeg",
@@ -739,7 +748,7 @@ var albumData = {
                   "51st Anniversary",
                   "The Wind Cries Mary",
                   "Highway Chile"],
-        "guitar-inds": []
+        "guitar-inds": [1, 2, 12, 14]
     },
     "abal": {
         "name": "Axis: Bold As Love",
@@ -972,4 +981,161 @@ var albumData = {
 
 };
 
-export {artistData, albumData};
+var favsongData = {
+    "foof": {
+        "rank": 1,
+        "name": "Four Out Of Five",
+        "album": "tbhac",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "cryinglight": {
+        "rank": 2,
+        "name": "Crying Lightning",
+        "album": "humbug",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "bodyp": {
+        "rank": 3,
+        "name": "Body Paint",
+        "album": "car",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "tranqbase": {
+        "rank": 4,
+        "name": "Tranquility Base Hotel &amp; Casino",
+        "album": "tbhac",
+        "artist": "Arctic Monkeys",
+        "guitar": 0,
+    },
+    "mirrorball": {
+        "rank": 5,
+        "name": "There'd Better Be A Mirrorball",
+        "album": "car",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "rumine": {
+        "rank": 6,
+        "name": "R U Mine",
+        "album": "am",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "batphne": {
+        "rank": 7,
+        "name": "Batphone",
+        "album": "tbhac",
+        "artist": "Arctic Monkeys",
+        "guitar": 0,
+    },
+    "stuhome": {
+        "rank": 8,
+        "name": "Still Take You Home",
+        "album": "wpstiatwin",
+        "artist": "Arctic Monkeys",
+        "guitar": 0,
+    },
+    "sculptures": {
+        "rank": 9,
+        "name": "Sculpture Of Anything Goes",
+        "album": "car",
+        "artist": "Arctic Monkeys",
+        "guitar": 0,
+    },
+    "riotvan": {
+        "rank": 10,
+        "name": "Riot Van",
+        "album": "wpstiatwin",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "diwknow": {
+        "rank": 11,
+        "name": "Do I Wanna Know",
+        "album": "am",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "danceshoes": {
+        "rank": 12,
+        "name": "Dancing Shoes",
+        "album": "wpstiatwin",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "onepp": {
+        "rank": 13,
+        "name": "One Point Perspective",
+        "album": "tbhac",
+        "artist": "Arctic Monkeys",
+        "guitar": 0,
+    },
+    "oowknow": {
+        "rank": 14,
+        "name": "Only One Who Knows",
+        "album": "favworstnight",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "bigid": {
+        "rank": 15,
+        "name": "Big Ideas",
+        "album": "car",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "myprop": {
+        "rank": 16,
+        "name": "My Propeller",
+        "album": "humbug",
+        "artist": "Arctic Monkeys",
+        "guitar": 1,
+    },
+    "startreat": {
+        "rank": 17,
+        "name": "Star Treatment",
+        "album": "tbhac",
+        "artist": "Arctic Monkeys",
+        "guitar": 0,
+    },
+    "balac": {
+        "rank": 18,
+        "name": "Balaclava",
+        "album": "favworstnight",
+        "artist": "Arctic Monkeys",
+        "guitar": 0,
+    },
+    "joe": {
+        "rank": 19,
+        "name": "Hey Joe",
+        "album": "are",
+        "artist": "Jimi Hendrix",
+        "guitar": 1,
+    },
+    "purphaze": {
+        "rank": 20,
+        "name": "Purple Haze",
+        "album": "are",
+        "artist": "Jimi Hendrix",
+        "guitar": 1,
+    },
+    "aawtower": {
+        "rank": 21,
+        "name": "All Along The Watchtower",
+        "album": "are",
+        "artist": "Jimi Hendrix",
+        "guitar": 1,
+    },
+    "mandepr": {
+        "rank": 22,
+        "name": "Manic Depression",
+        "album": "are",
+        "artist": "Jimi Hendrix",
+        "guitar": 1,
+    },
+}
+
+export {artistData, albumData, favsongData};
