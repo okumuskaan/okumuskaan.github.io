@@ -31,21 +31,23 @@ header {
     text-align: center;
 }
 
-#album-song-greatest-container {
-    display: flex;
+#painting-song-greatest-container {
+    display: block;
     justify-content: space-between;
     gap: 5px;
     flex-wrap: wrap;
 }
 
-#album-great-container {
+#painting-great-container {
     margin: 75px 0px;
     padding: 10px;
     background-color: #121212;
-    width: 48%;
+    width: 80%;
     min-width: 500px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    margin: 75px auto;
+    border-radius: 20px;
+    //border-top-right-radius: 20px;
+    //border-bottom-right-radius: 20px;
 }
 
 #song-great-container {
@@ -58,52 +60,66 @@ header {
     border-bottom-left-radius: 20px;
 }
 
-#album-container-title {
+#painting-container-title {
     margin-top: 25px;
+    margin-bottom: 50px;
     text-align: center;
     font-weight: 400;
     font-size: 23px;
     letter-spacing: 1.5px;
 }
 
-#album-container {
+#painting-container {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    //flex-direction: column;
     flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
     margin: 20px 0px;
+    height: 1000px;
+    width: 730px;
+    margin: 0px auto;
 }
 
-.album-box {
+.painting-container-column {
+    width: 200px;
+}
+
+.painting-box {
     background-color: rgb(44,44,44, 0.5);
     color: whitesmoke;
-    margin: 30px auto;
-    width: 700px;
-    height: 200px;
+    margin: 0px auto;
+    width: 200px;
+    //height: 200px;
     border-radius: 15px;
     text-decoration: none;
-    display: flex;
+    //display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
 }
 
-.album-box:hover {
+.painting-box:hover {
     background-color: rgb(44,44,44, 1);
     cursor: pointer;
 }
 
-.album-title {
-    text-align: right;
-    letter-spacing: 2px;
-    margin: 50px;
-    padding: 20px;
+.painting-title {
+    text-align: left;
+    letter-spacing: 1px;//2px;
+    margin: 0px 20px;
+    padding: 10px 5px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 13px;//16px;
 }
 
-.album-cover {
-    height: 200px;
-    border-top-left-radius: 15px;
+.painting-cover {
+    width: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    //border-radius: 5px;
+    margin-bottom: 0px;
 }
 
 

@@ -65,23 +65,9 @@
             <div id="menu-icon-container">
                 <img id="menu-icon" src="./resources/imgs/header/menu-icon.png">
             </div>
-            <a href="./index.html"><h1>Kaan Okumu&#351;</h1></a>
+            <a href="./index.html"><h1 id="full-name">Kaan Okumu&#351;</h1></a>
+            <a href="./index.html"><h1 id="first-name">Kaan</h1></a>
         </div>
-        <nav>
-            <ul>
-                <li id="nav-menu"><a href="./index.html"
-                                     class="nav-link non-chosen">Home</a></li>
-                <li id="nav-projects" class="chosen"><a href="./projects.html"
-                                         class="nav-link">
-                    Projects</a></li>
-                <li id="nav-about_me"><a href="./about_me.html"
-                                         class="nav-link non-chosen">About
-                    Me</a></li>
-                <li id="nav-activities"><a href="#"
-                                           class="nav-link non-chosen">My
-                    Activities</a></li>
-            </ul>
-        </nav>
         <form id="search-container">
             <div id="search">
                 <button type="submit">
@@ -92,6 +78,25 @@
                        id="search-text" autocomplete="off">
             </div>
         </form>
+        <nav>
+            <ul>
+                <li id="nav-menu" class="chosen">
+                    <a href="./index.html"
+                       class="nav-link">
+                        <h4>Home</h4>
+                    </a>
+                </li>
+                <li id="nav-projects"><a href="./projects.html"
+                                         class="nav-link non-chosen">
+                    Projects</a></li>
+                <li id="nav-about_me"><a href="./about_me.html"
+                                         class="nav-link non-chosen">About
+                    Me</a></li>
+                <li id="nav-activities"><a href="./activities.html"
+                                           class="nav-link non-chosen">My
+                    Activities</a></li>
+            </ul>
+        </nav>
         <div id="header-right">
             <a href="https://github.com/okumuskaan" target="_blank"
                class="nav-link non-chosen github-box">
@@ -105,39 +110,124 @@
 
     <main>
 
+        <div id="title">
+            <h1>My Projects</h1>
+        </div>
+
         <div class="secondary-nav">
-            <div class="secondary-nav-box">
+            <a href="#sp" class="secondary-nav-box">
                 <h3>Signal Processing</h3>
-            </div>
-            <div class="secondary-nav-box">
-                <h3>Telecommunications</h3>
-            </div>
-            <div class="secondary-nav-box">
+            </a>
+            <a href="#com" class="secondary-nav-box-2">
+                <h3>Communications</h3>
+            </a>
+            <a href="#webdes" class="secondary-nav-box">
                 <h3>Web Design</h3>
-            </div>
-            <div class="secondary-nav-box">
+            </a>
+            <a href="#artproj" class="secondary-nav-box-2">
                 <h3>Art Projects</h3>
-            </div>
+            </a>
         </div>
 
         <div class="projects-main type1">
-            <div class="projects-banner">
+            <div class="projects-banner" id="sp">
                 <div class="projects-header">
-                    <h3>Signal Processing</h3>
+                    <h3>Signal Processing
+                        <span>
+                            <a href="./com.html">
+                                <img
+                                        src="./resources/imgs/projects/resize.png"
+                                        style="height: 10px; position: relative;
+                                       bottom: 10px; right: 8px;"
+                                >
+                            </a>
+                        </span>
+                    </h3>
                 </div>
                 <div class="projects-description">
-                    I'm very interested in the idea that the potential of
-                    human expression can be extended enormously with the
-                    technological innovation. For that purposes, I try to combine
-                    my main technological disciplines to the contemporary
-                    artistic practices.
+                    I have been always fascinated by the idea of the
+                    mathematical perspective on information, data and
+                    signals. It took my interests that every kind of data can
+                    be represented and stored in computational environment.
+                    However, this framework created a whole bunch of new
+                    problems to be solved. Thanks to great
+                    mathematicians like <em>Joseph Fourier</em>, we can make
+                    great analysis on signals, which helped us processing
+                    them for specific purposes in real-world applications.
+                    Here are the list of my works in the field of Signal
+                    Procesing.
+                </div>
+            </div>
+            <div class="project-box-container">
+                <div class="project-box" id="pogain">
+                    Project 1
+                    <a href="./sp.html" class="see-more">
+                        <h5>See More
+                            <span>
+                        <img
+                                src="./resources/imgs/projects/resize.png"
+                                style="height: 8px; position: relative;
+                               bottom: 8px; right: 6px; opacity: 0.8;"
+                        >
+                    </span>
+                        </h5>
+                    </a>
+                </div>
+                <div class="project-box">
+                    Project 2
+                    <a href="./sp.html" class="see-more">
+                        <h5>See More
+                            <span>
+                        <img
+                                src="./resources/imgs/projects/resize.png"
+                                style="height: 8px; position: relative;
+                               bottom: 8px; right: 6px; opacity: 0.8;"
+                        >
+                    </span>
+                        </h5>
+                    </a>
+                </div>
+                <div class="project-box">
+                    Project 3
+                    <a href="./sp.html" class="see-more">
+                        <h5>See More
+                            <span>
+                        <img
+                                src="./resources/imgs/projects/resize.png"
+                                style="height: 8px; position: relative;
+                               bottom: 8px; right: 6px; opacity: 0.8;"
+                        >
+                    </span>
+                        </h5>
+                    </a>
+                </div>
+            </div>
+            <div class="prj-pages-nav-container">
+                <div class="prj-pages-nav chosen">
+                    1
+                </div>
+                <div class="prj-pages-nav">
+                    2
+                </div>
+                <div class="prj-pages-nav">
+                    3
                 </div>
             </div>
         </div>
         <div class="projects-main type2">
-            <div class="projects-banner">
+            <div class="projects-banner" id="com">
                 <div class="projects-header">
-                    <h3>Telecommunications</h3>
+                    <h3>Communications
+                        <span>
+                            <a href="./com.html">
+                                <img
+                                        src="./resources/imgs/projects/resize.png"
+                                        style="height: 10px; position: relative;
+                                       bottom: 10px; right: 8px;"
+                                >
+                            </a>
+                        </span>
+                    </h3>
                 </div>
                 <div class="projects-description">
                     I'm very interested in the idea that the potential of
@@ -147,9 +237,31 @@
                     artistic practices.
                 </div>
             </div>
+            <div class="project-box-container">
+                <div class="project-box-2">
+                    Project 1
+                </div>
+                <div class="project-box-2">
+                    Project 2
+                </div>
+                <div class="project-box-2">
+                    Project 3
+                </div>
+            </div>
+            <div class="prj-pages-nav-container">
+                <div class="prj-pages-nav chosen">
+                    1
+                </div>
+                <div class="prj-pages-nav">
+                    2
+                </div>
+                <div class="prj-pages-nav">
+                    3
+                </div>
+            </div>
         </div>
         <div class="projects-main type1">
-            <div class="projects-banner">
+            <div class="projects-banner" id="webdes">
                 <div class="projects-header">
                     <h3>Web Design</h3>
                 </div>
@@ -161,9 +273,19 @@
                     artistic practices.
                 </div>
             </div>
+            <div class="project-box-container">
+                <div class="project-box">
+                    Project 1
+                </div>
+            </div>
+            <div class="prj-pages-nav-container">
+                <div class="prj-pages-nav chosen">
+                    1
+                </div>
+            </div>
         </div>
         <div class="projects-main type2">
-            <div class="projects-banner">
+            <div class="projects-banner" id="artproj">
                 <div class="projects-header">
                     <h3>Art Projects</h3>
                 </div>
@@ -175,7 +297,16 @@
                     artistic practices.
                 </div>
             </div>
-
+            <div class="project-box-container">
+                <div class="project-box-2">
+                    Project 1
+                </div>
+            </div>
+            <div class="prj-pages-nav-container">
+                <div class="prj-pages-nav chosen">
+                    1
+                </div>
+            </div>
         </div>
 
     </main>

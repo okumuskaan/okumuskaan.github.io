@@ -403,6 +403,9 @@ margin: 0px;
     header {
         height: 80px;
     }
+    footer {
+        margin-top: 80px;
+    }
     #menu-icon-container {
         height: 80px;
     }

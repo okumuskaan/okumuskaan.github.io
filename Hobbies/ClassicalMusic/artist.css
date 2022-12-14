@@ -10,7 +10,7 @@ body {
     padding: 0px;
 }
 
-header {
+.header {
     background-size: cover;
     width: 480px;
     height: 300px;
@@ -42,21 +42,12 @@ header {
     margin: 75px 0px;
     padding: 10px;
     background-color: #121212;
-    width: 48%;
+    width: 100%;
     min-width: 500px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-#song-great-container {
-    margin: 75px 0px;
-    padding: 10px;
-    background-color: #121212;
-    width: 48%;
-    min-width: 500px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
 
 #album-container-title {
     margin-top: 25px;
@@ -71,14 +62,30 @@ header {
     gap: 20px;
     flex-wrap: wrap;
     margin: 20px 0px;
+    justify-content: center;
 }
 
+.work-type-box {
+    //width: 80%;
+    padding: 30px;
+}
+.work-type-box-title {
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 40px;
+    margin-bottom: 10px;
+
+}
+.album-box-and-part-box {
+    display: block;
+    height: 100px;
+}
 .album-box {
     background-color: rgb(44,44,44, 0.5);
     color: whitesmoke;
     margin: 30px auto;
     width: 700px;
-    height: 200px;
+    height: 100px;
     border-radius: 15px;
     text-decoration: none;
     display: flex;
@@ -90,6 +97,33 @@ header {
 .album-box:hover {
     background-color: rgb(44,44,44, 1);
     cursor: pointer;
+}
+
+.part-box-container {
+    //height: 0px;
+    //opacity: 0;
+    //z-index: -1;
+}
+.part-box {
+    height: 0px;
+    opacity: 0;
+    //color: red;
+    transition: all 0.3s linear;
+    margin: 0px auto;
+    background-color: rgba(44,44,44, 0.5);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 5px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.arrow-container {
+    padding-right: 40px;
+}
+.arrow-icon {
+    height: 40px;
 }
 
 .album-title {
@@ -108,20 +142,7 @@ header {
 
 
 
-#song-container-title {
-    margin-top: 25px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 23px;
-    letter-spacing: 1.5px;
-}
 
-#song-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 20px 0px;
-}
 
 @media screen and (max-width: 1150px) {
     #album-song-greatest-container {
@@ -142,7 +163,7 @@ header {
 }
 @media screen and (max-width: 750px) {
 
-    header {
+    .header {
         height: 200px;
         width: 320px;
     }

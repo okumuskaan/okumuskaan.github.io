@@ -5,7 +5,7 @@ var theSong = localStorage.getItem("song");
 console.log("TheAlbum:", theAlbum);
 console.log("TheSong:", theSong);
 
-import {artistData, albumData} from "./data/musicData.js";
+import {artistData, albumData, guitarTabData} from "./data/musicData.js";
 
 document.querySelector("html").style.background =
 albumData[theAlbum]["background-color"];
@@ -16,7 +16,9 @@ var audioPlayer = document.querySelector("audio");
 
 var closebtn = document.getElementById("close-button");
 
-var tabs = [["--------------------------------------------------------",
+var tabs = guitarTabData[theSong]["tabs"];
+/*
+[["--------------------------------------------------------",
              "--------------------------------------------------------",
              "---------------4-2--------------------------------------",
              "-------------2------5-7~------------------5-3-----3-3---",
@@ -45,11 +47,13 @@ var tabs = [["--------------------------------------------------------",
               "--0---0-0---0---0----------------------------------------"
              ]
              ];
+*/
 
 let MAXNUMBERNOTES = tabs[0][0].length;
 let TOTALNUMBERNOTES = [];
 
-var tabBoxTitles = ["Intro", "Intro 2", "Verse 1", "Chorus 1"];
+var tabBoxTitles = guitarTabData[theSong]["tab-box-titles"];
+//["Intro", "Intro 2", "Verse 1", "Chorus 1"];
 
 var tabLineNames = ["E", "B", "G", "D", "A", "E"]
 let noteInd = 0;
