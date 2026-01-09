@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaan Okumus</title>
+
+    <link href="./menu.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script src="./menu.js" async></script>
+    <script src="./arrow.js" async></script>
+    <script src="./see-more.js" async></script> 
+</head>
+<body>
+
+<header>
+    <div id="logo-title-container">
+        <h3 id="logo-title">Kaan Okumus</h3>
+    </div>
+
+    <nav id="header-nav">
+        <a href="./index.html" class="subnav">Home</a>
+        <h5 class="chosen subnav">About Me</h5>
+        <a href="./publications.html" class="subnav">Research</a>
+        <a href="./teaching.html" class="subnav">Teaching</a>
+        <a href="./news.html" class="subnav">News</a>
+        <a href="./contact.html" class="subnav">Contact</a>
+    </nav>
+    <nav id="header-nav-2" style="display: none;">
+        <div id="mobile-menu-container" class="container"
+             onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div id="mobile-nav">
+        <h5 id="mobile-nav-top">
+            <a href="./index.html">Home</a>
+        </h5>
+        <h5 class="chosen">
+            <a href="./about_me.html">About Me</a>
+        </h5>
+        <h5>
+            <a href="./publications.html">Research</a>
+        </h5>
+        <h5>
+            <a href="./teaching.html">Teaching</a>
+        </h5>
+        <h5>
+            <a href="./news.html">News</a>
+        </h5>
+        <h5 id="mobile-nav-bottom">
+            <a href="./contact.html">Contact</a>
+        </h5>
+    </div>
+    <div class="banner">
+        <p id="greet-title">Hello World!<br><br>I'm Kaan, a master
+            student at
+            EPFL SysCom.</p>
+        <a href="./photos.html" id="banner-img-link" target="_blank">
+            <p id="banner-img-source">
+                <em>Kaan Okumus, 2019
+                    <sup><span>
+                            <img id="see-photos"
+                                 src="./imgs/menu/arrow.png">
+                        </span></sup>
+                </em>
+            </p>
+        </a>
+    </div>
+
+    <div class="nav-box-container">
+        <div class="nav-box-profil">
+            <div class="nav-box-icon-me-container">
+                <img src="./imgs/menu/kaan.png"
+                     class="nav-box-icon-me">
+                <div class="nav-box-caption">
+                    <h1 class="profil-title">Kaan Okumus</h1>
+                    <h2 class="profil-desc">PhD Candidate in Communication Systems</h2>
+                    <a class="profil-uni" href="https://www.chalmers.se/en/" target="_blank"
+                    >Chalmers University of Technology</a>
+                    <div class="profil-uni-small-captions">
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/location.png"
+                             class="location-icon">
+                            <p>Gothenburg, Sweden</p>
+                        </div>
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/orcid_black.png"
+                             class="location-icon">
+                             <a href="https://orcid.org/my-orcid?orcid=0000-0001-9863-3057" target="_blank">
+                                <p>ORCID</p>
+                             </a>
+                        </div>
+
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/ieee.png"
+                             class="location-icon">
+                             <a href="https://ieeexplore.ieee.org/author/37089659436" target="_blank">
+                                <p>IEEE Xplore</p>
+                             </a>
+                        </div>
+
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/scholar.png"
+                             class="location-icon">
+                             <a href="https://scholar.google.com/citations?user=K9LKq7cAAAAJ&hl=en&oi=ao" target="_blank">
+                                <p>Google Scholar</p>
+                             </a>
+                        </div>
+
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/github-logo.png"
+                             class="location-icon">
+                             <a href="https://github.com/okumuskaan" target="_blank">
+                                <p>GitHub</p>
+                             </a>
+                        </div>
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/linkedin.png"
+                             class="location-icon">
+                             <a href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/" target="_blank">
+                                <p>LinkedIn</p>
+                             </a>
+                        </div>
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/email.png"
+                             class="location-icon">
+                             <a href="mailto:okumus@chalmers.se" target="_blank">
+                                <p>Email</p>
+                             </a>
+                        </div>
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/instagram.png"
+                             class="location-icon">
+                             <a href="https://www.instagram.com/okumus.kaan/" target="_blank">
+                                <p>Instagram</p>
+                             </a>
+                        </div>
+                            
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="nav-box-profil-right">
+                <h4 class="menu-title">
+                    Biography
+                </h4>
+                <p class="menu-bio">
+                    I am a PhD student in the Communication Systems group at Chalmers University of Technology, Department of Electrical Engineering, where I have been a doctoral researcher since 2023. I work under the supervision of Prof. Giuseppe Durisi and Prof. Erik G. Ström. My research interests lie in wireless communications and information theory, with a particular focus on massive random access and unsourced multiple access systems. I am especially interested in scalable and practical algorithms for large-scale wireless systems, including distributed MIMO architectures.
+                </p>
+                <p class="menu-bio">
+                    I received my Master of Science degree in Communication Systems from EPFL in 2023, where I conducted my master's thesis under the supervision of Dr. Matthieu Simeoni at the EPFL Imaging Systems group. My thesis focused on graph signal processing methods for inverse problems. During my time at EPFL, I also contributed to the development of the open-source Python package Pycsou and worked as a student assistant.
+                </p>
+                <p class="menu-bio">
+                    I obtained my Bachelor of Science degree in Electrical and Electronics Engineering from Middle East Technical University (METU) in 2021, with a specialization in signal processing and telecommunications.
+                </p>
+                <p class="menu-bio">
+                    My current research explores the intersection of theory and practice in modern wireless communications systems, including unsourced multiple access, distributed MIMO, federated learning, and multi-target localization. I am motivated by problems where scalability, uncertainty, and real-world constraints play a central role in system design.
+                </p>
+                <div id="download-cv-section">
+                    <p class="menu-bio">
+                        You can download the full CV here:
+                    </p>
+                    <div class="download-cv-container">
+                    <a class="download-cv" href="./downloads/cv.pdf" download target="_blank">
+                        <img src="./imgs/about_me/download.png">
+                        <p>Download CV</p>
+                    </a>
+                </div>
+                </div>
+
+                <h4 class="menu-title">
+                    Education
+                </h4>
+                <p class="menu-bio papers-list">
+                    <div class="edu-container-row">
+                        <div class="edu-container-row-main">
+                            <p class="edu-item-main-text">
+                                <span style="font-weight: 500;">Ph.D. in Electrical Engineering</span> <br> <a href="https://www.chalmers.se/en/" target="_blank">Chalmers University of Technology</a>
+                            </p>
+                            <p class="edu-item-date-text">
+                                Oct. 2023 - <em>Present</em> <br>
+                                <img class="see-more-icon" src="./imgs/icons/arrow-down.png"> <span class="see-more">See more</span> 
+                            </p>
+                        </div>
+                        <div class="edu-container-row-extra">
+                            <p class="edu-item-main-text">
+                                <span class="bold-text">Anticipated Graduation Year: </span> 2028 <br>
+                                <span class="bold-text">Supervisors:</span> Prof. Dr. Erik G. Ström, Prof. Dr. Giuseppe Durisi <br>
+                                <span class="bold-text">Funded by:</span> Swedish Research Council <br>
+                                <span class="bold-text">Lab/Group:</span> Communication Systems <br>
+                                <span class="bold-text">Under the project:</span> Goal-oriented semantics communication <br>
+                                <span class="bold-text">Duties:</span> <a href="#researcher">Research</a>, teaching and learning. <br>
+                                <span class="bold-text">Research topics:</span> Massive random access, unsourced multiple access, multi-target localization, federated learning, and information theory. 
+                            </p>
+                            <p class="edu-item-date-text">
+                                <img class="view-less-icon" src="./imgs/icons/arrow-down copy.png"> <span class="view-less">View less</span>
+                            </p>     
+                        </div>
+                    </div>
+                    <div class="edu-container-row">
+                        <div class="edu-container-row-main">
+                            <p class="edu-item-main-text">
+                                M.Sc. in Communication Systems <br> <a href="https://www.epfl.ch/en/" target="_blank">École Polytechnique Fédérale de Lausanne (EPFL)</a> 
+                            </p>
+                            <p class="edu-item-date-text">
+                                Sep. 2021 - Jul. 2023 <br>
+                                <img class="see-more-icon" src="./imgs/icons/arrow-down.png"> <span class="see-more">See more</span> 
+                            </p>
+                        </div>
+                        <div class="edu-container-row-extra">
+                            <p class="edu-item-main-text">
+                                <span class="bold-text">Thesis:</span> <a href="./publications.html#msc-thesis">Linear inverse problems for manifolds using graph signal processing</a> <br>
+                                <span class="bold-text">Supervisors:</span> Dr. Matthieu Simenoni, Dr. Joan Rué Queralt <br>
+                                <span class="bold-text">Lab/Group:</span> Audiovisuel Communications Laboratory (LCAV) <br>
+                                <span class="bold-text">CGPA: </span> 5.35/6.00 <br>
+                                <span class="bold-text">Specialization: </span> Signals, Images and Interfaces <br>
+                                <span class="bold-text">Swiss Professional Title: </span> Ingénieur en systèmes de communication (ing. sys. com. dipl. EPFL)<br>
+                                <span class="bold-text">Fields covered by the qualification:</span> Information Security (cryptography), Wireless Communication, Internet, Web and Networks, Signals, Images and Audio <br>
+                                <span class="bold-text">Mandatory Internship:</span> <a href="#intern-kandou">Signal Processing Engineering Internship, Kandou Bus SA, EPFL - Innovation Park, from 11 July 2022 to 16 September 2022</a> <br>
+                                <span class="bold-text">Prominent Courses:</span> 
+                            </p>
+                            <ul id="ul-edu-extra">
+                                <li id="li-edu-extra">Mathematical Foundations of Signal Processing, Grade: 6.00/6.00</li>
+                                <li id="li-edu-extra">Modern Digital Communications: A hands-on approach, Grade: 6.00/6.00</li>
+                                <li id="li-edu-extra">Computational Photography, Grade: 5.75/6.00</li>
+                                <li id="li-edu-extra">Computers and Music, Grade: 5.75/6.00</li>
+                                <li id="li-edu-extra">Deep Learning, Grade: 5.75/6.00</li>
+                                <li id="li-edu-extra" style="margin-bottom: 0px;">TCP/IP Networking, Grade: 5.75/6.00</li>
+                            </ul>
+                            <p class="edu-item-main-text" style="margin-top: 0px">
+                                <span class="bold-text">Prominent Projects:</span>
+                            </p>
+                            <ul id="ul-edu-extra">
+                                <li id="li-edu-extra">Optimisation of Statistical Arbitrage in Financial Engineering</li>
+                                <li id="li-edu-extra">Ground-Truth Aware Po-Ga Noise Parameters Estimation of Images</li>
+                                <li id="li-edu-extra">DiffuserCam Project</li>
+                                <li id="li-edu-extra" style="margin-bottom: 0px;">Deep Learning Based Discomfort Glare Detection</li>
+                            </ul>
+                            <p class="edu-item-date-text">
+                                <img class="view-less-icon" src="./imgs/icons/arrow-down copy.png"> <span class="view-less">View less</span>
+                            </p>   
+                        </div>
+                    </div>
+                    <div class="edu-container-row">
+                        <div class="edu-container-row-main">
+                            <p class="edu-item-main-text">
+                                B.Sc. in Electrical and Electronics Engineering <br> <a href="https://www.metu.edu.tr/" target="_blank">Middle East Technical University (METU)</a> 
+                            </p>
+                            <p class="edu-item-date-text">
+                                Aug. 2016 - June 2021 <br>
+                                <img class="see-more-icon" src="./imgs/icons/arrow-down.png"> <span class="see-more">See more</span> 
+                            </p>
+   
+                        </div>
+                        <div class="edu-container-row-extra">
+                            <p class="edu-item-main-text">
+                                <span class="bold-text">CGPA: </span> 3.87/4.00 <br>
+                                <span class="bold-text">Ranked: </span> 6th out of 350 students <br>
+                                <span class="bold-text">Specialization: </span> Telecommunications and Signal Processing <br>
+                                <span class="bold-text">Professional Title: </span> Electrical and Electronics Engineer<br>
+                                <span class="bold-text">Fields covered by the qualification:</span> Wireless communications, computer, control theory, power engineering, electronics, microwaves, electromagnetics, and signal processing. <br>
+                                <span class="bold-text">Bachelor Design Project:</span> <a href="./publications.html#bsc-thesis">SYMON: Symptom Monitor of COVID-19</a> <br>
+                                <span class="bold-text">Mandatory Internships:</span> <a href="#intern-havelsan">HAVELSAN, from 11 July 2022 to 16 September 2022</a> and <a href="#intern-havelsan">ASELSAN, from 11 July 2022 to 16 September 2022</a> <br>
+                                <span class="bold-text">Prominent Courses:</span> 
+                            </p>
+                            <ul id="ul-edu-extra">
+                                <li id="li-edu-extra">Communications I and II</li>
+                                <li id="li-edu-extra">Signals and System I and II</li>
+                                <li id="li-edu-extra">Introduction to Probability and Random Variables</li>
+                                <li id="li-edu-extra">Vector Space Methods in Signal Processing</li>
+                                <li id="li-edu-extra">Real-Time Applications of Digital Signal Processing</li>
+                                <li id="li-edu-extra" style="margin-bottom: 0px;">Digital Signal Processing</li>
+                            </ul>
+                            <p class="edu-item-main-text" style="margin-top: 0px">
+                                <span class="bold-text">Prominent Projects:</span>
+                            </p>
+                            <ul id="ul-edu-extra">
+                                <li id="li-edu-extra">SYMON: Symptom Monitor of COVID-19</li>
+                                <li id="li-edu-extra" style="margin-bottom: 0px;">A Lane Adjuster Analog Electronic Circuit for Smart Car Applications</li>
+                            </ul>
+                            <p class="edu-item-date-text">
+                                <img class="view-less-icon" src="./imgs/icons/arrow-down copy.png"> <span class="view-less">View less</span>
+                            </p>     
+                        </div>
+                    </div>
+                </p>
+                
+                <h4 class="menu-title">
+                    Experience
+                </h4>
+
+                <p class="menu-bio papers-list">
+                    <div class="edu-container-row">
+                        <div class="edu-container-row-main">
+                            <p class="edu-item-main-text" id="researcher">
+                                <span style="font-weight: 500;">PhD Researcher</span> <br> <a href="https://www.chalmers.se/en/" target="_blank">Chalmers University of Technology</a> 
+                            </p>
+                            <p class="edu-item-date-text">
+                                Oct. 2023 - <em>Present</em> <br>
+                                <img class="see-more-icon" src="./imgs/icons/arrow-down.png"> <span class="see-more">See more</span> 
+                            </p>
+                        </div>
+                        <div class="edu-container-row-extra">
+                            <p class="edu-item-main-text">
+                                <span class="bold-text">Supervisors:</span> Prof. Dr. Erik G. Ström, Prof. Dr. Giuseppe Durisi <br>
+                                <span class="bold-text">Funded by:</span> Swedish Research Council <br>
+                                <span class="bold-text">Lab/Group:</span> Communication Systems <br>
+                                <span class="bold-text">Under the project:</span> Goal-oriented semantics communication <br>
+                                <span class="bold-text">Research topics:</span> Massive random access, unsourced multiple access, multi-target localization, federated learning, and information theory. <br>
+                                <a href="./publications.html" class="bold-text">See publications</a>
+                            </p>
+                            <p class="edu-item-date-text">
+                                <img class="view-less-icon" src="./imgs/icons/arrow-down copy.png"> <span class="view-less">View less</span>
+                            </p>     
+                        </div>
+                    </div>
+                    <div class="edu-container-row">
+                        <div class="edu-container-row-main">
+                            <p class="edu-item-main-text" id="intern-kandou">
+                                Signal Processing Engineer Intern <br> <a href="https://www.kandou.ai/" target="_blank">Kandou S.A.</a>
+                            </p>
+                            <p class="edu-item-date-text">
+                                Jul. 2022 - Sep. 2022 <br>
+                                <img class="see-more-icon" src="./imgs/icons/arrow-down.png"> <span class="see-more">See more</span> 
+                            </p>
+                        </div>
+                        <div class="edu-container-row-extra">
+                            <p class="edu-item-main-text">
+                                Charge-pump PLL (CP-PLL) is implemented for wired communication. Differential evolution and
+                                genetic algorithms are analyzed and implemented for the optimization of PLL performance parameters. A graphical user interface is designed to provide a complete application that wraps everything
+                                implemented with a visually appealing interface.
+                            </p>
+                            <p class="edu-item-date-text">
+                                <img class="view-less-icon" src="./imgs/icons/arrow-down copy.png"> <span class="view-less">View less</span>
+                            </p>   
+                        </div>
+                    </div>
+                    <div class="edu-container-row">
+                        <div class="edu-container-row-main">
+                            <p class="edu-item-main-text">
+                                Pyxu Developer <br>  <a href="https://www.epfl.ch/en/" target="_blank">École Polytechnique Fédérale de Lausanne (EPFL)</a> 
+                            </p>
+                            <p class="edu-item-date-text">
+                                Apr. 2022 - Sep. 2022 <br>
+                                <img class="see-more-icon" src="./imgs/icons/arrow-down.png"> <span class="see-more">See more</span> 
+                            </p>
+   
+                        </div>
+                        <div class="edu-container-row-extra">
+                            <p class="edu-item-main-text">
+                                I contributed to the development of Pyxu v2. Pyxu is a Python 3 package for solving linear inverse problems with state-of-art proximal algorithms. The software implements in a highly modular way the main building blocks cost functionals, penalty terms and linear operators of generic penalised convex optimisation problems. <br>
+                                <a href="https://pyxu-org.github.io/" target="_blank" style="font-weight: 500;">See Pyxu</a> 
+                            </p>
+                            <p class="edu-item-date-text">
+                                <img class="view-less-icon" src="./imgs/icons/arrow-down copy.png"> <span class="view-less">View less</span>
+                            </p>     
+                        </div>
+                    </div>
+                    <div class="edu-container-row">
+                        <div class="edu-container-row-main">
+                            <p class="edu-item-main-text">
+                                Intern <br>  <a href="https://havelsan.com/en" target="_blank">HAVELSAN</a>
+                            </p>
+                            <p class="edu-item-date-text">
+                                Aug. 2020 - Sep. 2020 <br>
+                                <img class="see-more-icon" src="./imgs/icons/arrow-down.png"> <span class="see-more">See more</span> 
+                            </p>
+   
+                        </div>
+                        <div class="edu-container-row-extra">
+                            <p class="edu-item-main-text">
+                                I designed and developed a cat breed detection app using object detection and image classification
+                                tools with neural networks and deep learning techniques. I also designed a GUI in Python for my
+                                application.
+                            </p>
+                            <p class="edu-item-date-text">
+                                <img class="view-less-icon" src="./imgs/icons/arrow-down copy.png"> <span class="view-less">View less</span>
+                            </p>     
+                        </div>
+                    </div>
+                    <div class="edu-container-row">
+                        <div class="edu-container-row-main">
+                            <p class="edu-item-main-text">
+                                Intern <br>  <a href="https://www.aselsan.com/en" target="_blank">ASELSAN</a>
+                            </p>
+                            <p class="edu-item-date-text">
+                                Jun. 2020 - Jul. 2020 <br>
+                                <img class="see-more-icon" src="./imgs/icons/arrow-down.png"> <span class="see-more">See more</span> 
+                            </p>
+   
+                        </div>
+                        <div class="edu-container-row-extra">
+                            <p class="edu-item-main-text">
+                                Using MicroZed 7010 that is based on the Zynq-7000 family, I designed Embedded Hardware Systems
+                                using Vivado® Design Suite and developed them using its Software Development Kit (SDK) with the
+                                use of C programming language. Also, I designed Digital IIR and FIR filters using Python with Scipy
+                                module and run it on the operating system on MicroZed that is compiled using Petalinux.
+                            </p>
+                            <p class="edu-item-date-text">
+                                <img class="view-less-icon" src="./imgs/icons/arrow-down copy.png"> <span class="view-less">View less</span>
+                            </p>     
+                        </div>
+                    </div>
+                    
+                </p>
+
+                <h4 class="menu-title">
+                    Languages
+                </h4>
+                <p class="menu-bio">
+                    <div class="languages-container">
+                        <div class="language-box">
+                            <img class="language-img" src="./imgs/about_me/turkey.png">
+                            <p class="language-text">Turkish</p>
+                            <p class="language-level">Native (C2)</p>
+                        </div>
+                        <div class="language-box">
+                            <img class="language-img" src="./imgs/about_me/uk.svg">
+                            <p class="language-text">English</p>
+                            <p class="language-level">Advanced (C1)</p>
+                        </div>
+                        <div class="language-box">
+                            <img class="language-img" src="./imgs/about_me/france.png">
+                            <p class="language-text">French</p>
+                            <p class="language-level">Intermediate (B1)</p>
+                        </div>
+                        <div class="language-box">
+                            <img class="language-img" src="./imgs/about_me/italy.png">
+                            <p class="language-text">Italian</p>
+                            <p class="language-level">Elementary (A2)</p>
+                        </div>
+                        <div class="language-box">
+                            <img class="language-img" src="./imgs/about_me/sweden.png">
+                            <p class="language-text">Swedish</p>
+                            <p class="language-level">Elementary (A2)</p>
+                        </div>                        
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Copyright &copy; 2026 Kaan Okumus. </p>
+
+    <div class="footer-logos-container">
+        <a class="footer-logo-container"
+           href="https://scholar.google.com/citations?user=K9LKq7cAAAAJ&hl=en&oi=sra"
+           target="_blank">
+            <img class="scholar"
+                 src="./imgs/footer/scholar-logo.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="mail"
+                 src="./imgs/footer/mail-logo.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.instagram.com/okumus.kaan/" target="_blank">
+            <img class="insta"
+                 src="./imgs/footer/instagram-logo.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="linkedin"
+                 src="./imgs/footer/linkedin-logo.png">
+        </a>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

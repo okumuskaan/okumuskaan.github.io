@@ -1,0 +1,422 @@
+html {
+    //font-family: "Montserrat", sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+main h1 {
+    color: rgb(33, 33, 33);
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.nav-box-icon-me-container {
+    height: 350px;
+    //width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 40px;
+    //border-right: 1px solid black;
+    //grid-column: 1 / 2;
+}
+
+.nav-box-icon-me {
+    height: 250px;
+    border-radius: 50px;
+}
+
+.profil-title {
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+
+.profil-desc {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.7);
+    margin: 10px;
+}
+
+.profil-uni {
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+}
+.profil-uni:hover {
+    color: black;
+    text-decoration: underline;
+}
+.edu-container {
+    padding: 25px 10%;
+    //padding: 25px 0px;
+    background-color: whitesmoke;
+}
+
+.edu-container a {
+    color: black;
+    //rgb(33,33,33);
+    text-decoration: none;
+}
+
+.edu-container-row {
+    display: grid;
+    grid-template-columns: 2fr 60% 1fr;
+    margin: 10px 0px;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    //border-bottom: 1px solid black;
+    border-radius: 5px;
+    //background-color: white;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    transition: box-shadow 0.2s linear;
+}
+
+.award-row {
+    display: grid;
+    grid-template-columns: 1fr 60% 1fr;
+    margin: 10px 0px;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: white;
+    transition: box-shadow 0.2s linear;
+}
+
+.publication-row {
+    display: grid;
+    grid-template-columns: 1fr 60% 1fr;
+    margin: 10px 0px;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    transition: box-shadow 0.2s linear;
+}
+
+.right-label {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    #flex-direction: flex-end;
+    justify-content: center;
+    //align-items: center;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+.hyperlink-container {
+    height: 33px;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hyperlink-container2 {
+    height: 33px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hyperlink-container3 {
+    height: 33px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.github-hyperlink {
+    height: 30px;
+    margin: auto 0;
+    transition: transform 0.2s ease-in;
+}
+
+.github-hyperlink:hover {
+    height: 32px;
+    cursor: pointer;
+}
+.ieee-hyperlink {
+    height: 25px;
+    margin: auto 0;
+    transition: transform 0.2s ease-in;
+}
+
+.ieee-hyperlink:hover {
+    height: 27px;
+    cursor: pointer;
+}
+
+.epfl-hyperlink {
+    height: 19px;
+    margin: auto 0;
+    transition: transform 0.2s ease-in;
+}
+
+.epfl-hyperlink:hover {
+    height: 21px;
+    cursor: pointer;
+}
+
+.left-label {
+    font-size: 14px;
+    padding: 5px 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.master {
+    font-weight: 500;
+    margin-right: 5px;
+    padding: 0px 5%;
+}
+
+.info-label {
+    font-size: 14px;
+    padding-top: 5px;
+    color: gray;
+    background-color: rgb(67, 130, 64);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    opacity: 0.8;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.download-cv-container {
+    padding: 30px 0px;
+    background-color: whitesmoke;
+}
+.download-cv {
+    background-color: orange;
+    color: black;
+    width: 160px;
+    margin: 0px auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+.download-sor {
+    background-color: orange;
+    color: black;
+    width: 300px;
+    margin: 0px auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+.download-trscpt {
+    background-color: orange;
+    color: black;
+    width: 230px;
+    margin: 0px auto;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+
+.download-cv img, .download-sor img, .download-trscpt img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.info-label:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.download-cv:hover, .download-sor:hover, .download-trscpt:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.arrow-right {
+    display: flex;
+    flex-direction: flex-end;
+    height: 30px;
+    margin: auto 0;
+    opacity: 0;
+    transform: rotate(90deg);
+    transition: transform 0.2s ease-in;
+}
+
+.arrow-right:hover {
+    //opacity: 1;
+}
+
+.info-box {
+    display: none;
+    //height: 0%;
+    position:
+    background-color: white;
+    color: black;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    //height: 400px;
+    padding: 25px;
+    margin: 0px 20px;
+    //border: 1px solid black;
+    //border-top: 0px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,1);
+    z-index: 10;
+
+}
+
+.subheading {
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.subheading2 {
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.subheading2-answer {
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.edu-description {
+    width: 80%;
+    margin: 0px auto;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.hyperlink {
+    text-decoration: none;
+    color: black;
+}
+.hyperlink:hover {
+    text-decoration: underline;
+}
+
+
+.company-logo {
+    height: 80px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+#kandou-button {
+    margin-top: 50px;
+    height: 30px;
+}
+
+#kandou-button p {
+    font-size: 14px;
+}
+
+.language-container {
+    background-color: whitesmoke;
+    padding: 25px 10%;
+}
+
+.language-boxes-container {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    text-align: center;
+}
+.language-box {
+    margin: 20px auto;
+    padding: 40px 40px 20px 40px;
+    width: 100px;
+    background-color: white;
+    //1px solid black;
+    border-radius: 10px;
+
+}
+.language-img {
+    height: 80px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .edu-container {
+        padding: 25px 0px;
+    }
+    .edu-container-row {
+        border-radius: 0px;
+    }
+    .arrow-right {
+        height: 30px;
+    }
+    .edu-container h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .skills-container h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .language-container h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .skills-container tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills-container tr td {
+        width: 70%;
+    }
+
+    .skills-container table {
+        min-width: 0px;
+    }
+
+    .edu-container .download-trscpt, .edu-container .download-sor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .edu-container .download-trscpt {
+        width: 180px;
+    }
+    .edu-container .download-sor {
+        width: 180px;
+    }
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaan Okumus</title>
+
+    <link href="./menu.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script src="./menu.js" async></script>
+    <script src="./arrow.js" async></script>
+</head>
+<body>
+
+<header>
+    <div id="logo-title-container">
+        <h3 id="logo-title">Kaan Okumus</h3>
+    </div>
+
+    <nav id="header-nav">
+        <a href="./index.html" class="subnav">Home</a>
+        <a href="./about_me.html" class="subnav">About Me</a>
+        <a href="./publications.html" class="subnav">Research</a>
+        <h5 class="chosen subnav">Teaching</h5>
+        <a href="./news.html" class="subnav">News</a>
+        <a href="./contact.html" class="subnav">Contact</a>
+
+    </nav>
+    <nav id="header-nav-2" style="display: none;">
+        <div id="mobile-menu-container" class="container"
+             onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div id="mobile-nav">
+        <h5 id="mobile-nav-top">
+            <a href="./index.html">Home</a>
+        </h5>
+        <h5>
+            <a href="./about_me.html">About Me</a>
+        </h5>
+        <h5>
+            <a href="./publications.html">Research</a>
+        </h5>
+        <h5 class="chosen"><a href="./teaching.html">Teaching</a></h5>
+        <h5>
+            <a href="./news.html">News</a>
+        </h5>
+        <h5 id="mobile-nav-bottom">
+            <a href="./contact.html">Contact</a>
+        </h5>
+    </div>
+    <div class="banner">
+        <p id="greet-title">Hello World!<br><br>I'm Kaan, a master
+            student at
+            EPFL SysCom.</p>
+        <a href="./photos.html" id="banner-img-link" target="_blank">
+            <p id="banner-img-source">
+                <em>Kaan Okumus, 2019
+                    <sup><span>
+                            <img id="see-photos"
+                                 src="./imgs/menu/arrow.png">
+                        </span></sup>
+                </em>
+            </p>
+        </a>
+    </div>
+
+    <div class="nav-box-container">
+        <div class="nav-box-profil">
+            <div class="nav-box-icon-me-container">
+                <img src="./imgs/menu/kaan.png"
+                     class="nav-box-icon-me">
+                <div class="nav-box-caption">
+                    <h1 class="profil-title">Kaan Okumus</h1>
+                    <h2 class="profil-desc">PhD Candidate in Communication Systems</h2>
+                    <a class="profil-uni" href="https://www.chalmers.se/en/" target="_blank"
+                    >Chalmers University of Technology</a>
+                    <div class="profil-uni-small-captions">
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/location.png"
+                             class="location-icon">
+                            <p>Gothenburg, Sweden</p>
+                        </div>
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/orcid_black.png"
+                             class="location-icon">
+                             <a href="https://orcid.org/my-orcid?orcid=0000-0001-9863-3057" target="_blank">
+                                <p>ORCID</p>
+                             </a>
+                        </div>
+
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/ieee.png"
+                             class="location-icon">
+                             <a href="https://ieeexplore.ieee.org/author/37089659436" target="_blank">
+                                <p>IEEE Xplore</p>
+                             </a>
+                        </div>
+
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/scholar.png"
+                             class="location-icon">
+                             <a href="https://scholar.google.com/citations?user=K9LKq7cAAAAJ&hl=en&oi=ao" target="_blank">
+                                <p>Google Scholar</p>
+                             </a>
+                        </div>
+
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/github-logo.png"
+                             class="location-icon">
+                             <a href="https://github.com/okumuskaan" target="_blank">
+                                <p>GitHub</p>
+                             </a>
+                        </div>
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/linkedin.png"
+                             class="location-icon">
+                             <a href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/" target="_blank">
+                                <p>LinkedIn</p>
+                             </a>
+                        </div>
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/email.png"
+                             class="location-icon">
+                             <a href="mailto:okumus@chalmers.se" target="_blank">
+                                <p>Email</p>
+                             </a>
+                        </div>
+                        <div class="profil-uni-small-caption-item">
+                            <img src="./imgs/icons/instagram.png"
+                             class="location-icon">
+                             <a href="https://www.instagram.com/okumus.kaan/" target="_blank">
+                                <p>Instagram</p>
+                             </a>
+                        </div>
+                            
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="nav-box-profil-right">
+                <h4 class="menu-title">
+                    Teaching Assistant at Chalmers University of Technology
+                </h4>                
+                <p class="menu-bio papers-list">
+                    <ul>
+                        <li>
+                            ESS013 Probability and statistical signal processing (bachelor's course, 7.5 credits): Spring 2024, Spring 2025.
+                        </li>
+                    </ul>
+                </p>
+                <h4 class="menu-title">
+                    Teaching Assistant at École Polytechnic Fédérale de Lausanne (EPFL)
+                </h4>                
+                <p class="menu-bio papers-list">
+                    <ul>
+                        <li>
+                            COM-405 Wireless networks (master's course, 8 credits): Spring 2023.
+                        </li>
+                    </ul>
+                </p>
+                <h4 class="menu-title">
+                    Master's thesis: Advisor
+                </h4>                
+                <p class="menu-bio papers-list">
+                    <ul>
+                        <li>
+                            Andreas Führ, "Sparse sampling for massive MIMO downlink CSI reference signals," Chalmers University of Technology, Ericsson AB, Sweden, Feb. 2025-Jul. 2025.
+                        </li>
+                    </ul>
+                </p>
+                <h4 class="menu-title">
+                    Bachelor's thesis: Supervisor
+                </h4>                
+                <p class="menu-bio papers-list">
+                    <ul>
+                        <li>
+                            Erik Jakobsson, Carl Johansson Tunell, Max Walkendorff, Karl Wållgren, "SmartHear: Adaptive and learning-based noise-cancelling headphones", Chalmers University of Technology, Sweden, Started in Jan. 2025.
+                        </li>
+                        <li>
+                            Sajeel Ahmad, Niclas Christopher Collard, Martin Martinsson, Gabriel Mörck, Sammy Rahimi, "Software-defined radio testbed for 6G research", Chalmers University of Technology, Sweden, Started in Jan. 2025.
+                        </li>
+                        <li>
+                            Lukas Dahlberg, Jamal El-Haj, Elsa Erkfeldt, Rami Ghalib, Ashkan Izadi, Casper Ranström, "SmartSense: AI-driven low-Cost wearable for real-time symptom detection and risk estimation", Chalmers University of Technology, Sweden, Jan. 2025-Jun. 2025.
+                        </li>
+                        <li>
+                            Vilgot Bengtsson, Melker Wibeck, Joel Wolf-Watz, "Software-defined radio testbend for 6G research", Chalmers University of Technology, Sweden, Jan. 2025-Jun. 2025.
+                        </li>
+                    </ul>
+                </p>
+                
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+</main>
+
+<footer>
+    <p>Copyright &copy; 2026 Kaan Okumus. </p>
+
+    <div class="footer-logos-container">
+        <a class="footer-logo-container"
+           href="https://scholar.google.com/citations?user=K9LKq7cAAAAJ&hl=en&oi=sra"
+           target="_blank">
+            <img class="scholar"
+                 src="./imgs/footer/scholar-logo.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="mail"
+                 src="./imgs/footer/mail-logo.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.instagram.com/okumus.kaan/" target="_blank">
+            <img class="insta"
+                 src="./imgs/footer/instagram-logo.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="linkedin"
+                 src="./imgs/footer/linkedin-logo.png">
+        </a>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
