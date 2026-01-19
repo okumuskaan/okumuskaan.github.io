@@ -1,0 +1,10 @@
+@inproceedings{ngo2024tuma,
+    author={Ngo, Khac-Hoang and Krishnan, Deekshith Pathayappilly and Okumus, Kaan and Durisi, Giuseppe and Ström, Erik G.},
+    title={Type-Based Unsourced Multiple Access}, 
+    booktitle = {Proc. IEEE Int. Workshop Signal Process. Advances Wireless Commun. (SPAWC)},
+    year={2024},
+    month={Sept.},
+    address={Lucca, Italy},
+    pages={911-915},
+    doi={10.1109/SPAWC60668.2024.10694658}
+}

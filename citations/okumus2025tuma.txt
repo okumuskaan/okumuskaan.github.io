@@ -1,0 +1,9 @@
+@inproceedings{okumus2025tuma,
+    author={Okumus, Kaan and Ngo, Khac-Hoang and Durisi, Giuseppe and Ström, Erik G.},
+    title={Type-Based Unsourced Multiple Access Over Fading Channels with Cell-Free Massive MIMO}, 
+    booktitle = {Proceedings of the IEEE International Symposium on Information Theory (ISIT)},
+    year={2025},
+    month={June},
+    address={Ann Arbor, MI, USA},
+    doi={10.1109/ISIT63088.2025.11195493}
+}

@@ -8,8 +8,8 @@
     <link href="./header.css" rel="stylesheet" type="text/css">
     <link href="./footer.css" rel="stylesheet" type="text/css">
     <link href="./base-template.css" rel="stylesheet" type="text/css">
-    <link href="./news.css" rel="stylesheet" type="text/css">
-    
+    <link href="./research.css" rel="stylesheet" type="text/css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -21,8 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <script src="./menu_responsive2.js" async></script>
-    <script src="./newsData.js"></script>
-    <script src="./news-click.js"></script>
 </head>
 <body>
 
@@ -32,14 +30,14 @@
     </div>
 
     <nav id="header-nav">
-        <h5 class="chosen subnav">Home</h5>
+        <a href="./index.html" class="subnav">Home</a>
         <a href="./about_me.html" class="subnav">About Me</a>
-        <a href="./research.html" class="subnav">Research</a>
+        <h5 class="chosen subnav">Research</h5>
         <a href="./teaching.html" class="subnav">Teaching</a>
         <a href="./news.html" class="subnav">News</a>
         <a href="./contact.html" class="subnav">Contact</a>
-    </nav>
 
+    </nav>
     <nav id="header-nav-2" style="display: none;">
         <div id="mobile-menu-container" class="container"
              onclick="myFunction(this)">
@@ -52,14 +50,25 @@
 
 <main>
     <div id="mobile-nav">
-        <h5 class="chosen" id="mobile-nav-top"><a href="./index.html">Home</a></h5>
-        <h5><a href="./about_me.html">About Me</a></h5>
-        <h5><a href="./research.html">Research</a></h5>
-        <h5><a href="./teaching.html">Teaching</a></h5>
-        <h5><a href="./news.html">News</a></h5>
-        <h5 id="mobile-nav-bottom"><a href="./contact.html">Contact</a></h5>
+        <h5 id="mobile-nav-top">
+            <a href="./index.html">Home</a>
+        </h5>
+        <h5>
+            <a href="./about_me.html">About Me</a>
+        </h5>
+        <h5 class="chosen">
+            <a href="./research.html">Research</a>
+        </h5>
+        <h5>
+            <a href="./teaching.html">Teaching</a>
+        </h5>
+        <h5>
+            <a href="./news.html">News</a>
+        </h5>
+        <h5 id="mobile-nav-bottom">
+            <a href="./contact.html">Contact</a>
+        </h5>
     </div>
-
     <div class="banner">
         <p id="greet-title">Hello World!<br><br>I'm Kaan, a master
             student at
@@ -78,7 +87,6 @@
 
     <div class="nav-box-container">
         <div class="nav-box-profil">
-
             <div class="nav-box-icon-me-container">
                 <img src="./imgs/menu/kaan.png"
                      class="nav-box-icon-me">
@@ -145,94 +153,69 @@
                                 <p>Instagram</p>
                              </a>
                         </div>
+                            
+                        
                     </div>
                 </div>
             </div>
-
             <div class="nav-box-profil-right">
-                <p class="menu-bio">
-                    I am a PhD student in <a class="intext-link" href="https://www.chalmers.se/en/departments/e2/research/communications-antennas-and-optical-networks/communication-systems/" target="_blank">Communication Systems research group</a> at <a href="https://www.chalmers.se/en/" target="_blank">Chalmers University of Technology</a>, Department of Electrical Engineering, supervised by <a href="https://gdurisi.github.io/" target="_blank">Prof. Dr. Giuseppe Durisi</a> and <a href="https://www.chalmers.se/en/persons/estrom/" target="_blank">Prof. Dr. Erik G. Ström</a>. I received my MSc in <a target="_blank" href="https://www.epfl.ch/education/bachelor/programs/communication-systems/">Communication Systems from EPFL</a> and my BSc in <a href="https://eee.metu.edu.tr/" target="_blank">Electrical and Electronics Engineering from METU</a>, and I have gained industrial internship experience in both Switzerland and Turkey.
-                </p>
-                <p class="menu-bio">
-                    My research focuses on wireless communications and information theory, with particular interest in massive random access and unsourced multiple access systems, and their applications to distributed MIMO, federated learning, and multi-target localization.
+                <h4 class="menu-title">Research Interests</h4>
+                    <p class="menu-bio">
+                        My research focuses on information theory, wireless communications, and signal processing. I am particularly interested in unsourced multiple access, massive MIMO systems, and machine learning applications in communication networks. My goal is to develop efficient and practical solutions for future wireless technologies.
+                    </p>
+                <h4 class="menu-title">
+                    Journal Papers
+                </h4>                
+                <p class="menu-bio papers-list">
+                    <ol>
+                        <li>
+                            N. Bähler, M. E. Helou, É. Objois, <span class="me-name">Kaan Okumus</span>, and S. Süsstrunk, "Pogain: Poisson-gaussian image noise modeling from paired samples," in IEEE Signal Proc. Lett., Vol. 29, pp. 2602-2606, Dec. 2022.
+                            <span class="icon-link">[<a href="https://ieeexplore.ieee.org/abstract/document/9976220" target="_blank"><img src="./imgs/icons/pdf.png" class="pdf-icon"></a>],</span>
+                            <span class="icon-link">[<a href="https://github.com/IVRL/PoGaIN" target="_blank"><img src="./imgs/icons/github-logo.png" class="pdf-icon"></a>],</span> 
+                            <span class="icon-link">[<a href="./citations/bahler2022pogain.txt"><img src="./imgs/icons/cite.png" class="pdf-icon"></a>]</span>
+                        </li>
+                    </ol>
                 </p>
                 <h4 class="menu-title">
-                    <a href="./news.html" id="news-link">News</a>
-                </h4>
-                <div class="news-container">
-                    <div class="news-box" data-id="0">
-                        <img class="news-img"
-                             src="./imgs/news/fl_setup.jpeg">
-                        <p class="news-title">Paper Accepted to IEEE ICC 2026</p>
-                        <p class="news-date">January 19, 2026</p>
-                        <p class="news-desc">
-                            Our paper <em>Type-Based Unsourced Federated Learning With Client Self-Selection</em> is accepted for presentation at IEEE ICC 2026 to be held in Glasgow, Scotland.
-                        </p>
-                    </div>
-                    <div class="news-box" data-id="1">
-                        <img class="news-img"
-                             src="./imgs/news/ISIT25_photo.jpeg">
-                        <p class="news-title">ISIT'25 Presentation</p>
-                        <p class="news-date">June 26, 2025</p>
-                        <p class="news-desc">
-                            Presented our paper <em>Type-Based Unsourced Multiple Access over Fading Channels with Cell-Free Massive MIMO</em> at IEEE ISIT 2025 in Ann Arbor, Michigan, USA.
-                        </p>
-                    </div>
-                    <div class="news-box" data-id="2">
-                        <img class="news-img"
-                             src="./imgs/news/tuma_cf_mimo_block_diagram.png">
-                        <p class="news-title">2 Papers Accepted to IEEE ISIT 2025</p>
-                        <p class="news-date">April 11, 2025</p>
-                        <p class="news-desc">
-                            Our papers about type-based multiple access (TUMA) are accepted for presentation at IEEE ISIT 2025 to be held in Ann Arbor, Michigan, USA.
-                        </p>
-                    </div>
-                    <div class="news-box" data-id="3">
-                        <img class="news-img"
-                             src="./imgs/news/swe-ctw24.JPG">
-                        <p class="news-title">Swe-CTW'24 Poster Presentation</p>
-                        <p class="news-date">October 17, 2024</p>
-                        <p class="news-desc">
-                            Presented our paper <em>Type-Based Unsourced Multiple Access</em> at Swe-CTW 2024 in Gothenburg, Sweden.
-                        </p>
-                    </div>
-                    <div class="news-box" data-id="4">
-                        <img class="news-img"
-                             src="./imgs/news/spawc-24.JPG">
-                        <p class="news-title">SPAWC'24 Poster Presentation</p>
-                        <p class="news-date">September 14, 2024</p>
-                        <p class="news-desc">
-                            Presented our paper <em>Type-Based Unsourced Multiple Access</em> at IEEE SPAWC 2024 in Lucca, Italy.
-                        </p>
-                    </div>
-                    <div class="news-box" data-id="5">
-                        <img class="news-img"
-                             src="./imgs/news/epfl-grad-photo.jpg">
-                        <p class="news-title">MSc Graduation Ceremony at EPFL</p>
-                        <p class="news-date">October 7, 2023</p>
-                        <p class="news-desc">
-                            Successfully completed my Master's degree in Communication Systems at EPFL with the Magistrale ceremony. 
-                        </p>
-                    </div>
-                    <div class="news-box" data-id="6">
-                        <img class="news-img"
-                             src="./imgs/news/chalmers-photo.png">
-                        <p class="news-title">Started PhD at Chalmers</p>
-                        <p class="news-date">October 3, 2023</p>
-                        <p class="news-desc">
-                            Started my PhD studies at Chalmers University of Technology in the Communication Systems research group, under the supervision of Prof. Dr. Giuseppe Durisi and Prof. Dr. Erik G. Ström. 
-                        </p>
-                    </div>
-                    <div class="news-box" data-id="7">
-                        <img class="news-img"
-                             src="./imgs/news/epfl-photo-2.jpg">
-                        <p class="news-title">Master Thesis Defense</p>
-                        <p class="news-date">June 23, 2023</p>
-                        <p class="news-desc">
-                            Successfully defended my Master's thesis titled <em></em> at EPFL, receiving positive feedback from the committee.
-                        </p>
-                    </div>
-                </div>
+                    Conference Papers
+                </h4>                
+                <p class="menu-bio papers-list">
+                    <ol>
+                        <li>
+                            <span class="me-name">Kaan Okumus</span>, K.-H. Ngo, G. Durisi, and E. G. Ström, “Type-based unsourced multiple access over fading channels with cell-free massive MIMO,” in Proc. IEEE Int. Symp. Inf. Theory (ISIT), Ann Arbor, MI, USA, June 2025. 
+                            <span class="icon-link">[<a href="https://ieeexplore.ieee.org/document/11195493" target="_blank"><img src="./imgs/icons/pdf.png" class="pdf-icon"></a>],</span>
+                            <span class="icon-link">[<a href="https://github.com/okumuskaan/tuma_fading_cf" target="_blank"><img src="./imgs/icons/github-logo.png" class="pdf-icon"></a>],</span>
+                            <span class="icon-link">[<a href="./citations/okumus2025tuma.txt"><img src="./imgs/icons/cite.png" class="pdf-icon"></a>]</span>
+                        </li>
+                        <li>
+                            D. P. Krishnan, <span class="me-name">Kaan Okumus</span>, K.-H. Ngo, and G. Durisi, “An achievability bound for type-based unsourced multiple access,” in Proc. IEEE Int. Symp. Inf. Theory (ISIT), Ann Arbor, MI, USA, June 2025.
+                            <span class="icon-link">[<a href="https://ieeexplore.ieee.org/document/11195434" target="_blank"><img src="./imgs/icons/pdf.png" class="pdf-icon"></a>],</span>
+                            <span class="icon-link">[<a href="./citations/krishnan2025tuma.txt"><img src="./imgs/icons/cite.png" class="pdf-icon"></a>]</span>
+                        </li>
+                        <li>
+                            K.-H. Ngo, D. P. Krishnan, <span class="me-name">Kaan Okumus</span>, G. Durisi, and E. G. Ström, “Type-based unsourced multiple access,” in Proc. IEEE Int. Workshop Signal Process. Advances Wireless Commun. (SPAWC), Lucca, Italy, Sept. 2024. 
+                            <span class="icon-link">[<a href="https://ieeexplore.ieee.org/abstract/document/10694658" target="_blank"><img src="./imgs/icons/pdf.png" class="pdf-icon"></a>],</span>
+                            <span class="icon-link">[<a href="https://github.com/khachoang1412/TUMA" target="_blank"><img src="./imgs/icons/github-logo.png" class="pdf-icon"></a>],</span>
+                            <span class="icon-link">[<a href="./citations/krishnan2025tuma.txt"><img src="./imgs/icons/cite.png" class="pdf-icon"></a>]</span>
+                        </li>
+                    </ol>
+                </p>
+
+                <h4 class="menu-title">
+                    Theses
+                </h4>                
+                <p class="menu-bio papers-list">
+                    <ul>
+                        <li id="msc-thesis">
+                            [MSc] <span class="me-name">Kaan Okumus</span>, "Linear inverse problems for manifolds using graph signal processing," École Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland, July 2023. 
+                            <span class="icon-link">[<a href="./docs/msc-thesis.pdf" download target="_blank"><img src="./imgs/icons/pdf.png" class="pdf-icon"></a>]</span>       
+                        </li>
+                        <li id="bsc-thesis">
+                            [BSc] <span class="me-name">Kaan Okumus</span>, O. Oral, S. Mert, U. Sedef, and M. Marchenkova "SYMON: Symptom Monitor of COVID-19," Middle East Technical University (METU), Ankara, Türkiye, June 2021. 
+                            <span class="icon-link">[<a href="./docs/bsc-report.pdf" download target="_blank"><img src="./imgs/icons/pdf.png" class="pdf-icon"></a>]</span>
+                        </li>
+                    </ul>
+                </p>
 
             </div>
         </div>

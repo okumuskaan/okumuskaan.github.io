@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Contact - Kaan Okumus</title>
 
-    <link href="./menu.css" rel="stylesheet" type="text/css">
+    <link href="./header.css" rel="stylesheet" type="text/css">
+    <link href="./footer.css" rel="stylesheet" type="text/css">
+    <link href="./base-template.css" rel="stylesheet" type="text/css">
     <link href="./contact.css" rel="stylesheet" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,24 +30,25 @@
         <h3 id="logo-title">Kaan Okumus</h3>
     </div>
 
-  <nav id="header-nav">
-    <a href="./index.html" class="subnav">Home</a>
-    <a href="./about_me.html" class="subnav">About Me</a>
-    <a href="./publications.html" class="subnav">Publications</a>
-    <a href="./teaching.html" class="subnav">Teaching</a>
-    <a href="./news.html" class="subnav">News</a>
-    <h5 class="chosen subnav">Contact</h5>
-  </nav>
-  <nav id="header-nav-2" style="display: none;">
-    <div id="mobile-menu-container" class="container"
-         onclick="myFunction(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-  </nav>
+    <nav id="header-nav">
+        <a href="./index.html" class="subnav">Home</a>
+        <a href="./about_me.html" class="subnav">About Me</a>
+        <a href="./research.html" class="subnav">Research</a>
+        <a href="./teaching.html" class="subnav">Teaching</a>
+        <a href="./news.html" class="subnav">News</a>
+        <h5 class="chosen subnav">Contact</h5>
+    </nav>
 
+    <nav id="header-nav-2" style="display: none;">
+        <div id="mobile-menu-container" class="container"
+             onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
 </header>
+
 
 <main>
     <div id="mobile-nav">
@@ -92,42 +95,17 @@
   <div class="mailform-container">
 
     <div class="mail-container">
-      <h2>Sending a Message/Mail/E-Mail:</h2>
+      <h2>Sending a Message/Mail/Email:</h2>
       <p><span style="margin-right:50px;">Work Email:</span> okumus[at]chalmers.se</p>
       <p><span style="margin-right:24px;">Personal Email:</span> okukaan[at]gmail.com</p>
       <p><span style="margin-right:67px;">Location:</span> Gothenburg,
         Sweden</p>
       <a href="https://maps.chalmers.se/#person:chalmers:okumus" target="_blank" id="office-loc-link">Click here for the exact location of my office!</a>
-
-        <!--
-      <div class="iconlink-container">
-        <a class="iconlink-logo-container"
-           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
-           target="_blank">
-          <img class="mail"
-               src="./imgs/footer/mail-logo.png">
-        </a>
-        <a class="iconlink-logo-container"
-           href="https://www.instagram.com/okumus.kaan/" target="_blank">
-          <img class="insta"
-               src="./imgs/footer/instagram-logo.png">
-        </a>
-        <a class="iconlink-logo-container"
-           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
-           target="_blank">
-          <img class="linkedin"
-               src="./imgs/footer/linkedin-logo.png">
-        </a>
-      </div>
-      -->
-
       <p>
             <div class="office-loc-container">
       <iframe class="office-loc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1766.3620814372916!2d11.979432728688423!3d57.68785696861222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff30b01337d59%3A0x1180b1d57c06ca10!2sEDIT%20Building!5e0!3m2!1sen!2sse!4v1767878402616!5m2!1sen!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       </p>
-
-      
 
     </div>
 
@@ -138,7 +116,7 @@
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
           <div style="display: block;">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name*">
+            <input type="text" id="fname" name="firstname" placeholder="Your first name*">
           </div>
           <div style="display: block;">
             <label for="lname">Last Name</label>
@@ -425,7 +403,7 @@
 
 
         <label for="subject">Message</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
         <input type="submit" value="Submit">
 
@@ -439,31 +417,32 @@
 <footer>
     <p>Copyright &copy; 2026 Kaan Okumus. </p>
 
-  <div class="footer-logos-container">
-    <a class="footer-logo-container"
-       href="https://scholar.google.com/citations?user=K9LKq7cAAAAJ&hl=en&oi=sra"
-       target="_blank">
-      <img class="scholar"
-           src="./imgs/footer/scholar-logo.png">
-    </a>
-    <a class="footer-logo-container"
-       href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
-       target="_blank">
-      <img class="mail"
-           src="./imgs/footer/mail-logo.png">
-    </a>
-    <a class="footer-logo-container"
-       href="https://www.instagram.com/okumus.kaan/" target="_blank">
-      <img class="insta"
-           src="./imgs/footer/instagram-logo.png">
-    </a>
-    <a class="footer-logo-container"
-       href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
-       target="_blank">
-      <img class="linkedin"
-           src="./imgs/footer/linkedin-logo.png">
-    </a>
-  </div>
+    <div class="footer-logos-container">
+        <a class="footer-logo-container"
+           href="https://scholar.google.com/citations?user=K9LKq7cAAAAJ&hl=en&oi=sra"
+           target="_blank">
+            <img class="scholar"
+                 src="./imgs/footer/scholar-logo.png">
+        </a>
+        <a class="footer-logo-container"
+           href="mailto:okumus@chalmers.se"
+           target="_blank">
+            <img class="mail"
+                 src="./imgs/footer/mail-logo.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.instagram.com/okumus.kaan/" target="_blank">
+            <img class="insta"
+                 src="./imgs/footer/instagram-logo.png">
+        </a>
+        <a class="footer-logo-container"
+           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           target="_blank">
+            <img class="linkedin"
+                 src="./imgs/footer/linkedin-logo.png">
+        </a>
+
+    </div>
 
 </footer>
 

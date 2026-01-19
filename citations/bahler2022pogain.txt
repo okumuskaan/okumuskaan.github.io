@@ -1,0 +1,10 @@
+@article{bahler2022pogain,
+    author={Bähler, Nicolas and Helou, Majed El and Objois, Étienne and Okumuş, Kaan and Süsstrunk, Sabine},
+    title={{PoGaIN}: Poisson-Gaussian Image Noise Modeling From Paired Samples}, 
+    journal={IEEE Signal Proc. Lett.}, 
+    year={2022},
+    month={Dec.},
+    volume={29},
+    pages={2602-2606},
+    doi={10.1109/LSP.2022.3227522}
+}

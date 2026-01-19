@@ -36,9 +36,6 @@ input[type=submit]:hover {
     min-width: 400px;
     margin: 20px auto;
     border-radius: 5px;
-    background-color: #white;
-    padding: 20px;
-    //text-align: center;
 }
 
 .mailform-container {
@@ -46,7 +43,28 @@ input[type=submit]:hover {
     justify-content: space-around;
 }
 
-@media screen and (max-width: 1000px){
+.iconlink-container {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 105px;
+    gap: 20px;
+}
+
+#office-loc-link {
+    color: #0000EE;
+    text-decoration: none;
+}
+#office-loc-link:hover {
+    text-decoration: underline;
+}
+.office-loc-container {
+    margin: 0px auto;
+}
+
+
+
+@media screen and (max-width: 1200px){
     .mailform-container {
         display: block;
     }
@@ -62,11 +80,3 @@ input[type=submit]:hover {
 
 
 
-.iconlink-container {
-    display: flex;
-    //justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 105px;
-    gap: 20px;
-}

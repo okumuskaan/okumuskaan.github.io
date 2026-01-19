@@ -1,0 +1,52 @@
+:root {
+  --list-indent: 24px;   /* left indent for list bullets/numbers */
+  --list-gap: 10px;      /* vertical gap between list items */
+  --list-line-height: 1.6;
+}
+
+.nav-box-profil-right ol,
+.nav-box-profil-right ul,
+.papers-list {
+  text-align: left;
+  list-style-position: outside; 
+  padding-left: 20px;           
+  margin: 0 0 0 0;
+}
+
+.nav-box-profil-right li,
+.papers-list li {
+  margin: 0 0 0.6rem 0;  /* vertical spacing between items */
+  line-height: 1.5;
+  text-align: left;      /* ensure each item itself is left aligned */
+}
+
+ol li, ul li {
+    font-weight: 300;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.5rem;
+    text-align: left;
+}
+ol, ul {
+    padding: 10px;
+    padding-top: 0px;
+    padding-left: 0px;
+    border-radius: 5px;
+    max-width: 700px;
+}
+
+.me-name {
+    font-weight: 500;
+}
+
+.pdf-icon {
+    height: 14px;
+    margin: 0px;
+    padding-top: 2px;
+}
+
+.icon-link {
+  white-space: nowrap;
+  display: inline-block;
+}

@@ -1,0 +1,9 @@
+@inproceedings{krishnan2025tuma,
+    author={Krishnan, Deekshith Pathayappilly and Okumus, Kaan and Ngo, Khac-Hoang and Durisi, Giuseppe},
+    title={An Achievability Bound for Type-Based Unsourced Multiple Access}, 
+    booktitle = {Proceedings of the IEEE International Symposium on Information Theory (ISIT)},
+    year={2025},
+    month={June},
+    address={Ann Arbor, MI, USA},
+    doi={10.1109/ISIT63088.2025.11195434}
+}

@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaan Okumus</title>
 
-    <link href="./menu.css" rel="stylesheet" type="text/css">
+    <link href="./header.css" rel="stylesheet" type="text/css">
+    <link href="./footer.css" rel="stylesheet" type="text/css">
+    <link href="./base-template.css" rel="stylesheet" type="text/css">
+    <link href="./news.css" rel="stylesheet" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +20,10 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <script src="./menu-news.js" async></script>
-    <script src="./arrow.js" async></script>
+    <script src="./menu_responsive2.js" async></script>
     <script src="./news.js" async></script>
+    <script src="./newsData.js"></script>
+    <script src="./news-click.js"></script>
 </head>
 <body>
 
@@ -30,7 +35,7 @@
     <nav id="header-nav">
         <a href="./index.html" class="subnav">Home</a>
         <a href="./about_me.html" class="subnav">About Me</a>
-        <a href="./publications.html" class="subnav">Research</a>
+        <a href="./research.html" class="subnav">Research</a>
         <a href="./teaching.html" class="subnav">Teaching</a>
         <h5 class="chosen subnav">News</h5>
         <a href="./contact.html" class="subnav">Contact</a>
@@ -54,7 +59,7 @@
             <a href="./about_me.html">About Me</a>
         </h5>
         <h5>
-            <a href="./publications.html">Research</a>
+            <a href="./research.html">Research</a>
         </h5>
         <h5>
             <a href="./teaching.html">Teaching</a>
@@ -83,7 +88,7 @@
     </div>
 
     <div class="nav-box-profil-right">
-        <div id="menu-title-container">
+        <div id="news-title-container">
             <h4 class="menu-title" id="news-title">
                 News
             </h4>
@@ -99,7 +104,20 @@
         
         
         <div class="news-container gallery" id="newsContainer">
-            <div class="news-box">
+
+            <div class="news-box" data-id="0">
+                <img class="news-img"
+                        src="./imgs/news/fl_setup.jpeg">
+                <div>
+                    <p class="news-title">Paper Accepted to IEEE ICC 2026</p>
+                    <p class="news-desc">
+                        Our paper <em>Type-Based Unsourced Federated Learning With Client Self-Selection</em> is accepted for presentation at IEEE ICC 2026 to be held in Glasgow, Scotland.
+                    </p>
+                    <p class="news-date">January 19, 2026</p>
+                </div>
+            </div>
+
+            <div class="news-box" data-id="1">
                 <img class="news-img"
                         src="./imgs/news/ISIT25_photo.jpeg">
                 <div>
@@ -110,7 +128,20 @@
                     <p class="news-date">June 26, 2025</p>
                 </div>
             </div>
-            <div class="news-box">
+
+            <div class="news-box" data-id="2">
+                <img class="news-img"
+                        src="./imgs/news/tuma_cf_mimo_block_diagram.png">
+                <div>
+                    <p class="news-title">2 Papers Accepted to IEEE ISIT 2025</p>
+                    <p class="news-desc">
+                        Our papers about type-based multiple access (TUMA) are accepted for presentation at IEEE ISIT 2025 to be held in Ann Arbor, Michigan, USA.
+                    </p>
+                    <p class="news-date">April 11, 2025</p>
+                </div>
+            </div>
+
+            <div class="news-box" data-id="3">
                 <img class="news-img"
                         src="./imgs/news/swe-ctw24.JPG">
                 <div>
@@ -121,7 +152,7 @@
                     <p class="news-date">October 17, 2024</p>
                 </div>
             </div>
-            <div class="news-box">
+            <div class="news-box" data-id="4">
                 <img class="news-img"
                         src="./imgs/news/spawc-24.JPG">
                 <div>
@@ -132,18 +163,18 @@
                     <p class="news-date">September 14, 2024</p>
                 </div>
             </div>
-            <div class="news-box">
+            <div class="news-box" data-id="5">
                 <img class="news-img"
                         src="./imgs/news/epfl-grad-photo.jpg">
                 <div>
                     <p class="news-title">MSc Graduation Ceremony at EPFL</p>
                     <p class="news-desc">
-                        Successfully completed my Master's degree in Communication Systems at EPFL with the Magistrale ceremony. A memorable milestone celebrating the end of an enriching academic journey at EPFL.
+                        Successfully completed my Master's degree in Communication Systems at EPFL with the Magistrale ceremony. 
                     </p>
                     <p class="news-date">October 7, 2023</p>
                 </div>
             </div>
-            <div class="news-box">
+            <div class="news-box" data-id="6">
                 <img class="news-img"
                         src="./imgs/news/chalmers-photo.png">
                 <div>
@@ -154,7 +185,7 @@
                     <p class="news-date">October 3, 2023</p>
                 </div>
             </div>
-            <div class="news-box">
+            <div class="news-box" data-id="7">
                 <img class="news-img"
                         src="./imgs/news/epfl-photo-2.jpg">
                 <div>
@@ -182,7 +213,7 @@
                  src="./imgs/footer/scholar-logo.png">
         </a>
         <a class="footer-logo-container"
-           href="https://www.linkedin.com/in/kaan-okumu%C5%9F-311a791b3/"
+           href="mailto:okumus@chalmers.se"
            target="_blank">
             <img class="mail"
                  src="./imgs/footer/mail-logo.png">
@@ -198,15 +229,10 @@
             <img class="linkedin"
                  src="./imgs/footer/linkedin-logo.png">
         </a>
-        
-
-
 
     </div>
 
-
 </footer>
-
 
 </body>
 </html>
