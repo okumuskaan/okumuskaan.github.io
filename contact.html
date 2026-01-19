@@ -110,21 +110,28 @@
     </div>
 
     <div class="form-container">
-      <form> <!--action="action_page.php">-->
+      <form action="https://formspree.io/f/xlggnnao" method="POST"> 
         <h2>Sending a Message Here:</h2>
 
+        <!-- Formspree settings -->
+        <input type="hidden" name="_subject" value="New message from okumuskaan.github.io">
+        <input type="hidden" name="_next" value="https://okumuskaan.github.io/thanks.html">
+        <input type="text" name="_gotcha" style="display:none">
+
+        <!-- Name -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
           <div style="display: block;">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your first name*">
+            <input type="text" id="fname" name="firstname" placeholder="Your first name*" required>
           </div>
           <div style="display: block;">
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname"
-                   placeholder="Your last name*">
+                   placeholder="Your last name*" required>
           </div>
         </div>
 
+        <!-- Job / Institute -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
           <div style="display: block;">
             <label for="ljob">Job</label>
@@ -138,15 +145,21 @@
           </div>
         </div>
 
+        <!-- Email -->
+        <div style="display: grid; grid-template-columns: 1fr;">
+          <div style="display: block;">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email*" required>
+          </div>
+          <div style="display: block;">
+            
+          </div>
+        </div>
 
-
-
-
-
-
+        <!-- Country -->
         <label for="country">Country</label>
         <select id="country" name="country">
-          <option style="opacity: 0.4;">Select Country (Not required)</option>
+          <option value="" style="opacity: 0.4;" disabled selected>Select Country (Not required)</option>
           <option value="AF">Afghanistan</option>
           <option value="AX">Aland Islands</option>
           <option value="AL">Albania</option>
@@ -401,10 +414,11 @@
           <option value="ZW">Zimbabwe</option>
         </select>
 
+        <!-- Message -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something..." style="height:200px" required></textarea>
 
-        <label for="subject">Message</label>
-        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
-
+        <!-- Submit -->
         <input type="submit" value="Submit">
 
       </form>
