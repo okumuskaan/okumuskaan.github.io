@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Detail - Kaan Okumus</title>
+    <title>Kaan Okumus</title>
 
-    <link href="./header.css" rel="stylesheet" type="text/css">
-    <link href="./footer.css" rel="stylesheet" type="text/css">
-    <link href="./base-template.css" rel="stylesheet" type="text/css">
-    <link href="./news.css" rel="stylesheet" type="text/css">
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css/base-template.css" rel="stylesheet" type="text/css">
+    <link href="./css/news.css" rel="stylesheet" type="text/css">
+    <link href="./css/news-detail.css" rel="stylesheet" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +21,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <script src="./menu_responsive2.js" async></script>
-    <script src="./newsData.js"></script>
+    <script src="./js/header-menu.js" async></script>
+    <script src="./js/logo-link.js"></script>
+    <script src="./js/newsData.js"></script>
 </head>
 <body>
 
@@ -55,21 +57,39 @@
         <h5><a href="./about_me.html">About Me</a></h5>
         <h5><a href="./research.html">Research</a></h5>
         <h5><a href="./teaching.html">Teaching</a></h5>
-        <h5><a href="./news.html">News</a></h5>
+        <h5><a href="./news.html" style="font-weight: 700;">News</a></h5>
         <h5 id="mobile-nav-bottom"><a href="./contact.html">Contact</a></h5>
     </div>
 
-    <div class="nav-box-profil-right">
-        <div id="news-detail">
-            <img id="news-img" class="news-img" src="" alt="News Image">
-            <h4 id="news-title" class="menu-title"></h4>
-            <p id="news-date" class="news-date"></p>
-            <p id="news-desc" class="news-desc"></p>
-            <div class="nav-buttons">
-                <a id="prev-btn" href="#" class="nav-btn">Previous</a>
-                <a id="next-btn" href="#" class="nav-btn">Next</a>
+
+    <div class="nav-box-container">
+        <!-- Back button at the top -->
+        <div class="news-detailed-header" style="justify-content: center; margin-top: 20px;">
+            <!--<p>
+                <a href="./news.html" id="news-link">See all</a>
+            </p>-->
+            <div class="back-button-container">
+                <a href="./news.html" class="back-btn">← Back to All News</a>
+            </div>
+            <div style="display: flex; gap: 20px;">
+                <a id="prev-btn" href="#" class="nav-btn2" style="padding-right: 20px;"><img src="./imgs/icons/left_arrow.png"><p>Previous</p></a>
+
+                <a id="next-btn" href="#" class="nav-btn2" style="padding-left: 20px;"><p>Next</p><img src="./imgs/icons/right_arrow.png"></a>
+            </div>
+
+        </div>
+
+        <!-- Main news content -->
+        <div class="detailed-news-container">
+            <div id="news-detail">
+                <img id="news-img" src="" alt="News Image">
+                <h4 id="news-title" class="menu-title"></h4>
+                <p id="news-date" class="news-date"></p>
+                <p id="news-desc" class="news-desc"></p>
             </div>
         </div>
+
+        
     </div>
 </main>
 
@@ -125,6 +145,47 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('prev-btn').href = 'news-detail.html?id=' + prevId;
   document.getElementById('next-btn').href = 'news-detail.html?id=' + nextId;
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const id = parseInt(urlParams.get('id'));
+  if (isNaN(id) || id < 0 || id >= newsData.length) {
+    document.getElementById('news-detail').innerHTML = '<p>News not found.</p>';
+    return;
+  }
+  const news = newsData[id];
+  document.getElementById('news-img').src = news.img;
+  document.getElementById('news-title').textContent = news.title;
+  document.getElementById('news-date').textContent = news.date;
+  document.getElementById('news-desc').innerHTML = news.desc;
+
+  const prevId = id > 0 ? id - 1 : newsData.length - 1;
+  const nextId = id < newsData.length - 1 ? id + 1 : 0;
+  document.getElementById('prev-btn').href = 'news-detail.html?id=' + prevId;
+  document.getElementById('next-btn').href = 'news-detail.html?id=' + nextId;
+
+  // Add keyboard navigation with hover effect
+  document.addEventListener('keydown', function(event) {
+    let btn;
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      btn = document.getElementById('prev-btn');
+    } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      btn = document.getElementById('next-btn');
+    }
+    if (btn) {
+      btn.classList.add('keyboard-hover');
+      setTimeout(() => {
+        window.location.href = btn.href;
+      }, 70); // Delay navigation to show hover effect
+    }
+  });
+});
+
 </script>
 
 </body>

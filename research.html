@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaan Okumus</title>
 
-    <link href="./header.css" rel="stylesheet" type="text/css">
-    <link href="./footer.css" rel="stylesheet" type="text/css">
-    <link href="./base-template.css" rel="stylesheet" type="text/css">
-    <link href="./research.css" rel="stylesheet" type="text/css">
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css/base-template.css" rel="stylesheet" type="text/css">
+    <link href="./css/research.css" rel="stylesheet" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <script src="./menu_responsive2.js" async></script>
+    <script src="./js/header-menu.js" async></script>
+    <script src="./js/logo-link.js" async></script>
+
 </head>
 <body>
 
@@ -161,15 +163,34 @@
             <div class="nav-box-profil-right">
                 <h4 class="menu-title">Research Interests</h4>
                     <p class="menu-bio">
-                        My research focuses on information theory, wireless communications, and signal processing. I am particularly interested in unsourced multiple access, massive MIMO systems, and machine learning applications in communication networks. My goal is to develop efficient and practical solutions for future wireless technologies.
+                        <!--My research focuses on information theory, wireless communications, and signal processing. I am particularly interested in unsourced multiple access, massive MIMO systems, and machine learning applications in communication networks. My goal is to develop efficient and practical solutions for future wireless technologies.-->
+                        My research focuses on information theory and wireless communications, with a particular emphasis on massive random access systems. I work on scalable algorithm design for large-scale wireless networks, including distributed MIMO architectures, with applications to federated learning and sensing-based systems.
                     </p>
+                <h4 class="menu-title">
+                    Preprints, Submitted or Accepted Papers
+                </h4>                
+                <p class="menu-bio papers-list">
+                    <ul>
+                        <li>
+                            <span class="me-name">Kaan Okumus</span>, K.-H. Hoang, G. Durisi, and E. G. Ström, "Type-based unsourced multiple access over fading channels in distributed MIMO  with application to multi-target localization," submitted to IEEE Trans. Wireless Commun., 2026.
+                        </li>
+                        <li id="ufl-tuma-icc26-paper">
+                            <span class="me-name">Kaan Okumus</span>, K.-H. Hoang, U. K. Ganesan, G. Durisi, E. G. Ström, and S. R. Pandey, "Type-based unsourced federated learning with client self-selection," accepted to IEEE Int. Conf. Commun. (ICC), Glasgow, Scotland, UK, 2026.
+                            <span class="icon-link">[<a href="https://github.com/okumuskaan/ufl_tuma" target="_blank"><img src="./imgs/icons/github-logo.png" class="pdf-icon"></a>]</span> 
+                        </li>
+                        <li>
+                            D. P. Krishnan, <span class="me-name">Kaan Okumus</span>, K.-H. Ngo, and G. Durisi, "Minimum energy per bit of unsourced multiple access with location-based codebook partitioning," submitted to IEEE Int. Symp. Inf. Theory (ISIT), Guangzhou, China, 2026. 
+                        </li>
+                    </ul>
+                </p>
+
                 <h4 class="menu-title">
                     Journal Papers
                 </h4>                
                 <p class="menu-bio papers-list">
                     <ol>
                         <li>
-                            N. Bähler, M. E. Helou, É. Objois, <span class="me-name">Kaan Okumus</span>, and S. Süsstrunk, "Pogain: Poisson-gaussian image noise modeling from paired samples," in IEEE Signal Proc. Lett., Vol. 29, pp. 2602-2606, Dec. 2022.
+                            N. Bähler, M. E. Helou, É. Objois, <span class="me-name">Kaan Okumus</span>, and S. Süsstrunk, "PoGaIN: Poisson-Gaussian image noise modeling from paired samples," in IEEE Signal Proc. Lett., Vol. 29, pp. 2602-2606, Dec. 2022.
                             <span class="icon-link">[<a href="https://ieeexplore.ieee.org/abstract/document/9976220" target="_blank"><img src="./imgs/icons/pdf.png" class="pdf-icon"></a>],</span>
                             <span class="icon-link">[<a href="https://github.com/IVRL/PoGaIN" target="_blank"><img src="./imgs/icons/github-logo.png" class="pdf-icon"></a>],</span> 
                             <span class="icon-link">[<a href="./citations/bahler2022pogain.txt"><img src="./imgs/icons/cite.png" class="pdf-icon"></a>]</span>
@@ -181,18 +202,18 @@
                 </h4>                
                 <p class="menu-bio papers-list">
                     <ol>
-                        <li>
+                        <li id="tuma-cf-mimo-isit25-paper">
                             <span class="me-name">Kaan Okumus</span>, K.-H. Ngo, G. Durisi, and E. G. Ström, “Type-based unsourced multiple access over fading channels with cell-free massive MIMO,” in Proc. IEEE Int. Symp. Inf. Theory (ISIT), Ann Arbor, MI, USA, June 2025. 
                             <span class="icon-link">[<a href="https://ieeexplore.ieee.org/document/11195493" target="_blank"><img src="./imgs/icons/pdf.png" class="pdf-icon"></a>],</span>
                             <span class="icon-link">[<a href="https://github.com/okumuskaan/tuma_fading_cf" target="_blank"><img src="./imgs/icons/github-logo.png" class="pdf-icon"></a>],</span>
                             <span class="icon-link">[<a href="./citations/okumus2025tuma.txt"><img src="./imgs/icons/cite.png" class="pdf-icon"></a>]</span>
                         </li>
-                        <li>
+                        <li id="bound-tuma-isit25-paper">
                             D. P. Krishnan, <span class="me-name">Kaan Okumus</span>, K.-H. Ngo, and G. Durisi, “An achievability bound for type-based unsourced multiple access,” in Proc. IEEE Int. Symp. Inf. Theory (ISIT), Ann Arbor, MI, USA, June 2025.
                             <span class="icon-link">[<a href="https://ieeexplore.ieee.org/document/11195434" target="_blank"><img src="./imgs/icons/pdf.png" class="pdf-icon"></a>],</span>
                             <span class="icon-link">[<a href="./citations/krishnan2025tuma.txt"><img src="./imgs/icons/cite.png" class="pdf-icon"></a>]</span>
                         </li>
-                        <li>
+                        <li id="tuma-spawc24-paper">
                             K.-H. Ngo, D. P. Krishnan, <span class="me-name">Kaan Okumus</span>, G. Durisi, and E. G. Ström, “Type-based unsourced multiple access,” in Proc. IEEE Int. Workshop Signal Process. Advances Wireless Commun. (SPAWC), Lucca, Italy, Sept. 2024. 
                             <span class="icon-link">[<a href="https://ieeexplore.ieee.org/abstract/document/10694658" target="_blank"><img src="./imgs/icons/pdf.png" class="pdf-icon"></a>],</span>
                             <span class="icon-link">[<a href="https://github.com/khachoang1412/TUMA" target="_blank"><img src="./imgs/icons/github-logo.png" class="pdf-icon"></a>],</span>
@@ -220,10 +241,6 @@
             </div>
         </div>
     </div>
-
-
-
-
 </main>
 
 <footer>

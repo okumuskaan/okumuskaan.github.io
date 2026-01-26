@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Kaan Okumus</title>
 
-    <link href="./header.css" rel="stylesheet" type="text/css">
-    <link href="./footer.css" rel="stylesheet" type="text/css">
-    <link href="./base-template.css" rel="stylesheet" type="text/css">
-    <link href="./contact.css" rel="stylesheet" type="text/css">
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css/base-template.css" rel="stylesheet" type="text/css">
+    <link href="./css/contact.css" rel="stylesheet" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +20,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-    <script src="./menu-news.js" async></script>
-    <script src="./arrow.js" async></script>
+
+    <script src="./js/header-menu.js" async></script>
+    <script src="./js/logo-link.js" async></script>
 
 </head>
 <body>
@@ -59,7 +61,7 @@
             <a href="./about_me.html">About Me</a>
         </h5>
         <h5>
-            <a href="./publications.html">Research</a>
+            <a href="./research.html">Research</a>
         </h5>
         <h5>
             <a href="./teaching.html">Teaching</a>
@@ -88,7 +90,7 @@
       </a>
   </div>
 
-  <h1 style="text-align: center;">Contact me </h1>
+  <h1 style="text-align: center;" id="contact-me-title">Contact me </h1>
   <p style="text-align: center;">You can contact me with the following ways:</p>
 
 
@@ -97,7 +99,7 @@
     <div class="mail-container">
       <h2>Sending a Message/Mail/Email:</h2>
       <p><span style="margin-right:50px;">Work Email:</span> okumus[at]chalmers.se</p>
-      <p><span style="margin-right:24px;">Personal Email:</span> okukaan[at]gmail.com</p>
+      <p><span style="margin-right:26px;">Personal Email:</span> okukaan[at]gmail.com</p>
       <p><span style="margin-right:67px;">Location:</span> Gothenburg,
         Sweden</p>
       <a href="https://maps.chalmers.se/#person:chalmers:okumus" target="_blank" id="office-loc-link">Click here for the exact location of my office!</a>
@@ -110,7 +112,8 @@
     </div>
 
     <div class="form-container">
-      <form action="https://formspree.io/f/xlggnnao" method="POST"> 
+      <!--<form action="https://formspree.io/f/xlggnnao" method="POST">-->
+      <form> 
         <h2>Sending a Message Here:</h2>
 
         <!-- Formspree settings -->
