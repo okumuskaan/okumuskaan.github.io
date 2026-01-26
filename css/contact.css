@@ -1,5 +1,8 @@
 html {
     font-family: 'Raleway', sans-serif;
+}
+
+main {
     font-weight: 300;
     font-size: 15px;
     line-height: 1.5rem;
