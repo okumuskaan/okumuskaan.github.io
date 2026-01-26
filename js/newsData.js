@@ -28,7 +28,7 @@ You can find the slides of my presentation <a class="intext-link" href="./docs/2
     date: 'June 26, 2025'
   },
   {
-    img: './imgs/news/tuma_cf_mimo-2.png',
+    img: './imgs/news/tuma_cf_mimo.png',
     title: '2 Papers Accepted to IEEE ISIT 2025',
     desc: 
   `
@@ -84,7 +84,7 @@ You can find the poster of my presentation <a class="intext-link" href="./docs/t
     date: 'October 3, 2023'
   },
   {
-    img: './imgs/news/epfl-photo-2.jpg',
+    img: './imgs/news/epfl-photo.jpg',
     title: 'Master Thesis Defense',
     desc: 'I successfully defended my Master\'s thesis titled <em></em> at EPFL, receiving positive feedback from the committee.',
     date: 'June 23, 2023'
