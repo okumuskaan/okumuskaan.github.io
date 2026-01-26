@@ -128,46 +128,34 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const id = parseInt(urlParams.get('id'));
-  if (isNaN(id) || id < 0 || id >= newsData.length) {
-    document.getElementById('news-detail').innerHTML = '<p>News not found.</p>';
-    return;
+  // Function to load news content
+  function loadNews() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = parseInt(urlParams.get('id'));
+    if (isNaN(id) || id < 0 || id >= newsData.length) {
+      document.getElementById('news-detail').innerHTML = '<p>News not found.</p>';
+      return;
+    }
+    const news = newsData[id];
+    document.getElementById('news-img').src = news.img;
+    document.getElementById('news-title').textContent = news.title;
+    document.getElementById('news-date').textContent = news.date;
+    document.getElementById('news-desc').innerHTML = news.desc;
+
+    const prevId = id > 0 ? id - 1 : newsData.length - 1;
+    const nextId = id < newsData.length - 1 ? id + 1 : 0;
+    document.getElementById('prev-btn').href = 'news-detail.html?id=' + prevId;
+    document.getElementById('next-btn').href = 'news-detail.html?id=' + nextId;
   }
-  const news = newsData[id];
-  document.getElementById('news-img').src = news.img;
-  document.getElementById('news-title').textContent = news.title;
-  document.getElementById('news-date').textContent = news.date;
-  document.getElementById('news-desc').innerHTML = news.desc;
 
-  const prevId = id > 0 ? id - 1 : newsData.length - 1;
-  const nextId = id < newsData.length - 1 ? id + 1 : 0;
-  document.getElementById('prev-btn').href = 'news-detail.html?id=' + prevId;
-  document.getElementById('next-btn').href = 'news-detail.html?id=' + nextId;
-});
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const id = parseInt(urlParams.get('id'));
-  if (isNaN(id) || id < 0 || id >= newsData.length) {
-    document.getElementById('news-detail').innerHTML = '<p>News not found.</p>';
-    return;
+  // Check if newsData is loaded; if not, wait a bit
+  if (typeof newsData === 'undefined') {
+    setTimeout(loadNews, 50); // Small delay for async load
+  } else {
+    loadNews();
   }
-  const news = newsData[id];
-  document.getElementById('news-img').src = news.img;
-  document.getElementById('news-title').textContent = news.title;
-  document.getElementById('news-date').textContent = news.date;
-  document.getElementById('news-desc').innerHTML = news.desc;
 
-  const prevId = id > 0 ? id - 1 : newsData.length - 1;
-  const nextId = id < newsData.length - 1 ? id + 1 : 0;
-  document.getElementById('prev-btn').href = 'news-detail.html?id=' + prevId;
-  document.getElementById('next-btn').href = 'news-detail.html?id=' + nextId;
-
-  // Add keyboard navigation with hover effect
+  // Add keyboard navigation with hover effect (only once)
   document.addEventListener('keydown', function(event) {
     let btn;
     if (event.key === 'ArrowLeft') {
@@ -185,7 +173,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-
 </script>
 
 </body>
