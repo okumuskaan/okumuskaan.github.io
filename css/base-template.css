@@ -1,0 +1,281 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    transition: 0.3s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+::selection {
+  background: #1f1f1f;
+  color: #f5f5f5;
+  text-shadow: none;
+}
+
+img, header, iframe, footer {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden; 
+}
+
+img { max-width: 100%; height: auto;}
+
+body, main {
+    margin: 0px;
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nav-box-container {
+    display: block;
+    justify-content: space-around;
+    margin: 0px auto;
+    padding: 10px 40px;
+    padding-top: 0px;
+    width: min(1200px, 100%);
+    margin-inline: auto;
+    padding-inline: clamp(12px, 3vw, 40px);
+}
+
+.nav-box-profil {
+  grid-template-columns: 340px 1fr;
+  padding-left: 0;
+  gap: 24px;
+}
+
+.nav-box-profil {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    margin: 20px 0px;
+    padding-left: 50px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "menu content";
+    grid-template-columns: 2fr 4fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.profil-title {
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+
+.profil-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.7);
+    margin: 10px;
+}
+
+.profil-uni {
+    font-size: 16px;
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+}
+
+.profil-uni:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.nav-box-icon-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    padding-left: 0px;
+    grid-column: 1 / 2;
+    grid-area: menu;
+    position: sticky;
+    top: 120px;  /* Adjust this if your header height is different */
+    height: fit-content;
+}
+
+.nav-box-profil-right {
+    grid-column: 2/3;
+    border-radius: 10px;
+    padding: 30px 50px;
+    grid-area: content;
+}
+
+.nav-box-icon-me {
+    height: 250px;
+    border-radius: 50px;
+}
+
+.location-icon {
+    height: 20px;
+    width: 20px;
+    display: block;
+    object-fit: contain;
+}
+
+.profil-uni-small-captions {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center the whole block horizontally */
+    gap: 6px;
+}
+
+.profil-uni-small-caption-item {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-start; /* left-align icon+text inside each row */
+    margin: 5px 0px;
+    width: 220px; /* consistent width so texts line up vertically */
+    text-align: left;
+    color: rgba(0,0,0,0.7);
+}
+
+.profil-uni-small-caption-item p {
+    margin: 0px 5px;
+    font-size: 12px;
+}
+
+.profil-uni-small-caption-item a {
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+}
+
+.profil-uni-small-caption-item a:hover {
+    text-decoration: underline;
+    color: rgba(0,0,0,0.7);
+}
+
+
+
+
+.menu-title {
+    font-size: 16px;
+    line-height: 1.5rem;
+    text-align: left;
+    max-width: 600px;
+}
+.menu-bio {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5rem;
+    text-align: left;
+    max-width: 700px;
+}
+.menu-bio a {
+    text-decoration: none;
+    color: #0000EE;
+}
+.menu-bio a:hover, .menu-bio a:visited {
+    text-decoration: underline;
+    color: #0000EE;
+}
+
+
+.bold-text {
+    font-weight: 500;
+}
+
+.intext-link {
+    color: #0000EE;
+    text-decoration: none;
+}
+.intext-link:hover {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1200px) {
+    .nav-box-profil-right { 
+        padding: 18px 50px;
+        max-width: 700px; 
+        margin: 0px auto;
+    }
+    .nav-box-icon-me-container { padding: 16px 0; position: static; top: auto; }
+
+    main {
+        top: 80px;
+    }
+
+    .nav-box-container {
+        display: block;
+        padding-top: 0px;
+    }
+    .nav-box-profil {
+        display: block;
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+
+    .nav-box-icon-me {
+        height: 100px;
+        border-radius: 20px;
+    }
+
+    .profil-title {
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+    }
+
+    .nav-box-icon-me-container {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;        
+        padding: 20px 10px;
+        grid-column: 1 / 2;
+        background-color: white;
+        position: inherit;
+    }
+
+    .nav-box-caption {
+        text-align: left;
+    }
+
+    .profil-desc, .profil-uni {
+        font-size: 12px;
+        margin: 3px 0px;
+    }
+
+    .profil-uni-small-captions {
+        display: none;
+    }
+
+    .menu-bio {
+        max-width: 1500px;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav-box-profil-right { padding: 18px 0px; } /* Can be deleted */
+}

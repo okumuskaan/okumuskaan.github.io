@@ -1,0 +1,173 @@
+header {
+    padding: 0.3rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: whitesmoke 1px solid;
+    margin-bottom: 0px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+#header-nav {
+    display: flex;
+    align-items: center;
+}
+
+#logo-title-container {
+    margin-left: 40px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#logo-title {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+
+#logo-title h3 {
+    margin: 0px 10px 0px 0px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+header nav h5, .subnav {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    width: 100px;
+    padding: 6px 10px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav-link:hover, header nav a:hover, #mobile-nav a:hover, header nav h5:hover,
+#mobile-nav h5:hover
+ {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+header nav h5.chosen, #mobile-nav h5.chosen {
+    font-weight: 700;
+}
+
+
+/* --- Header responsiveness (CSS-driven) --- */
+#header-nav-2 { 
+    display: none; 
+    margin-right: 0.5rem;
+}
+
+
+.banner {
+    display: none;
+}
+
+#mobile-nav {
+    margin-top: 0px;
+    background-color: whitesmoke;
+    height: 0px;
+    display: none;
+    transition: 0.3s linear;
+    overflow: hidden;
+    will-change: height;
+}
+
+#mobile-nav h5 {
+    text-decoration: none;
+    color: black;
+    opacity: 0;
+    margin: 7px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 10px 5px ;
+    text-align: center;
+    transition: 0.1s linear;
+}
+
+#mobile-nav #mobile-nav-top {
+    margin-top: 0px;
+}
+
+#mobile-nav h5 a {
+    color: black;
+    text-decoration: none;
+}
+
+#mobile-nav-top {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+#mobile-nav-bottom {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+.mobile-subdropdown {
+    margin-top: 10px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.mobile-subdropdown h5 {
+    opacity: 0;
+    transition: 0.1s linear;
+}
+
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {transform: translate(0, 7px) rotate(-45deg);}
+.change .bar2 {opacity: 0;}
+.change .bar3 {transform: translate(0, -7px) rotate(45deg);}
+
+
+@media (max-width: 1200px) {
+    header { 
+        padding: 0.6rem 1rem; 
+        height: 80px;
+    }
+    #logo-title-container { margin-left: 1rem; }
+    #header-nav { display: none; }
+    #header-nav-2 { display: flex !important; }
+    header h1 {
+        font-size: 30px;
+    }
+}
+
+/* Slightly tighter header on very small screens */
+@media (max-width: 420px) {
+  #logo-title { font-size: 1rem; letter-spacing: 1.2px; }
+}
+

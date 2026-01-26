@@ -1,0 +1,133 @@
+/* Back button */
+.back-button-container {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0px clamp(12px, 4vw, 80px);
+}
+
+.back-btn {
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Detailed news container */
+.detailed-news-container {
+    max-width: 900px;
+    min-height: 800px;
+    margin: 0 auto;
+    padding: 20px clamp(12px, 4vw, 80px);
+    /*background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
+}
+
+#news-detail .menu-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#news-detail .news-date {
+    font-size: 13px;
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#news-detail .news-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+#news-detail #news-img {
+  height: 300px;
+  min-width: 80%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Navigation buttons (moved outside) */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0px clamp(12px, 4vw, 80px);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+}
+
+.nav-btn2 {
+    padding: 0px 0px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    gap: 5px;
+}
+
+.nav-btn2:hover, .nav-btn2.keyboard-hover  {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.news-detailed-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-btn2 img {
+    height: 40px;
+    opacity: 0.8;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .detailed-news-container {
+        padding: 15px;
+    }
+
+    .back-button-container {
+        text-align: center;
+    }
+}
