@@ -2,6 +2,13 @@
    NEWS (base card styles)
    ========================= */
 
+.nav-box-profil-right-newspage {
+    grid-column: 2/3;
+    border-radius: 10px;
+    padding: 30px 50px;
+    grid-area: content;
+}
+
 .news-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -480,3 +487,14 @@ html, body {
     }
 }
 
+@media (max-width: 1200px) {
+    .nav-box-profil-right-newspage { 
+        padding: 18px 50px;
+        max-width: 1000px; 
+        margin: 0px auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav-box-profil-right-newspage { padding: 18px 0px; } /* Can be deleted */
+}
