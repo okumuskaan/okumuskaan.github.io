@@ -490,7 +490,7 @@ html, body {
 @media (max-width: 1200px) {
     .nav-box-profil-right-newspage { 
         padding: 18px 50px;
-        max-width: 1000px; 
+        max-width: 900px; 
         margin: 0px auto;
     }
 }
