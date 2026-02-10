@@ -8,6 +8,8 @@ const newsData = [
     <a class="intext-link" href="https://icc2026.ieee-icc.org/" target="_blank">IEEE International Conference on Communications (ICC) 2026</a>, to be held in Glasgow, Scotland, UK.
     <br><br>
     In this work, we study <span class="bold-text">federated learning over wireless networks</span> in the presence of heterogeneous data across clients. Instead of relying on server-side knowledge of client-specific information, which can raise privacy concerns, we propose a <span class="bold-text">client self-selection</span> mechanism where devices independently decide whether to participate based on locally computed training losses and a common threshold broadcast by the server. To enable reliable aggregation over wireless channels, this strategy is embedded into the <span class="bold-text">type-based unsourced multiple access (TUMA)</span> framework over distributed MIMO, resulting in a fully unsourced design: the server does not need to know client identities, and no channel state information is required at either the clients or the server. 
+    <br><br>
+    You can see the paper <a class="intext-link" href="https://arxiv.org/abs/2602.06601" target="_blank">here</a>.
 `,
     date: 'January 19, 2026'
   },
