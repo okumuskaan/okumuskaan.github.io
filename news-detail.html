@@ -131,11 +131,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // Function to load news content
   function loadNews() {
     const urlParams = new URLSearchParams(window.location.search);
-    const id = parseInt(urlParams.get('id'));
+    let id = parseInt(urlParams.get('id'));
     if (isNaN(id) || id < 0 || id >= newsData.length) {
       document.getElementById('news-detail').innerHTML = '<p>News not found.</p>';
       return;
     }
+    console.log("id = ", id);
     const news = newsData[id];
     document.getElementById('news-img').src = news.img;
     document.getElementById('news-title').textContent = news.title;

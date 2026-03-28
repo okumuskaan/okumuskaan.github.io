@@ -1,5 +1,36 @@
 const newsData = [
   {
+    img: './imgs/news/isit26_plot.png',
+    title: 'Paper Accepted to IEEE ISIT 2026',
+    desc: 
+`
+    I am pleased to share that our paper <a class="intext-link" href="./research.html#uma_loc_cc-isit26-paper">Minimum Energy per Bit of Unsourced Multiple Access with Location-Based Codebook Partitioning</a> has been accepted for presentation at the 
+    <a class="intext-link" href="https://2026.ieee-isit.org" target="_blank">IEEE International Symposium on Information Theory (ISIT) 2026</a>, to be held in Guangzhou, China.
+    <br><br>
+    In this work, we derive <span class="bold-text">finite-blocklength bounds</span> on the minimum energy per bit for unsourced multiple access (UMA) under heterogeneous path-loss conditions, and show that location-based codebook partitioning, where users select subcodebooks based on their path loss, provides clear gains over conventional UMA. 
+    <br>
+    <ul>
+        <li style="margin-bottom: 10px;">
+          New achievability bounds: random-coding bounds (minimum-distance decoding) and interference-cancellation bounds are derived for both location-based partitioned and common codebook schemes.
+        </li>
+        <li style="margin-bottom: 10px;">
+        Identification of new error events (e.g., “accidentally correct” collisions) specific to this setting.
+         </li>
+         <li style="margin-bottom: 10px;">
+          Large-system replica analysis showing that partitioning simplifies the system into parallel scalar channels with known path loss.
+         </li>
+         <li>
+          Comprehensive validation: coded compressed sensing (CCS) with multisource AMP is implemented, and all bounds and practical algorithm results are compared, confirming performance gains.
+         </li>
+    </ul>
+    <br>
+    Overall, the paper demonstrates that exploiting location information in codebook design leads to performance gains in UMA scenarios.
+    <br><br>
+    You can see the extended version of the paper <a class="intext-link" href="https://gdurisi.github.io/files/2026/krishnan06-02a.pdf" target="_blank">here</a>.
+`,
+    date: 'March 28, 2026'
+  },  
+  {
     img: './imgs/news/fl_setup.png',
     title: 'Paper Accepted to IEEE ICC 2026',
     desc: 
