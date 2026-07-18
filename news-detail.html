@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     let id = parseInt(urlParams.get('id'));
     if (isNaN(id) || id < 0 || id >= newsData.length) {
-      document.getElementById('news-detail').innerHTML = '<p>News not found.</p>';
+      document.getElementById('news-detail').innerHTML = '<p></p>';
       return;
     }
     console.log("id = ", id);

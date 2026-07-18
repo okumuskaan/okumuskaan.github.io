@@ -1,5 +1,59 @@
 const newsData = [
   {
+    img: './imgs/news/halfway-cover_huge.png',
+    title: 'Half-way seminar',
+    desc: 
+`
+I presented my half-way seminar at Chalmers University of Technology in Gothenburg, Sweden. The half-way seminar is a mandatory milestone for PhD students at Chalmers who continue directly toward the doctoral degree without obtaining a licentiate degree. It serves as a formal evaluation of the progress made during the first half of the PhD and assesses whether the research has reached a level corresponding to the licentiate degree. Based on the seminar and the discussion, the examiner determines whether the student has successfully passed this milestone.
+<br><br>
+The seminar was opened by my examiner, Prof. Thomas Eriksson, after which my supervisor, Prof. Erik G. Ström, introduced the seminar and my research. I then gave a 25-minute presentation summarizing the progress of my PhD research. This was followed by a 30-minute discussion session led by Prof. Deniz Gündüz (Imperial College London), who served as the external discussion leader. His insightful questions and valuable feedback stimulated an engaging scientific discussion and provided useful perspectives for my future research. At the conclusion of the seminar, my examiner Prof. Thomas Eriksson announced that I had successfully passed the half-way seminar.
+<br><br>
+
+During the seminar, I presented the contributions of the following research papers:
+
+<ul>
+    <li style="margin-bottom: 10px;">
+        <a class="intext-link" href="./research.html#tuma-cf-mimo-isit25-paper">
+            Type-based unsourced multiple access over fading channels with cell-free massive MIMO
+        </a>
+    </li>
+    <li style="margin-bottom: 10px;">
+        <a class="intext-link" href="./research.html#tuma-mtl-twc-paper">
+            Type-based unsourced multiple access over fading channels in distributed MIMO with application to multi-target localization
+        </a>
+    </li>
+    <li>
+        <a class="intext-link" href="./research.html#ufl-tuma-icc26-paper">
+            Type-based unsourced federated learning with client self-selection
+        </a>
+    </li>
+</ul>
+
+<br>
+
+I would like to express my sincere gratitude to Prof. Deniz Gündüz for serving as the external discussion leader and for his thoughtful questions and constructive feedback throughout the seminar. I am also grateful to my examiner, Prof. Thomas Eriksson, for his careful evaluation and valuable comments. Finally, I would like to thank my supervisors, Prof. Erik G. Ström and Prof. Giuseppe Durisi, as well as my collaborators and co-authors, Assist. Prof. Khac-Hoang Ngo, Dr. Deekshith P. Krishnan, Dr. Unnikrishnan K. Ganesan, and Assist. Prof. Shashi Raj Pandey, whose guidance, support, and collaboration have been invaluable throughout my PhD journey.
+
+<br><br>
+
+You can find the slides of my half-way seminar <a class="intext-link" href="./docs/2026-06-halfway_seminar.pdf" target="_blank">here</a>.
+`,
+    date: 'June 3, 2026'
+  },
+  {
+    img: './imgs/news/ICC26_photo.jpeg',
+    title: 'ICC\'26 Presentation',
+    desc: 
+`
+    I presented our paper <a class="intext-link" href="./research.html#ufl-tuma-icc26-paper">Type-based unsourced federated learning with client self-selection</a> at the 
+    <a class="intext-link" target="_blank" href="https://icc2026.ieee-icc.org">IEEE International Conference on Communications (ICC) 2026</a> in Glasgow, Scotland, UK.
+    <br><br>
+The presentation sparked an engaging discussion on unsourced federated learning, with insightful questions and valuable feedback from researchers attending the session.
+<br><br>
+You can find the slides of my presentation <a class="intext-link" href="./docs/2026-05-ufl_tuma-icc26.pdf" target="_blank">here</a>.
+`,
+    date: 'May 26, 2026'
+  },
+  {
     img: './imgs/news/isit26_plot.png',
     title: 'Paper Accepted to IEEE ISIT 2026',
     desc: 
