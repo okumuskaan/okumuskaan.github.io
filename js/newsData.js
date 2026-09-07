@@ -1,5 +1,47 @@
 const newsData = [
   {
+    img: './imgs/news/imperial_news_photo.jpg',
+    title: 'Research Visit at Imperial College London',
+    desc: 
+`
+I started my new position at Imperial College London as a visiting doctoral researcher, where I will be working with Prof. Deniz Gündüz and his group Information Information Processing and Communications Lab.`,
+    date: 'September 1, 2026'
+  },
+  {
+    img: './imgs/news/tuma_twc_paper_screenshot_news.png',
+    title: 'Paper Published in IEEE TWC',
+    desc: 
+`
+Our paper 
+<a class="intext-link" href="./research.html#tuma-mtl-twc-paper">Type-Based Unsourced Multiple Access over Fading Channels in Distributed MIMO with Application to Multi-Target Localization</a> 
+is published in <a class="intext-link" href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7693" target="_blank">IEEE Transactions on Wireless Communications</a> (Volume: 25).
+<br><br>
+
+In this work, we extend <span class="bold-text">type-based unsourced multiple access (TUMA)</span> to fading channels in distributed MIMO (D-MIMO) systems. Unlike conventional unsourced multiple access, which focuses on recovering the set of transmitted messages, TUMA aims to estimate their <span class="bold-text">type</span>, i.e., the empirical distribution of the transmitted messages, thereby accounting for message collisions that naturally arise when multiple users report the same information. 
+
+<br>
+<ul>
+    <li style="margin-bottom: 10px;">
+      <span class="bold-text">TUMA over fading D-MIMO channels:</span> We extend TUMA to a more realistic setting with small- and large-scale fading, random user activity, and no instantaneous channel state information. We employ location-based codebook partitioning and adapt multisource approximate message passing (AMP) to estimate message multiplicities. 
+    </li>
+    <li style="margin-bottom: 10px;">
+      <span class="bold-text">Centralized and distributed decoding:</span> We develop multiplicity-aware Bayesian decoding based on multisource AMP, together with a distributed implementation that reduces the computational burden at the central processor and improves scalability for large D-MIMO systems. 
+    </li>
+    <li style="margin-bottom: 10px;">
+      <span class="bold-text">Application to multi-target localization:</span> We show how TUMA can be used in a sensor-assisted localization system, where distributed sensors detect targets and communicate their quantized positions to a D-MIMO receiver.
+    </li>
+    <li>
+      <span class="bold-text">End-to-end sensing–communication tradeoff:</span> We investigate how localization performance depends jointly on the resources allocated to sensing and communication and on the number of bits used to quantize target positions. This reveals the tradeoff between target detection, localization resolution, and reliable communication.     
+    </li>
+  </ul>
+<br>
+Overall, the paper demonstrates how TUMA can enable reliable communication of message multiplicities over realistic fading channels, and illustrates its potential for distributed sensing applications in which multiple devices may observe and report the same underlying information.
+<br><br>
+You can see the paper <a class="intext-link" href="https://ieeexplore.ieee.org/document/11667054" target="_blank">here</a>.
+`,
+    date: 'August 26, 2026'
+  },
+  {
     img: './imgs/news/halfway-cover_huge.png',
     title: 'Half-way seminar',
     desc: 
